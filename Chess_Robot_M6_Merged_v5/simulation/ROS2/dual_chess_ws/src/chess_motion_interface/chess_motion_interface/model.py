@@ -55,4 +55,3 @@ class Model:
                 if error < 1e-4 and all(np.linalg.norm(sol.x - old['q']) > 1e-3 for old in result):
                     result.append({'q': sol.x.tolist(), 'error': error})
         return result
-

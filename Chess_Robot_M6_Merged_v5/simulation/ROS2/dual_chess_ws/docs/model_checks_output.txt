@@ -1,0 +1,8 @@
+[PASS] Design chain equals Design URDF (200 random configs, both robots)  max difference 0.0e+00
+[PASS] zero pose: robot1 vs robot2 clear  min distance 0.520 m
+[PASS] zero pose: arms vs board collision geometry clear  
+[PASS] HOME pose: robot1 vs robot2 clear  min distance 0.145 m
+[PASS] HOME pose: arms vs board collision geometry clear  
+[INFO] robot1 tool0 at HOME (world, m)  [-0.003 -0.126  0.202]
+[INFO] robot2 tool0 at HOME (world, m)  [0.003 0.126 0.202]
+[PASS] positional reach of robot1: 64/64 square centres (playing area 35.0 cm, square 4.375 cm) inside the tool-tip reach band at z 3-6 cm  band 0.00..0.57 m; positions only

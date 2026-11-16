@@ -1,0 +1,31 @@
+Board playing area 35.0 cm, squares 4.375 cm. Targets: 64 square centres + capture-bin slots (placeholders).
+
+1) Distance from the base axis to the nearest / farthest square centre, by base distance d from the board centre
+   (base on the centre line, d measured from board centre; arm must span [nearest, farthest])
+   d [cm]   nearest [cm]   farthest [cm]   needed l1+l2 with 10 % margin [cm]   needed |l1-l2| <= [cm]
+      20          5.2           38.5                  42.3                            5.2
+      25          9.9           43.1                  47.4                            9.9
+      30         14.8           47.8                  52.6                           14.8
+      35         19.8           52.6                  57.9                           19.8
+      40         24.8           57.4                  63.1                           24.8
+
+2) Joint ranges needed for l1=30 cm, l2=24 cm (both arms identical, rotated copies)
+   d [cm]   reachable   left elbow: q1 range [deg], max|q2| [deg]      right elbow: q1 range [deg], max|q2| [deg]
+      20          NO    unreachable                                 unreachable
+      25          yes   [-117.8,    4.6]   163.0                    [ -35.3,  110.8]   163.0
+      30          yes   [-107.4,   -5.8]   150.7                    [ -30.3,   98.7]   150.7
+      35          yes   [ -97.7,    5.2]   138.8                    [ -31.5,   88.7]   138.8
+      40          NO    unreachable                                 unreachable
+
+3) Sweep (d = 30 cm): which link pairs reach everything, and the elbow range they need (left elbow)
+   l1 [cm]  l2 [cm]  l1+l2    reach all?   q1 range [deg]        max|q2| [deg]
+       25      25      50          yes    [-113.1,    1.7]      145.4
+       28      24      52          yes    [-108.7,   -2.6]      148.0
+       30      24      54          yes    [-107.4,   -5.8]      150.7
+       30      30      60          yes    [-120.0,  -18.5]      151.3
+       32      22      54          yes    [-102.5,    3.0]      156.1
+       35      20      55          NO     
+       35      25      60          yes    [-106.6,    1.2]      158.6
+       20      20      40          NO     
+
+Reading: the FARTHEST square sets the minimum l1+l2; the NEAREST squares force the deepest elbow fold (large |q2|) and need |l1-l2| below their distance. Moving the base away from the board reduces the fold but raises the reach needed. Final values depend on the real arm and layout.

@@ -1,0 +1,26 @@
+robot: Assem4.SLDASM   links=4 joints=3
+joint types: {'joint0': 'fixed', 'joint1': 'continuous', 'joint2': 'continuous'}
+actuated joints (DOF = 2): ['joint1', 'joint2']
+
+zero-pose link frames in the root frame (origin | z-axis):
+  base_link  [0. 0. 0.] | z=[0. 0. 1.]
+  link0      [-0.1858 -0.244  -0.1266] | z=[ 0.0189 -0.9998 -0.    ]
+  link1      [-0.1858 -0.244  -0.0666] | z=[-0.9998 -0.0189 -0.    ]
+  link2      [-0.1821 -0.441  -0.0324] | z=[ 0.9998  0.0189 -0.    ]
+
+per-link mesh / mass checks:
+  base_link: mesh size [0.06 0.06 0.09] m (units look metric/metres), volume 1.366e-04 m3; mass 0.1372 kg -> density 1004 kg/m3; COM-to-mesh-centroid 0.3688 m
+  link0: mesh size [0.06 0.09 0.06] m (units look metric/metres), volume 1.366e-04 m3; mass 0.1372 kg -> density 1004 kg/m3; COM-to-mesh-centroid 0.0000 m
+  link1: mesh size [0.26 0.06 0.04] m (units look metric/metres), volume 3.640e-04 m3; mass 0.3667 kg -> density 1008 kg/m3; COM-to-mesh-centroid 0.0001 m
+  link2: mesh size [0.26 0.06 0.04] m (units look metric/metres), volume 3.640e-04 m3; mass 0.3667 kg -> density 1008 kg/m3; COM-to-mesh-centroid 0.0001 m
+
+duplicate-geometry scan (same mesh volume at the same place in the root frame):
+  DUPLICATE: base_link == link0
+
+WARNINGS:
+  - joint0: fixed joint carries a zero <axis> (harmless, non-conformant)
+  - joint1: continuous (unlimited) joint, no <limit> -> no effort/velocity/position limits
+  - joint2: continuous (unlimited) joint, no <limit> -> no effort/velocity/position limits
+  - base_link and link0 are the SAME part at the SAME place (exported twice) -> double mass/collision
+ERRORS:
+  - base_link: inertial COM is 0.369 m from its own mesh centroid (wrong frame in export?)

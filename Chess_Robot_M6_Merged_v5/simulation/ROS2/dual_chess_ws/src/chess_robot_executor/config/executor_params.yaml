@@ -1,0 +1,39 @@
+# chess_robot_executor configuration. EVERY value is a PLACEHOLDER unless marked otherwise.
+#   board.play_size / surface_z : supplied board CAD (35 cm playing area) - board decision pending
+#   mounts                      : current simulation layout (robot1 at -Y facing +Y, robot2 at +Y facing -Y)
+#   scara / limits / park / heights / gripper / capture_bins / sink : placeholders until the Design team (arm), M2 (pieces),
+#                                 M4/M9 (limits, motors) and M5 (control) deliver real data. Joint names of `sink` follow
+#                                 the FINAL arm model, which does not exist yet.
+# Units: metres, radians, seconds. Frames: board B (x a->h, y rank 1->8, z up); robot R (+x = forward at joint zero).
+executor:
+  board: {play_size: 0.35, surface_z: 0.01}
+  mounts:
+    robot1: {x: 0.0, y: -0.3, yaw: 1.5707963267948966, base_z: 0.0}
+    robot2: {x: 0.0, y: 0.3, yaw: -1.5707963267948966, base_z: 0.0}
+  arm_for_side: {white: robot1, black: robot2}
+  scara:
+    l1: 0.3
+    l2: 0.24
+    q1_limits: [-2.8, 2.8]
+    q2_limits: [-2.8, 2.8]
+    z_limits: [0.0, 0.15]
+    reach_margin: 0.003
+    elbow_preference: left
+  limits:
+    vmax: [1.0, 1.5, 0.1]
+    amax: [3.0, 4.0, 0.5]
+    speed_scale: 0.5
+  park: {q1: 1.5708, q2: 2.3}
+  heights:
+    piece_height: {p: 0.035, n: 0.045, b: 0.05, r: 0.04, q: 0.06, k: 0.07}
+    grasp_fraction: 0.6
+    travel_clearance: 0.03
+    place_clearance: 0.003
+  gripper: {open_width: 0.045, grasp_width: 0.012, time: 0.6}
+  capture_bins:
+    robot1: {x: 0.26, y: -0.15, dx: 0.035, dy: 0.035, columns: 4, slots: 24}
+    robot2: {x: -0.26, y: 0.15, dx: -0.035, dy: -0.035, columns: 4, slots: 24}
+  timing: {operator_timeout: 120.0, settle_time: 0.1, min_segment: 0.05}
+  sink:
+    joint_names: {shoulder: shoulder_joint, elbow: elbow_joint, z: z_joint, gripper: gripper_finger_joint}
+    topic_pattern: /{arm}/{joint}/cmd_pos

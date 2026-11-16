@@ -1,0 +1,2 @@
+# Keep the imported CAD reference byte-for-byte, including original whitespace.
+Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/src/dual_chess_description/reference/scara_v2/** -whitespace

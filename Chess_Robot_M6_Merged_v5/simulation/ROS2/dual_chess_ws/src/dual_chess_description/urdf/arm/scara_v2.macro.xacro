@@ -28,7 +28,7 @@
       </geometry>
     </collision>
   </link>
-  
+
 <link name="${prefix}link1">
     <inertial>
       <origin xyz="-0.0311088376984149 0.072017093942124 0.0182331776596625" rpy="0 0 0" />
@@ -51,7 +51,7 @@
       </geometry>
     </collision>
   </link>
-  
+
 <joint name="${prefix}joint1" type="prismatic">
     <origin xyz="0.03125 -0.0859 -0.035955" rpy="0 0 0" />
     <parent link="${prefix}base_link" />
@@ -59,7 +59,7 @@
     <axis xyz="0 -1 0" />
     <limit lower="0" upper="0.10" effort="100" velocity="0.10" />
   </joint>
-  
+
 <link name="${prefix}link2">
     <inertial>
       <origin xyz="0.000221120559350497 -0.102219735376576 0.0107244539207943" rpy="0 0 0" />
@@ -82,7 +82,7 @@
       </geometry>
     </collision>
   </link>
-  
+
 <joint name="${prefix}joint2" type="revolute">
     <origin xyz="-0.03125 0 -0.056045" rpy="1.5708 0.082676 -3.1416" />
     <parent link="${prefix}link1" />
@@ -90,7 +90,7 @@
     <axis xyz="0 0 1" />
     <limit lower="-3.14159" upper="3.14159" effort="10" velocity="1.0" />
   </joint>
-  
+
 <link name="${prefix}link3">
     <inertial>
       <origin xyz="2.86863589614439E-06 -0.120593503386313 -0.0292349890322536" rpy="0 0 0" />
@@ -113,7 +113,7 @@
       </geometry>
     </collision>
   </link>
-  
+
 <joint name="${prefix}joint3" type="revolute">
     <origin xyz="0 -0.16 0.04065" rpy="3.1416 0 -2.8496" />
     <parent link="${prefix}link2" />
@@ -121,7 +121,7 @@
     <axis xyz="0 0 1" />
     <limit lower="-3.14159" upper="3.14159" effort="10" velocity="1.0" />
   </joint>
-  
+
 <link name="${prefix}link4">
     <inertial>
       <origin xyz="-0.00292490574527843 -0.00604379873164884 0.0170983274966861" rpy="0 0 0" />
@@ -144,13 +144,13 @@
       </geometry>
     </collision>
   </link>
-  
+
 <joint name="${prefix}joint4" type="fixed">
     <origin xyz="0.017567 -0.18776 -0.06775" rpy="1.5708 0 -0.27725" />
     <parent link="${prefix}link3" />
     <child link="${prefix}link4" />
   </joint>
-  
+
 <link name="${prefix}link5">
     <inertial>
       <origin xyz="0.00556640917295986 -0.011997881931687 -5.55111512312578E-17" rpy="0 0 0" />
@@ -173,7 +173,7 @@
       </geometry>
     </collision>
   </link>
-  
+
 <joint name="${prefix}joint5" type="fixed">
     <origin xyz="-0.0031703 -0.0063 0.019" rpy="0 0 0" />
     <parent link="${prefix}link4" />

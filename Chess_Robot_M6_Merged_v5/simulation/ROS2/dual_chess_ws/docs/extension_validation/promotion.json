@@ -1,0 +1,21 @@
+{
+  "status": "committed_after_execution_and_mock_vision",
+  "state": {
+    "schema_version": "1.0",
+    "fen": "Q3k3/8/8/8/8/8/8/4K3 b - - 0 1",
+    "turn": "black",
+    "result": null,
+    "synchronized": true,
+    "blocked": false,
+    "block_reason": null,
+    "pending_plan_id": null,
+    "pending_move": null,
+    "robot_ack_received": false,
+    "committed_plies": 1,
+    "legal_moves": [
+      "e8f7",
+      "e8e7",
+      "e8d7"
+    ]
+  }
+}

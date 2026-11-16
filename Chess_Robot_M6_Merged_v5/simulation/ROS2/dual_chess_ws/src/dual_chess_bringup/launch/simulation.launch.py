@@ -18,6 +18,7 @@ def generate_launch_description():
     executor_share = get_package_share_directory('chess_robot_executor')
 
     declared = [
+        DeclareLaunchArgument('geometry_file', default_value=os.path.join(desc_share,'config','chess_geometry.yaml')),
         DeclareLaunchArgument('rviz', default_value='true', description='Start RViz'),
         DeclareLaunchArgument('gz_args', default_value='-r'),
         DeclareLaunchArgument('robot1_enabled', default_value='true'),
@@ -43,6 +44,7 @@ def generate_launch_description():
             os.path.join(gz_share, 'launch', 'gazebo.launch.py')),
         launch_arguments={
             'gz_args': LaunchConfiguration('gz_args'),
+            'geometry_file': LaunchConfiguration('geometry_file'),
             'robot1_enabled': LaunchConfiguration('robot1_enabled'),
             'robot2_enabled': LaunchConfiguration('robot2_enabled'),
             'use_meshes': LaunchConfiguration('use_meshes'),

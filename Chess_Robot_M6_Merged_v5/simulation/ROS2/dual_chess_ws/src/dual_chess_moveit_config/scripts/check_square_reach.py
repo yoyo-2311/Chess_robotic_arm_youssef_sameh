@@ -14,60 +14,15 @@ from scipy.optimize import least_squares
 from scipy.spatial.transform import Rotation
 
 
-def transform(origin):
-    t = np.eye(4)
-    if origin is not None:
-        t[:3, :3] = Rotation.from_euler('xyz', np.fromstring(origin.get('rpy', '0 0 0'), sep=' ')).as_matrix()
-        t[:3, 3] = np.fromstring(origin.get('xyz', '0 0 0'), sep=' ')
-    return t
-
-
-class Model:
-    def __init__(self, root):
-        self.by_child = {j.find('child').get('link'): j for j in root.findall('joint')}
-
-    def chain(self, link):
-        chain = []
-        while link in self.by_child:
-            j = self.by_child[link]
-            chain.append(j)
-            link = j.find('parent').get('link')
-        return list(reversed(chain))
-
-    def fk(self, link, q):
-        t = np.eye(4)
-        for j in self.chain(link):
-            t = t @ transform(j.find('origin'))
-            if j.get('type') == 'fixed':
-                continue
-            a = np.fromstring(j.find('axis').get('xyz'), sep=' ')
-            v = np.eye(4)
-            if j.get('type') == 'prismatic':
-                v[:3, 3] = a * q[j.get('name')]
-            else:
-                v[:3, :3] = Rotation.from_rotvec(a * q[j.get('name')]).as_matrix()
-            t = t @ v
-        return t[:3, 3]
-
-    def solutions(self, arm, target):
-        active = [j for j in self.chain(arm + '_tool0') if j.get('type') != 'fixed']
-        names = [j.get('name') for j in active]
-        lo = [float(j.find('limit').get('lower')) for j in active]
-        hi = [float(j.find('limit').get('upper')) for j in active]
-        result = []
-        for a in [-2.5, 0., 2.5]:
-            for b in [-2., 2.]:
-                sol = least_squares(lambda q: self.fk(arm + '_tool0', dict(zip(names, q))) - target,
-                                    [.05, a, b], bounds=(lo, hi), gtol=1e-10)
-                error = float(np.linalg.norm(sol.fun))
-                if error < 1e-4 and all(np.linalg.norm(sol.x - old['q']) > 1e-3 for old in result):
-                    result.append({'q': sol.x.tolist(), 'error': error})
-        return result
+from chess_motion_interface.model import Model, transform
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--urdf')
+    parser.add_argument('--geometry-file')
+    parser.add_argument('--heights', nargs='+', type=float, default=[.03,.08])
+    parser.add_argument('--relative', action='store_true', help='Interpret heights above the playing surface along the board normal')
     parser.add_argument('--output')
     parser.add_argument('--collision', action='store_true')
     parser.add_argument('--plan', action='store_true', help='Also check collision-free paths from both arms parked; implies --collision')
@@ -78,7 +33,11 @@ def main():
     else:
         import xacro
         from ament_index_python.packages import get_package_share_directory
-        root = ET.fromstring(xacro.process_file(str(Path(get_package_share_directory('dual_chess_description')) / 'urdf/dual_chess.urdf.xacro')).toxml())
+        root = ET.fromstring(xacro.process_file(str(Path(get_package_share_directory('dual_chess_description')) / 'urdf/dual_chess.urdf.xacro'), mappings={'geometry_file':args.geometry_file} if args.geometry_file else {}).toxml())
+    from chess_motion_interface.geometry import Geometry
+    from ament_index_python.packages import get_package_share_directory
+    config_path = args.geometry_file or str(Path(get_package_share_directory('dual_chess_description'))/'config/chess_geometry.yaml')
+    geometry = Geometry.load(config_path)
     model = Model(root)
     node = None
     if args.collision:
@@ -86,6 +45,21 @@ def main():
         from moveit_msgs.srv import GetStateValidity
         rclpy.init()
         node = rclpy.create_node('square_reach_check')
+        from rclpy.qos import QoSProfile, DurabilityPolicy
+        from std_msgs.msg import String
+        snapshots, descriptions = [], []
+        qos = QoSProfile(depth=1,durability=DurabilityPolicy.TRANSIENT_LOCAL)
+        node.create_subscription(String,'/chess/geometry',lambda m:snapshots.append(json.loads(m.data)),qos)
+        node.create_subscription(String,'/robot_description',lambda m:descriptions.append(m.data),qos)
+        import time
+        deadline = time.monotonic()+10
+        while (not snapshots or not descriptions) and time.monotonic()<deadline:
+            rclpy.spin_once(node,timeout_sec=.1)
+        if not snapshots or not descriptions:
+            raise RuntimeError('Live geometry/robot description unavailable; wait for demo.launch.py to initialize')
+        geometry = Geometry(snapshots[-1]['configuration'])
+        if not args.urdf:
+            model = Model(ET.fromstring(descriptions[-1]))
         client = node.create_client(GetStateValidity, '/check_state_validity')
         if not client.wait_for_service(timeout_sec=30):
             raise RuntimeError('Start demo.launch.py first: /check_state_validity is unavailable')
@@ -134,7 +108,7 @@ def main():
                 raise RuntimeError('Collision service timed out')
             res = future.result()
             return res.valid, sorted({c.contact_body_1 + ' / ' + c.contact_body_2 for c in res.contacts})
-    report = {'scope': 'Square-centre endpoint position reach at world z=0.03 and 0.08 m; tool0=geometric fingertip centre. No pieces or grasp calibration.', 'collision_checked': args.collision, 'paths_from_home_checked': args.plan, 'arms': {}}
+    report = {'scope': 'Configured square-centre reach; simulation-only geometry and uncalibrated geometric TCP.', 'configuration': geometry.raw, 'heights':args.heights, 'relative_to_surface':args.relative, 'collision_checked': args.collision, 'paths_from_home_checked': args.plan, 'arms': {}}
     failed = False
     try:
         for arm in ['robot1', 'robot2']:
@@ -142,9 +116,12 @@ def main():
             for file in 'abcdefgh':
                 for rank in '12345678':
                     square = file + rank
-                    xy = model.fk('board_square_' + square, {})[:2]
-                    for z in [.03, .08]:
-                        sols = model.solutions(arm, np.array([*xy, z]))
+                    xy = geometry.square(square)[:2]
+                    for z in args.heights:
+                        if args.collision and snapshots[-1]['revision'] != snapshots[0]['revision']:
+                            raise RuntimeError('geometry_changed_during_validation: retry with the scene idle')
+                        target = geometry.square(square,z) if args.relative else np.array([*xy,z])
+                        sols = model.solutions(arm, target)
                         valid = []
                         contacts = []
                         for s in sols:
@@ -154,7 +131,7 @@ def main():
                                 if not ok:
                                     continue
                             valid.append(s)
-                        row = {'square': square, 'height': z, 'reachable': bool(sols), 'valid': bool(valid), 'solutions': valid, 'contacts': sorted(set(contacts))}
+                        row = {'square': square, 'height': z, 'world':target.tolist(), 'reachable': bool(sols), 'valid': bool(valid), 'solutions': valid, 'contacts': sorted(set(contacts))}
                         if args.plan and valid:
                             code, points, attempts = plan_from_home(arm, valid)
                             row['planning_error_code'], row['trajectory_points'], row['planning_attempts'] = code, points, attempts

@@ -1,20 +1,19 @@
 <?xml version="1.0"?>
-<!-- Board resized in XY to 60% of original CAD: 240 mm frame, 210 mm grid.
-     Mount offset 190 mm; base height 40 mm. See docs/08_scara_moveit.md.
-     Original chess board dimensions derived from the SUPPLIED Board 1_stl.STL (mm -> m).
-     Local STL bounds: X=[0,400], Y=[0,20.18920517], Z=[0,400] millimetres.
-     The playing grid lies at STL Y=10mm and spans X,Z = [25,375] mm.
-     Board/TF coordinates: +X=a->h, +Y=rank 1->8, +Z=up.
-     The STL orientation is corrected within board.macro.xacro; no mesh edits.
-     Robot base offset is a numerically verified simulation layout, not measured hardware.
--->
+<!-- Central simulation geometry; all physical measurements remain provisional. -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <xacro:property name="board_size" value="0.24"/>
-  <xacro:property name="board_play_size" value="0.21"/>
-  <xacro:property name="board_square" value="${board_play_size/8}"/>
-  <xacro:property name="board_thickness" value="0.020189205169677734"/>
-  <xacro:property name="board_play_surface_height" value="0.010"/>
-  <xacro:property name="board_rim_width" value="${(board_size-board_play_size)/2}"/>
-  <xacro:property name="base_gap" value="0.07"/>
-  <xacro:property name="robot_base_offset" value="${board_size/2 + base_gap}"/>
+<xacro:arg name="geometry_file" default="$(find dual_chess_description)/config/chess_geometry.yaml"/>
+<xacro:property name="geometry" value="${xacro.load_yaml('$(arg geometry_file)')}"/>
+<xacro:property name="board_length" value="${geometry['board']['length']}"/>
+<xacro:property name="board_width" value="${geometry['board']['width']}"/>
+<xacro:property name="board_square_x" value="${(board_length-2*geometry['board']['border_x'])/8 if geometry['board']['grid_mode']=='fit_board' else geometry['board']['square_size_x']}"/>
+<xacro:property name="board_square_y" value="${(board_width-2*geometry['board']['border_y'])/8 if geometry['board']['grid_mode']=='fit_board' else geometry['board']['square_size_y']}"/>
+<xacro:property name="board_size" value="${board_length}"/>
+<xacro:property name="board_play_size" value="${8*board_square_x}"/>
+<xacro:property name="board_square" value="${board_square_x}"/>
+<xacro:property name="board_thickness" value="${geometry['board']['thickness']}"/>
+<xacro:property name="board_play_surface_height" value="${geometry['board']['surface_height']}"/>
+<xacro:property name="board_rim_x" value="${(board_length-8*board_square_x)/2}"/>
+<xacro:property name="board_rim_y" value="${(board_width-8*board_square_y)/2}"/>
+<xacro:property name="board_rim_width" value="${board_rim_x}"/>
+<xacro:property name="robot_base_offset" value="${-geometry['mounts']['robot1']['position'][1]}"/>
 </robot>

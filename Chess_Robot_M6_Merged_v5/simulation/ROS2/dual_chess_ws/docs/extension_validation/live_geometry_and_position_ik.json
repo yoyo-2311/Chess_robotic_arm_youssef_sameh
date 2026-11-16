@@ -1,0 +1,168 @@
+{
+  "rectangular_translated_yawed_low_board": {
+    "successful": true,
+    "reason": ""
+  },
+  "changed_live_geometry": {
+    "revision": 1,
+    "frame_id": "world",
+    "configuration": {
+      "board": {
+        "length": 0.25,
+        "width": 0.23,
+        "square_size_x": 0.0275,
+        "square_size_y": 0.025,
+        "thickness": 0.020189205169677735,
+        "surface_height": 0.01,
+        "position": [
+          0.002,
+          -0.002,
+          0.001
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.05
+        ],
+        "grid_mode": "fit_board",
+        "border_x": 0.015,
+        "border_y": 0.015
+      },
+      "support": {
+        "enabled": true,
+        "size": [
+          0.24,
+          0.24,
+          0.01
+        ],
+        "position": [
+          0.0,
+          0.0,
+          -0.005
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mounts": {
+        "robot1": {
+          "position": [
+            0.0,
+            -0.19,
+            0.04
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            1.5707963267948966
+          ]
+        },
+        "robot2": {
+          "position": [
+            0.0,
+            0.19,
+            0.04
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            -1.5707963267948966
+          ]
+        }
+      },
+      "tool": {
+        "position": [
+          0.007,
+          -0.0287,
+          0.0
+        ]
+      },
+      "pieces": {
+        "heights": {
+          "p": 0.018,
+          "n": 0.022,
+          "b": 0.024,
+          "r": 0.02,
+          "q": 0.025,
+          "k": 0.026
+        },
+        "radius": 0.003
+      },
+      "motion": {
+        "grasp_fraction": 0.65,
+        "approach_clearance": 0.012,
+        "transfer_clearance": 0.012,
+        "place_clearance": 0.001,
+        "velocity_scale": 0.4,
+        "acceleration_scale": 0.4,
+        "cartesian_step": 0.002,
+        "minimum_cartesian_fraction": 0.999,
+        "operator_timeout": 120.0,
+        "max_board_tilt": 0.035
+      },
+      "capture_bins": {
+        "robot1": {
+          "origin": [
+            0.14,
+            -0.042,
+            0.025
+          ],
+          "step": [
+            0.0,
+            0.012,
+            0.0
+          ],
+          "row_step": [
+            0.012,
+            0.0,
+            0.0
+          ],
+          "columns": 8,
+          "slots": 16
+        },
+        "robot2": {
+          "origin": [
+            -0.14,
+            -0.042,
+            0.025
+          ],
+          "step": [
+            0.0,
+            0.012,
+            0.0
+          ],
+          "row_step": [
+            -0.012,
+            0.0,
+            0.0
+          ],
+          "columns": 8,
+          "slots": 16
+        }
+      }
+    },
+    "placeholders": true
+  },
+  "support_penetration_rejected": {
+    "successful": false,
+    "reason": "board_intersects_support: adjust the low board pose or support geometry"
+  },
+  "wide_platform_collision_rejected": {
+    "successful": false,
+    "reason": "new_geometry_collides_with_robot: ['robot1_base_link/chess_support', 'robot2_base_link/chess_support']"
+  },
+  "restored": {
+    "successful": true,
+    "reason": ""
+  },
+  "robot1_position_only_ik": {
+    "error_code": 1,
+    "position_error": 2.6578844746415742e-08
+  },
+  "robot2_position_only_ik": {
+    "error_code": 1,
+    "position_error": 9.875113625765419e-07
+  }
+}

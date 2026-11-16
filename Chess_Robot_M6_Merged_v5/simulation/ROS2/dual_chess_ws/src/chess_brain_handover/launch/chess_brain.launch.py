@@ -7,6 +7,8 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
+        DeclareLaunchArgument("engine_mode", default_value="stockfish"),
+        DeclareLaunchArgument("initial_fen", default_value=""),
         DeclareLaunchArgument("engine_path", default_value="/usr/games/stockfish"),
         DeclareLaunchArgument("white_preset", default_value="strong"),
         DeclareLaunchArgument("black_preset", default_value="medium"),
@@ -15,6 +17,8 @@ def generate_launch_description():
             name="chess_brain", output="screen",
             parameters=[{
                 "engine_path": LaunchConfiguration("engine_path"),
+                "engine_mode": LaunchConfiguration("engine_mode"),
+                "initial_fen": LaunchConfiguration("initial_fen"),
                 "white_preset": LaunchConfiguration("white_preset"),
                 "black_preset": LaunchConfiguration("black_preset"),
                 "allow_placement_shortcut": False,

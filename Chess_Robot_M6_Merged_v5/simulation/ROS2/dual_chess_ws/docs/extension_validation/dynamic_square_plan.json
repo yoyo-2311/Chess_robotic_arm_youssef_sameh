@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "succeeded",
+  "plan_id": "a58193aed2364150a69eba7c3b74bdeb",
+  "geometry_revision": 1,
+  "simulation_grasp": true,
+  "request_id": "a58193aed2364150a69eba7c3b74bdeb",
+  "awaiting_vision": false,
+  "executed": false,
+  "mode": "plan_only"
+}

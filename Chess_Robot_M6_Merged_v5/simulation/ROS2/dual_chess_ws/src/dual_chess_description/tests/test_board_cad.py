@@ -1,148 +1,73 @@
-"""Portable v1.3.2 board-CAD regression tests: no ROS, numpy, or trimesh needed.
-Native Xacro, URDF, Gazebo, RViz, collision, and mesh rendering still need Jazzy.
-"""
+"""Configurable board regression tests; original CAD stays available as reference."""
 from pathlib import Path
-import struct
-import unittest
-import xml.etree.ElementTree as ET
+import xml.etree.ElementTree as E
+import tempfile
+import numpy as np
+import pytest
+import yaml
+import xacro
+from chess_motion_interface.geometry import Geometry
+from chess_motion_interface.model import Model
 
-HERE = Path(__file__).resolve().parent
-DESC = HERE.parent
-SRC = DESC.parent
-X = '{http://www.ros.org/wiki/xacro}'
-BOARD = DESC/'meshes/chess_board/Board_1_original.STL'
-PARAMS = DESC/'urdf/board/board_params_cad.xacro'
-
-
-def numeric_board_properties():
-    root = ET.parse(PARAMS).getroot()
-    raw = {p.attrib['name']: p.attrib['value'] for p in root.findall(X+'property')}
-    env = {}
-    for key, v in raw.items():
-        if v.startswith('${') and v.endswith('}'):
-            env[key] = eval(v[2:-1], {'__builtins__': {}}, env)
-        else:
-            env[key] = float(v)
-    return env
+DESC = Path(__file__).resolve().parents[1]
+CONFIG = DESC/'config/chess_geometry.yaml'
 
 
-def stl_bounds():
-    b = BOARD.read_bytes()
-    count = struct.unpack_from('<I', b, 80)[0]
-    if len(b) != 84+50*count:
-        raise ValueError('invalid binary STL length')
-    low = [float('inf')]*3; high=[float('-inf')]*3
-    for i in range(count):
-        # skip normal vector, read 3 vertices; no numpy dependency
-        xyz = struct.unpack_from('<9f', b, 84+i*50+12)
-        for j in range(3):
-            for k in (0,3,6):
-                low[j] = min(low[j],xyz[k+j])
-                high[j] = max(high[j],xyz[k+j])
-    return count,low,high
+def expanded(raw=None):
+    with tempfile.TemporaryDirectory() as directory:
+        path = Path(directory)/'geometry.yaml'
+        path.write_text(yaml.safe_dump(raw or Geometry.load(CONFIG).raw))
+        return E.fromstring(xacro.process_file(str(DESC/'urdf/dual_chess.urdf.xacro'),mappings={'geometry_file':str(path)}).toxml())
 
 
-class CADBoardTests(unittest.TestCase):
-    def test_mesh_is_original_and_binary(self):
-        self.assertTrue(BOARD.exists())
-        self.assertGreater(BOARD.stat().st_size, 100_000)
-        n, lo, hi = stl_bounds()
-        self.assertEqual(n, 4612)
-        for a,b in zip(lo,[0,0,0]):
-            self.assertAlmostEqual(a,b,delta=1e-4)
-        for a,b in zip(hi,[400,20.18920517,400]):
-            self.assertAlmostEqual(a,b,delta=1e-4)
+def test_board_mesh_retained_and_low_surface_is_not_base_z():
+    assert (DESC/'meshes/chess_board/Board_1_original.STL').stat().st_size > 100000
+    g = Geometry.load(CONFIG)
+    assert g.square('e4')[2] == pytest.approx(.01)
+    s = g.raw['support']
+    assert s['position'][2]+s['size'][2]/2 == pytest.approx(0.)
+    assert g.raw['mounts']['robot1']['position'][2] == pytest.approx(.04)
 
-    def test_dimensions_and_real_square_pitch(self):
-        p = numeric_board_properties()
-        self.assertAlmostEqual(p['board_size'], .24)
-        self.assertAlmostEqual(p['board_play_size'], .21)
-        self.assertAlmostEqual(p['board_square'], .02625)
-        self.assertAlmostEqual(p['board_rim_width'], .015)
-        self.assertAlmostEqual(p['board_thickness'], .02018920517, places=8)
-        self.assertAlmostEqual(p['board_play_surface_height'], .01)
-        self.assertAlmostEqual(p['robot_base_offset'], .19)
-        self.assertFalse((DESC/'urdf/board/board_params_placeholder.xacro').exists())
 
-    def test_mesh_scale_and_frame_relationships(self):
-        root=ET.parse(DESC/'urdf/board/board.macro.xacro').getroot()
-        macro=root.find(f'{X}macro[@name="chess_board"]')
-        self.assertIsNotNone(macro)
-        vis=macro.find('link[@name="board_link"]/visual')
-        self.assertEqual(vis.find('geometry/mesh').get('filename'),
-                         'package://dual_chess_description/meshes/chess_board/Board_1_original.STL')
-        self.assertEqual(vis.find('geometry/mesh').get('scale'),'${board_size/400} 0.001 ${board_size/400}')
-        self.assertEqual(vis.find('origin').get('rpy'),'${pi/2} 0 0')
-        self.assertEqual(vis.find('origin').get('xyz'),
-                         '${-board_size/2} ${board_size/2} ${-board_thickness/2}')
-        j=macro.find('joint[@name="board_joint"]')
-        self.assertEqual(j.find('origin').get('xyz'), '0 0 ${board_thickness/2}')
-        surf=macro.find('joint[@name="board_surface_joint"]')
-        self.assertEqual(surf.find('origin').get('xyz'),
-                         '0 0 ${board_play_surface_height-board_thickness/2}')
-        for corner,sign in [('a1','-'),('h8','')]:
-            joint=macro.find(f'joint[@name="board_{corner}_joint"]')
-            coord=('-3.5*board_square' if corner=='a1' else '3.5*board_square')
-            self.assertEqual(joint.find('origin').get('xyz'), f'${{{coord}}} ${{{coord}}} 0')
+@pytest.mark.parametrize('changed',[False,True])
+def test_all_square_tf_centres_match_config_for_rectangular_rotated_board(changed):
+    raw = Geometry.load(CONFIG).raw
+    if changed:
+        raw['board'].update(length=.28,width=.20,position=[.015,-.02,.003],rpy=[.02,0.,.25])
+    g = Geometry(raw)
+    root = expanded(raw)
+    model = Model(root)
+    assert len([l for l in root.findall('link') if l.get('name','').startswith('board_square_')]) == 64
+    for f in 'abcdefgh':
+        for r in '12345678':
+            assert model.fk('board_square_'+f+r,{}) == pytest.approx(g.square(f+r),abs=1e-10)
+    assert root.find("joint[@name='robot1_joint1']").get('type') == 'prismatic'
+    assert root.find("joint[@name='robot1_joint1']/limit").get('upper') == '0.10'
 
-    def test_transformed_bounds_playing_surface_and_square_centres(self):
-        p=numeric_board_properties(); _,low,high=stl_bounds()
-        # Rx(+90 deg), then xy-centering; this reproduces the Xacro transform.
-        transformed=[]
-        for x in (low[0],high[0]):
-            for y in (low[1],high[1]):
-                for z in (low[2],high[2]):
-                    transformed.append(((p['board_size']/400)*x-p['board_size']/2,
-                                        p['board_size']/2-(p['board_size']/400)*z,
-                                        .001*y))
-        for i,expected_lo,expected_hi in [(0,-.12,.12),(1,-.12,.12),(2,0,p['board_thickness'])]:
-            self.assertAlmostEqual(min(a[i] for a in transformed), expected_lo, places=7)
-            self.assertAlmostEqual(max(a[i] for a in transformed), expected_hi, places=7)
-        self.assertAlmostEqual(p['board_play_surface_height'],.010)
-        # Physical grid spans [25,375] mm from either mesh edge.
-        self.assertAlmostEqual(3.5*p['board_square'],.091875)
-        self.assertAlmostEqual(.12-(25+.5*43.75)*.0006,.091875)
 
-    def test_preserves_previous_arm_home_and_interface(self):
-        top=(DESC/'urdf/dual_chess.urdf.xacro').read_text()
-        self.assertIn('scara_v2.macro.xacro',top)
-        self.assertIn('chess_board parent="world"',top)
-        bridge=(SRC/'dual_chess_gazebo/config/bridge.yaml').read_text()
-        import yaml
-        channels=[b['ros_topic_name'] for b in yaml.safe_load(bridge) if b['ros_topic_name'].endswith('/cmd_pos')]
-        self.assertEqual(len(channels),6)
-        launch=(SRC/'dual_chess_bringup/launch/simulation.launch.py').read_text()
-        self.assertIn('chess_brain.launch.py',launch)
-        self.assertIn('chess_auto_coordinator',launch)
+def test_collision_dimensions_and_square_colours_follow_config():
+    root = expanded()
+    box = root.find("link[@name='board_link']/collision[@name='playing_area_collision']/geometry/box")
+    assert np.fromstring(box.get('size'),sep=' ') == pytest.approx([.24,.24,.01])
+    assert root.find("link[@name='chess_support_link']/collision") is not None
+    assert {l.find('visual/material').get('name') for l in root.findall('link') if l.get('name','').startswith('board_square_')} == {'square_dark','square_light'}
 
-    def test_checkerboard_overlay_has_64_squares_and_materials(self):
-        root = ET.parse(DESC/'urdf/board/board.macro.xacro').getroot()
-        macro = root.find(f'{X}macro[@name="chess_board"]')
-        sq_links = [l for l in macro.findall('link') if l.get('name','').startswith('board_square_')]
-        sq_joints = [j for j in macro.findall('joint') if j.get('name','').startswith('board_square_')]
-        self.assertEqual(len(sq_links), 64)
-        self.assertEqual(len(sq_joints), 64)
-        self.assertEqual(len(set(l.get('name') for l in sq_links)), 64)
-        self.assertEqual(len(set(j.get('name') for j in sq_joints)), 64)
-        self.assertEqual({l.find('visual/material').get('name') for l in sq_links},
-                         {'square_light','square_dark'})
-        for j in sq_joints:
-            self.assertEqual(j.get('type'), 'fixed')
-            self.assertEqual(j.find('parent').get('link'), 'board_surface')
-            name = j.get('name')[len('board_square_'):-len('_joint')]
-            self.assertEqual(j.find('child').get('link'),f'board_square_{name}')
-        a1 = macro.find('link[@name="board_square_a1"]')
-        h1 = macro.find('link[@name="board_square_h1"]')
-        h8 = macro.find('link[@name="board_square_h8"]')
-        self.assertEqual(a1.find('visual/material').get('name'), 'square_dark')
-        self.assertEqual(h1.find('visual/material').get('name'), 'square_light')
-        self.assertEqual(h8.find('visual/material').get('name'), 'square_dark')
-        self.assertEqual(len(macro.find('link[@name="board_link"]').findall('visual')),1)
 
-    def test_urdf_sources_xml_parse(self):
-        for p in DESC.rglob('*.xacro'):
-            with self.subTest(file=p.name):
-                ET.parse(p)
+def test_independent_square_pitches_and_separate_manual_launch():
+    raw = Geometry.load(CONFIG).raw
+    raw['board'].update(grid_mode='square_size',square_size_x=.022,square_size_y=.025)
+    g = Geometry(raw)
+    m = Model(expanded(raw))
+    assert m.fk('board_square_h8',{}) == pytest.approx(g.square('h8'))
+    launch = (DESC/'launch/display.launch.py').read_text()
+    assert 'IfCondition' in launch and 'UnlessCondition' in launch
+    assert 'joint_state_publisher_gui' in launch and 'controller_manager' not in launch
+    assert (DESC/'launch/manual.launch.py').exists()
 
-if __name__=='__main__':
-    unittest.main()
+
+def test_zero_border_flat_board_has_no_zero_sized_rim_geometry():
+    raw = Geometry.load(CONFIG).raw
+    raw['board'].update(grid_mode='square_size',length=.21,width=.21)
+    root = expanded(raw)
+    for box in root.findall('.//box'):
+        assert np.all(np.fromstring(box.get('size'),sep=' ')>0)

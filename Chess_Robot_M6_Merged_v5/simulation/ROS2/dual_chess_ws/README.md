@@ -1,47 +1,61 @@
-# Dual chess SCARA robot — ROS 2 Jazzy and MoveIt 2
+# Dual SCARA chess robot — ROS 2 Jazzy / MoveIt 2
 
-The active robot description now uses **Scara_ws_last.zip**, instantiated twice with unique joint/link names. Original CAD transforms, limits, masses, inertias and six STL meshes are retained. The previous arm files remain for reference but are not included by the active model.
+This continues the supplied `Scara_ws_last.zip` integration. Both CAD arms, previous launch names, chess brain, coordinator and the offline executor are retained. The new `chess_motion_interface` connects the existing chess action schema to MoveIt and controller feedback.
 
-The board is **240 mm outside, 210 mm playing area, 26.25 mm squares**. Bases are at world Y=±190 mm, Z=40 mm, yaw ±90°. Tool frames use the geometric fingertip centre. This layout is for simulation and needs physical calibration.
+**Start here:** [complete test guide and engine/vision/embedded contracts](docs/09_configurable_motion_interfaces.md).
 
-The unchanged project was committed as `30a97e591bdd92fd49da5a5fbb5b46bda8aa25d1` and [uploaded before modification](https://github.com/yoyo-2311/Chess_robotic_arm_youssef_sameh/tree/backup/original-before-scara-2026-11-16).
+## Build
 
-## Build and launch MoveIt
-
-Run these commands from this `dual_chess_ws` directory:
+From this `dual_chess_ws` folder:
 
 ```bash
 source /opt/ros/jazzy/setup.bash
 colcon build
 source install/setup.bash
-ros2 launch dual_chess_moveit_config demo.launch.py
 ```
 
-Use `rviz:=false` for headless operation. This launch runs **mock ros2_control hardware**, two trajectory controllers, robot_state_publisher and MoveIt. It does not start Gazebo or command motors. Avoid running the old display/Gazebo launch on the same ROS domain at the same time: each publishes its own robot/joint state.
+Source both environments in every terminal. Run one test mode per ROS domain.
 
-In another sourced terminal:
+## Test modes
+
+| Mode | Command |
+|---|---|
+| Manual sliders + RViz | `ros2 launch dual_chess_description manual.launch.py` |
+| Interactive MoveIt + mock controllers | `ros2 launch dual_chess_moveit_config demo.launch.py` |
+| Full mock engine/vision/gripper → robot → feedback | `ros2 launch dual_chess_moveit_config simulation_pipeline.launch.py` |
+| Existing display / Gazebo / chess-only launches | Retained; see the test guide for backend distinctions |
+
+In another sourced terminal after starting the appropriate mode:
 
 ```bash
-# Plan only; position goal at fingertip height 80 mm in world coordinates
-ros2 run dual_chess_moveit_config plan_square.py --arm robot1 --square e4
-# Plan and execute on the mock controllers
-ros2 run dual_chess_moveit_config plan_square.py --arm robot1 --square e4 --execute
-# Park before switching arms
-ros2 run dual_chess_moveit_config plan_square.py --arm robot1 --home --execute
-ros2 run dual_chess_moveit_config plan_square.py --arm robot2 --square e5 --execute
-ros2 run dual_chess_moveit_config plan_square.py --arm robot2 --home --execute
-# Full endpoint + path check, with both arms initially parked; does not execute paths
-ros2 run dual_chess_moveit_config check_square_reach.py --plan --output /tmp/chess_square_paths.json
+# With demo.launch.py: plan only, then optionally execute on mock controllers
+ros2 run chess_motion_interface square_target --arm robot1 --square e4
+ros2 run chess_motion_interface square_target --arm robot1 --square e4 --execute
+ros2 run chess_motion_interface square_target --arm robot1 --home --execute
+# With simulation_pipeline.launch.py: wait for legal move, execution and fresh mock vision
+ros2 run chess_motion_interface mock_engine --move e2e4
+ros2 run chess_motion_interface mock_engine --move d7d5
+ros2 run chess_motion_interface mock_engine --move e4d5
 ```
 
-In RViz choose planning group `robot1`, `robot2` or `both_arms`. Only the individual arms have position-only IK; use joint goals for `both_arms`. A 3-DoF SCARA cannot choose arbitrary tool orientation. The square helper derives joint goals from the actual CAD chain and calls MoveIt's collision-aware planner, then optionally ExecuteTrajectory.
+The guide includes separate capture, castling, en passant, promotion, mock-CV, stop, failure and confirmation tests. `square_target --probe --execute` performs a straight descent/retreat on an **empty** square. The original `plan_square.py` and all-square checker now read live geometry.
 
-## Scope and limits
+## Configurable, low-mounted board
 
-The empty-board checks cover every square centre at fingertip world heights 30 and 80 mm, with the other arm parked. These are position/path checks, not a complete chess pick-and-place demonstration. Gripper joints in the supplied export are **fixed**. A calibrated grasp point, actuated gripper, piece geometry/clearance, capture bins, physical drivers and chess-move orchestration remain to be integrated. An 80 mm tool height is not sufficient clearance for every possible physical chess set.
+Edit `src/dual_chess_description/config/chess_geometry.yaml`, or pass `geometry_file:=/absolute/path/custom.yaml` to a launch. It centralizes board dimensions, rectangular square pitches, XYZ/RPY, separate robot mounts, support, piece heights, clearances, TCP and capture trays. Board settings also have live ROS parameters on `/chess_motion_interface`; active motion and pending vision confirmation lock geometry changes. Every square and scene object follows the effective geometry.
 
-The original `chess_robot_executor` is retained as an **offline planar prototype**, with its original example dimensions and tests. Its live mode is disabled because it does not describe this CAD chain. The chess brain and coordinator remain available, but do not route chess plans into the new MoveIt helper yet.
+**Every physical value is a simulation placeholder.** Initially the playing surface is just 10 mm above its supporting pad; CAD base origins are separately at 40 mm. The final board, platform, TCP, mounting geometry and chess set are unconfirmed. The supplied CAD base intersects a broad platform at this low level, so a successful test with the configured small pad is not proof that an arbitrary tabletop will work.
 
-The existing Gazebo launch expands the new model and uses six direct position-command channels. It is separate from the tested mock MoveIt system. Gazebo dynamics, CAD floor clearance and physics controllers have not been validated in this change. Do not treat mock execution as Gazebo or hardware verification.
+## Execution and integration boundaries
 
-See [analysis, geometry and verification](docs/08_scara_moveit.md). The [previous README](docs/reference_pre_scara_README.md) describes the preserved baseline and is historical.
+MoveIt uses position-only IK for each 3-DoF arm. XYZ goals are supported; arbitrary tool orientation is not. Execute sends actual ROS trajectory actions to **mock ros2_control**, and success also requires endpoint joint feedback. This does not simulate Gazebo contact physics or real motors.
+
+The supplied gripper is fixed. The new pipeline uses an explicit mock gripper handshake and attached collision objects to test pick/place logic. A future hardware adapter must supply real gripper actuation/feedback and a ros2_control driver after the embedded specifications are known. No MCU, motor or protocol is assumed.
+
+The existing chess brain retains rule validation and confirmed game state. Robot success alone never commits a move: a fresh matching vision observation is also required. Failed or partial movement cannot advance confirmed FEN. Mock vision is synthetic test evidence and must not be used to confirm a physical board.
+
+## Evidence and history
+
+Current reports: `docs/extension_validation/`. Current architecture/commands: [test guide](docs/09_configurable_motion_interfaces.md).
+
+[Earlier SCARA integration](docs/08_scara_moveit.md) and [pre-SCARA README](docs/reference_pre_scara_README.md) are historical. The unchanged original was uploaded before edits as commit `30a97e591bdd92fd49da5a5fbb5b46bda8aa25d1` on [the backup branch](https://github.com/yoyo-2311/Chess_robotic_arm_youssef_sameh/tree/backup/original-before-scara-2026-11-16).

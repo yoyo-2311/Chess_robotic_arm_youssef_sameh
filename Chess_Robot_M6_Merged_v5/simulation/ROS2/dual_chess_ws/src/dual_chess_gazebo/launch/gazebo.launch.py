@@ -7,11 +7,12 @@ Starts: gz sim (chess_world.sdf), robot_state_publisher (sim time), ros_gz_sim `
 RViz is NOT started here; use dual_chess_bringup simulation.launch.py for both.
 """
 import os
+import xacro
 
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import (AppendEnvironmentVariable, DeclareLaunchArgument,
-                            IncludeLaunchDescription, TimerAction)
+                            IncludeLaunchDescription, TimerAction, OpaqueFunction)
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import (Command, FindExecutable, LaunchConfiguration,
                                   PathJoinSubstitution)
@@ -23,7 +24,7 @@ WORLD_NAME = 'chess_world'   # must match worlds/chess_world.sdf and config/brid
 MODEL_NAME = 'dual_chess'    # must match config/bridge.yaml
 
 
-def generate_launch_description():
+def setup(context):
     desc_share = get_package_share_directory('dual_chess_description')
     gz_share = get_package_share_directory('dual_chess_gazebo')
     ros_gz_sim_share = get_package_share_directory('ros_gz_sim')
@@ -33,15 +34,6 @@ def generate_launch_description():
     xacro_file = PathJoinSubstitution(
         [FindPackageShare('dual_chess_description'), 'urdf', 'dual_chess.urdf.xacro'])
 
-    declared = [
-        DeclareLaunchArgument('gz_args', default_value='-r',
-                              description="Extra gz sim flags, e.g. '-r -s' (headless server)"),
-        DeclareLaunchArgument('robot1_enabled', default_value='true'),
-        DeclareLaunchArgument('robot2_enabled', default_value='true'),
-        DeclareLaunchArgument('use_meshes', default_value='false'),
-        DeclareLaunchArgument('spawn_delay', default_value='3.0',
-                              description='Seconds to wait for gz sim before spawning'),
-    ]
 
     # let Gazebo resolve package://dual_chess_description/meshes/robot_arm/*.STL
     resource_path = AppendEnvironmentVariable(
@@ -56,16 +48,9 @@ def generate_launch_description():
         }.items(),
     )
 
-    robot_description = ParameterValue(
-        Command([
-            FindExecutable(name='xacro'), ' ', xacro_file,
-            ' robot1_enabled:=', LaunchConfiguration('robot1_enabled'),
-            ' robot2_enabled:=', LaunchConfiguration('robot2_enabled'),
-            ' use_meshes:=', LaunchConfiguration('use_meshes'),
-            ' sim_gazebo:=true',
-        ]),
-        value_type=str,
-    )
+    mappings = {key:LaunchConfiguration(key).perform(context) for key in ['geometry_file','robot1_enabled','robot2_enabled','use_meshes']}
+    mappings['sim_gazebo'] = 'true'
+    robot_description = xacro.process_file(os.path.join(desc_share,'urdf','dual_chess.urdf.xacro'),mappings=mappings).toxml()
 
     rsp = Node(
         package='robot_state_publisher', executable='robot_state_publisher',
@@ -87,4 +72,20 @@ def generate_launch_description():
         parameters=[{'config_file': bridge_cfg}],
     )
 
-    return LaunchDescription(declared + [resource_path, gz_sim, rsp, spawn, bridge])
+    return [resource_path, gz_sim, rsp, spawn, bridge]
+
+
+def generate_launch_description():
+    desc_share = get_package_share_directory('dual_chess_description')
+    declared = [
+        DeclareLaunchArgument('geometry_file', default_value=os.path.join(desc_share,'config','chess_geometry.yaml')),
+        DeclareLaunchArgument('gz_args', default_value='-r',
+                              description="Extra gz sim flags, e.g. '-r -s' (headless server)"),
+        DeclareLaunchArgument('robot1_enabled', default_value='true'),
+        DeclareLaunchArgument('robot2_enabled', default_value='true'),
+        DeclareLaunchArgument('use_meshes', default_value='false'),
+        DeclareLaunchArgument('spawn_delay', default_value='3.0',
+                              description='Seconds to wait for gz sim before spawning'),
+    ]
+
+    return LaunchDescription(declared + [OpaqueFunction(function=setup)])

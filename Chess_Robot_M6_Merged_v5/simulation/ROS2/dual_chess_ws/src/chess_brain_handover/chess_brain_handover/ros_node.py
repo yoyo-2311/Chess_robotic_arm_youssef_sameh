@@ -6,7 +6,7 @@ See docs/INTEGRATION_CONTRACT.md for topic names and publisher responsibilities.
 import json
 import os
 
-from .core import GameController
+from .core import GameController, chess
 
 
 def main(args=None):
@@ -20,23 +20,41 @@ def main(args=None):
             self.declare_parameter("white_preset", "strong")
             self.declare_parameter("black_preset", "medium")
             self.declare_parameter("engine_path", "")
+            self.declare_parameter("engine_mode", "stockfish")
+            self.declare_parameter("initial_fen", "")
             self.declare_parameter("min_confidence", 0.95)
             self.declare_parameter("min_cell_confidence", 0.90)
             self.declare_parameter("allow_placement_shortcut", False)
             path = self.get_parameter("engine_path").value or os.environ.get("STOCKFISH_PATH") or None
+            mode = self.get_parameter("engine_mode").value
+            if mode not in ("stockfish", "mock"):
+                raise ValueError("engine_mode must be stockfish or mock")
+            class MockPlayer:
+                def choose_move(self, board):
+                    return sorted(board.legal_moves, key=lambda move: move.uci())[0], None, 0.
+                def close(self):
+                    pass
+            players = {chess.WHITE: MockPlayer(), chess.BLACK: MockPlayer()} if mode == "mock" else None
             self.game = GameController(
+                players=players,
                 white=self.get_parameter("white_preset").value,
                 black=self.get_parameter("black_preset").value,
                 engine_path=path,
                 min_confidence=float(self.get_parameter("min_confidence").value),
                 min_cell_confidence=float(self.get_parameter("min_cell_confidence").value),
             )
+            initial = self.get_parameter("initial_fen").value
+            if initial:
+                if mode != "mock":
+                    raise ValueError("initial_fen startup override is for mock simulation only; use verified reset for a physical board")
+                self.game.reset(physical_reset_confirmed=True, fen=initial)
             self.last_vision = None
             self.safety_ready = False  # must be asserted by EXTERNAL safety coordinator
             self.pub_plan = self.create_publisher(String, "/chess/move_plan", 10)
             self.pub_state = self.create_publisher(String, "/chess/state", 10)
             self.pub_events = self.create_publisher(String, "/chess/events", 10)
             self.create_subscription(String, "/chess/command", self.on_command, 10)
+            self.create_subscription(String, "/chess/engine/move", self.on_engine_move, 10)
             self.create_subscription(String, "/chess/vision/board", self.on_vision, 10)
             self.create_subscription(String, "/chess/robot_ack", self.on_robot_ack, 10)
             self.create_subscription(Bool, "/chess/safety_ready", self.on_safety, 10)
@@ -66,6 +84,13 @@ def main(args=None):
             self.safety_ready = bool(msg.data)
             self.event({"event": "safety_signal", "ready": self.safety_ready})
 
+        def on_engine_move(self, msg):
+            try:
+                data = json.loads(msg.data) if msg.data.strip().startswith('{') else {"uci": msg.data.strip()}
+                self.on_command(String(data=json.dumps({**data, "action": "uci"})))
+            except Exception as exc:
+                self.event({"event": "command_error", "ok": False, "error": str(exc)})
+
         def on_command(self, msg):
             try:
                 data = self.parse(msg)
@@ -86,11 +111,17 @@ def main(args=None):
                         self.safety_ready = False  # must rearm for every new move
                         self.send(self.pub_plan, plan.to_dict())
                         response = {"ok": True, "status": "plan_published", "plan_id": plan.plan_id}
-                elif action == "manual":
+                elif action in ("manual", "uci"):
                     if not self.safety_ready:
                         response = {"ok": False, "status": "waiting_for_safety_ready"}
                     else:
-                        plan = self.game.manual_move(data["from_sq"], data["to_sq"], data.get("promotion"))
+                        if action == "uci":
+                            move = chess.Move.from_uci(data["uci"])
+                            if move not in self.game.board.legal_moves:
+                                raise ValueError("Illegal UCI move: " + data["uci"])
+                            plan = self.game.manual_move(data["uci"][:2], data["uci"][2:4], data["uci"][4:] or None)
+                        else:
+                            plan = self.game.manual_move(data["from_sq"], data["to_sq"], data.get("promotion"))
                         self.safety_ready = False
                         self.send(self.pub_plan, plan.to_dict())
                         response = {"ok": True, "status": "manual_plan_published", "plan_id": plan.plan_id}
@@ -105,7 +136,7 @@ def main(args=None):
                         response = {"ok": True, "status": "reset_requires_new_vision_sync"}
                 else:
                     response = {"ok": False, "status": "unknown_command"}
-                self.event({"event": "command_response", "action": action, **response})
+                self.event({"event": "command_response", "action": action, "request_id": data.get("request_id"), **response})
             except (Exception) as exc:
                 self.event({"event": "command_error", "ok": False, "error": str(exc)})
 

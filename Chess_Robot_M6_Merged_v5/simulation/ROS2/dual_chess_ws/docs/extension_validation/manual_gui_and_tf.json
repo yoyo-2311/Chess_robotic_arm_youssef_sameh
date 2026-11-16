@@ -1,0 +1,25 @@
+{
+  "joint_state_publisher_count": 1,
+  "publisher_names": [
+    "joint_state_publisher"
+  ],
+  "joint_names": [
+    "robot1_joint1",
+    "robot1_joint2",
+    "robot1_joint3",
+    "robot2_joint1",
+    "robot2_joint2",
+    "robot2_joint3"
+  ],
+  "positions": [
+    0.0,
+    0.0,
+    0.0,
+    0.01514,
+    0.01696458600000028,
+    0.08482292999999963
+  ],
+  "both_tool_transforms_present": true,
+  "gui_process_started": true,
+  "slider_drag_automated": false
+}

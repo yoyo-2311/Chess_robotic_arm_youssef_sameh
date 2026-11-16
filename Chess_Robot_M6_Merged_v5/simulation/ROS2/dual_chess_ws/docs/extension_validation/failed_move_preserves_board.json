@@ -1,0 +1,40 @@
+{
+  "injected_gripper_failure": true,
+  "move_command_output": "{\"status\": \"failed_or_rejected\", \"reason\": \"{'plan_id': 'bd8be09a551447a99b4c8a01a318e2b4', 'success': False, 'arm_parked': False, 'gripper_released': False, 'reason': 'gripper_operation_failed'}\"}\n[ros2run]: Process exited with failure 1\n",
+  "confirmed_board_unchanged": true,
+  "state": {
+    "schema_version": "1.0",
+    "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "turn": "white",
+    "result": null,
+    "synchronized": true,
+    "blocked": true,
+    "block_reason": "robot_execution_failed_or_not_safe",
+    "pending_plan_id": "bd8be09a551447a99b4c8a01a318e2b4",
+    "pending_move": "e2e4",
+    "robot_ack_received": false,
+    "committed_plies": 0,
+    "legal_moves": [
+      "g1h3",
+      "g1f3",
+      "b1c3",
+      "b1a3",
+      "h2h3",
+      "g2g3",
+      "f2f3",
+      "e2e3",
+      "d2d3",
+      "c2c3",
+      "b2b3",
+      "a2a3",
+      "h2h4",
+      "g2g4",
+      "f2f4",
+      "e2e4",
+      "d2d4",
+      "c2c4",
+      "b2b4",
+      "a2a4"
+    ]
+  }
+}

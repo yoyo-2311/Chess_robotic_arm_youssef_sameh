@@ -1,0 +1,49 @@
+{
+  "controller_execution_succeeded": true,
+  "commit_held_until_fresh_vision": true,
+  "geometry_locked_while_awaiting_confirmation": true,
+  "geometry_rejection_reason": "geometry_locked: wait for ready and idle; failed/partial moves need reconciliation",
+  "fresh_vision_then_committed": true,
+  "ack": {
+    "plan_id": "2966f04fe85441afb32d5a67e17e1ae1",
+    "success": true,
+    "arm_parked": true,
+    "gripper_released": true,
+    "simulated_gripper": true
+  },
+  "state": {
+    "schema_version": "1.0",
+    "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+    "turn": "black",
+    "result": null,
+    "synchronized": true,
+    "blocked": false,
+    "block_reason": null,
+    "pending_plan_id": null,
+    "pending_move": null,
+    "robot_ack_received": false,
+    "committed_plies": 1,
+    "legal_moves": [
+      "g8h6",
+      "g8f6",
+      "b8c6",
+      "b8a6",
+      "h7h6",
+      "g7g6",
+      "f7f6",
+      "e7e6",
+      "d7d6",
+      "c7c6",
+      "b7b6",
+      "a7a6",
+      "h7h5",
+      "g7g5",
+      "f7f5",
+      "e7e5",
+      "d7d5",
+      "c7c5",
+      "b7b5",
+      "a7a5"
+    ]
+  }
+}

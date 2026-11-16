@@ -4,7 +4,7 @@ project(dual_chess_description)
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY urdf launch rviz meshes reference
+  DIRECTORY urdf launch rviz meshes reference config
   DESTINATION share/${PROJECT_NAME}
 )
 

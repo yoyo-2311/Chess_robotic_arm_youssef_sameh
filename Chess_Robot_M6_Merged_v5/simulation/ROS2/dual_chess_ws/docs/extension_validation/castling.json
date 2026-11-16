@@ -1,0 +1,41 @@
+{
+  "status": "committed_after_execution_and_mock_vision",
+  "state": {
+    "schema_version": "1.0",
+    "fen": "r3k2r/8/8/8/8/8/8/R4RK1 b kq - 1 1",
+    "turn": "black",
+    "result": null,
+    "synchronized": true,
+    "blocked": false,
+    "block_reason": null,
+    "pending_plan_id": null,
+    "pending_move": null,
+    "robot_ack_received": false,
+    "committed_plies": 1,
+    "legal_moves": [
+      "h8g8",
+      "h8f8",
+      "h8h7",
+      "h8h6",
+      "h8h5",
+      "h8h4",
+      "h8h3",
+      "h8h2",
+      "h8h1",
+      "e8d8",
+      "e8e7",
+      "e8d7",
+      "a8d8",
+      "a8c8",
+      "a8b8",
+      "a8a7",
+      "a8a6",
+      "a8a5",
+      "a8a4",
+      "a8a3",
+      "a8a2",
+      "a8a1",
+      "e8c8"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "simulation_only": true,
+  "final_physical_geometry_confirmed": false,
+  "test_count": 155,
+  "low_board_paths": {
+    "robot1": {
+      "passed": 128,
+      "total": 128,
+      "planning_requests": {
+        "1": 125,
+        "2": 3
+      }
+    },
+    "robot2": {
+      "passed": 128,
+      "total": 128,
+      "planning_requests": {
+        "1": 124,
+        "2": 4
+      }
+    }
+  },
+  "special_moves_committed_after_controller_execution_and_mock_vision": [
+    "capture",
+    "castling",
+    "en_passant",
+    "promotion"
+  ],
+  "gui_started": true,
+  "mouse_drag_automated": false,
+  "move_group_action_executed": true,
+  "confirmed_board_unchanged_on_failure": true,
+  "low_support_and_mounts_are_placeholders": true
+}

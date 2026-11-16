@@ -2,9 +2,9 @@
 <!-- Source: Scara_ws_last.zip, scara_v2.urdf. CAD geometry, inertia and joint transforms retained.
      tool0 is the geometric fingertip centre (link5 bounds), pending physical grasp calibration. -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-<xacro:macro name="scara_chess_arm" params="prefix parent x y yaw">
+<xacro:macro name="scara_chess_arm" params="prefix parent mount">
 <link name="${prefix}mount"/>
-<joint name="${prefix}mount_joint" type="fixed"><parent link="${parent}"/><child link="${prefix}mount"/><origin xyz="${x} ${y} 0.04" rpy="0 0 ${yaw}"/></joint>
+<joint name="${prefix}mount_joint" type="fixed"><parent link="${parent}"/><child link="${prefix}mount"/><origin xyz="${mount['position'][0]} ${mount['position'][1]} ${mount['position'][2]}" rpy="${mount['rpy'][0]} ${mount['rpy'][1]} ${mount['rpy'][2]}"/></joint>
 <joint name="${prefix}world_to_base" type="fixed"><parent link="${prefix}mount"/><child link="${prefix}base_link"/><origin xyz="0 0 0" rpy="-1.57079632679 0 0"/></joint>
 <link name="${prefix}base_link">
     <inertial>
@@ -181,7 +181,7 @@
   </joint>
 
 <link name="${prefix}tool0"/>
-<joint name="${prefix}tool0_joint" type="fixed"><parent link="${prefix}link5"/><child link="${prefix}tool0"/><origin xyz="0.007 -0.0287 0" rpy="0 0 0"/></joint>
+<joint name="${prefix}tool0_joint" type="fixed"><parent link="${prefix}link5"/><child link="${prefix}tool0"/><origin xyz="${geometry['tool']['position'][0]} ${geometry['tool']['position'][1]} ${geometry['tool']['position'][2]}" rpy="0 0 0"/></joint>
 </xacro:macro>
 <xacro:macro name="scara_control_joint" params="prefix index initial">
 <joint name="${prefix}joint${index}"><command_interface name="position"/><state_interface name="position"><param name="initial_value">${initial}</param></state_interface><state_interface name="velocity"/></joint>

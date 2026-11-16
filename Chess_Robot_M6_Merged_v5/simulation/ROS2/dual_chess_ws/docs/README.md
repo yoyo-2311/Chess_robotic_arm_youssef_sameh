@@ -1,3 +1,5 @@
+Current extension: [configurable geometry, all test modes and engine/vision/embedded contracts](09_configurable_motion_interfaces.md).
+
 Current integration: [SCARA and MoveIt analysis](08_scara_moveit.md). Start with the [workspace README](../README.md).
 
 Earlier documents below describe the baseline and may contain superseded dimensions and joint names.

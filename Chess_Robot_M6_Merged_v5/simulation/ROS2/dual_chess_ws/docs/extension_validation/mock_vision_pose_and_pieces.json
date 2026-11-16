@@ -1,0 +1,8 @@
+{
+  "detected_playing_plane_z": 0.011,
+  "configured_underside_z": 0.0009999999999999974,
+  "square_tf_count": 64,
+  "complete_piece_positions_applied": true,
+  "confirmed_fen_unchanged": true,
+  "frame_contract": "chess_board is playing surface centre"
+}

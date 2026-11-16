@@ -1,0 +1,13 @@
+[move_group-4] [INFO] [1794840934.083433816] [move_group.moveit.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'robot1': 1 1 1
+[move_group-4] [INFO] [1794840934.083564859] [move_group.moveit.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'robot2': 1 1 1
+[motion_interface-5] [INFO] [1794840935.241612916] [chess_motion_interface]: {"schema_version":1,"status":"ready","plan_id":"","geometry_revision":0,"simulation_grasp":true,"detail":"Scene and controllers available; gripper handshake required for chess moves"}
+[move_group-4] [INFO] [1794840945.944416263] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 20 points (followed 100.000000% of requested trajectory)
+[move_group-4] [INFO] [1794840947.525802564] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 20 points (followed 100.000000% of requested trajectory)
+[move_group-4] [INFO] [1794840952.694154157] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 13 points (followed 100.000000% of requested trajectory)
+[move_group-4] [INFO] [1794840953.878876690] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 13 points (followed 100.000000% of requested trajectory)
+[move_group-4] [INFO] [1794840958.654321107] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 20 points (followed 100.000000% of requested trajectory)
+[move_group-4] [INFO] [1794840960.192943280] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 21 points (followed 100.000000% of requested trajectory)
+[move_group-4] [INFO] [1794840963.098776623] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 20 points (followed 100.000000% of requested trajectory)
+[move_group-4] [INFO] [1794840964.615701658] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 20 points (followed 100.000000% of requested trajectory)
+[motion_interface-5] [INFO] [1794840971.551212978] [chess_motion_interface]: {"schema_version":1,"status":"execution_complete","plan_id":"f1b0ee8945464cde91ef5f8e80cc50c0","geometry_revision":0,"simulation_grasp":true,"uci":"e5d6","awaiting_vision":true}
+[motion_interface-5] [INFO] [1794840971.551656694] [chess_motion_interface]: {"schema_version":1,"status":"succeeded","plan_id":"f1b0ee8945464cde91ef5f8e80cc50c0","geometry_revision":0,"simulation_grasp":true,"request_id":"f1b0ee8945464cde91ef5f8e80cc50c0","awaiting_vision":true}

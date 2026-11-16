@@ -32,30 +32,45 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--arm', choices=['robot1', 'robot2'], default='robot1')
     ap.add_argument('--square', default='e4')
-    ap.add_argument('--height', type=float, default=.08, help='Fingertip height in world frame (m)')
+    ap.add_argument('--height', type=float, default=None, help='Optional absolute world-Z override; default is configured approach height')
     ap.add_argument('--execute', action='store_true')
     ap.add_argument('--home', action='store_true', help='Return this arm to its parked SRDF home before switching arms')
     ap.add_argument('--output')
     args = ap.parse_args()
     if not args.home and (len(args.square) != 2 or args.square[0] not in 'abcdefgh' or args.square[1] not in '12345678'):
         ap.error('square must be a1 through h8')
-    urdf = Path(get_package_share_directory('dual_chess_description')) / 'urdf/dual_chess.urdf.xacro'
-    model = Model(ET.fromstring(xacro.process_file(str(urdf)).toxml()))
-    if args.home:
-        srdf = ET.parse(Path(get_package_share_directory('dual_chess_moveit_config')) / 'config/dual_chess.srdf').getroot()
-        state = srdf.find(f"group_state[@name='home'][@group='{args.arm}']")
-        solutions = [{'q': [float(j.get('value')) for j in state.findall('joint')]}]
-        args.square = 'home'
-    else:
-        xy = model.fk('board_square_' + args.square, {})[:2]
-        solutions = model.solutions(args.arm, np.array([*xy, args.height]))
-    if not solutions:
-        raise SystemExit('Target is outside the CAD joint limits')
     rclpy.init()
     node = rclpy.create_node('plan_chess_square')
     latest = []
     sub = node.create_subscription(JointState, '/joint_states', lambda msg: latest.append(msg), 10)
     try:
+        from std_msgs.msg import String
+        from rclpy.qos import QoSProfile, DurabilityPolicy
+        from chess_motion_interface.geometry import Geometry
+        import time
+        snapshots, descriptions = [], []
+        qos = QoSProfile(depth=1,durability=DurabilityPolicy.TRANSIENT_LOCAL)
+        node.create_subscription(String,'/chess/geometry',lambda m:snapshots.append(json.loads(m.data)),qos)
+        node.create_subscription(String,'/robot_description',lambda m:descriptions.append(m.data),qos)
+        deadline = time.monotonic()+10
+        while (not snapshots or not descriptions) and time.monotonic()<deadline:
+            rclpy.spin_once(node,timeout_sec=.1)
+        if not snapshots or not descriptions:
+            raise RuntimeError('Wait for demo.launch.py to initialize its live geometry')
+        model = Model(ET.fromstring(descriptions[-1]))
+        geometry = Geometry(snapshots[-1]['configuration'])
+        if args.home:
+            srdf = ET.parse(Path(get_package_share_directory('dual_chess_moveit_config')) / 'config/dual_chess.srdf').getroot()
+            state = srdf.find(f"group_state[@name='home'][@group='{args.arm}']")
+            solutions = [{'q': [float(j.get('value')) for j in state.findall('joint')]}]
+            args.square = 'home'
+        else:
+            target = geometry.square(args.square, geometry.travel())
+            if args.height is not None:
+                target[2] = args.height
+            solutions = model.solutions(args.arm, target)
+        if not solutions:
+            raise SystemExit('Target is outside the CAD joint limits')
         client = node.create_client(GetMotionPlan, '/plan_kinematic_path')
         if not client.wait_for_service(timeout_sec=30):
             raise RuntimeError('Start demo.launch.py first')

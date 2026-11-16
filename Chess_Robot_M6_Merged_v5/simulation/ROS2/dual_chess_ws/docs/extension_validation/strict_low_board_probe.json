@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "succeeded",
+  "plan_id": "c164d1ab5bb3432bbd9dfeb953caacdd",
+  "geometry_revision": 2,
+  "simulation_grasp": true,
+  "request_id": "c164d1ab5bb3432bbd9dfeb953caacdd",
+  "awaiting_vision": false,
+  "executed": true,
+  "mode": "controller_execution"
+}

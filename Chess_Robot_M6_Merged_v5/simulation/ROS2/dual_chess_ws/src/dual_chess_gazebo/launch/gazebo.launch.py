@@ -2,8 +2,8 @@
 
 Starts: gz sim (chess_world.sdf), robot_state_publisher (sim time), ros_gz_sim `create`
 (spawns the URDF from /robot_description as model "dual_chess"), ros_gz_bridge
-(/clock, /joint_states, /robotN/base_yaw_joint/cmd_pos,
- /robotN/joint1/cmd_pos, /robotN/joint2/cmd_pos).
+(/clock, /joint_states, /robotN/joint1/cmd_pos (m),
+ /robotN/joint2/cmd_pos and /robotN/joint3/cmd_pos (rad)).
 RViz is NOT started here; use dual_chess_bringup simulation.launch.py for both.
 """
 import os

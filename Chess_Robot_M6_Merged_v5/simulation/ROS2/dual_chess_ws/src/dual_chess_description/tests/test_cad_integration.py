@@ -23,11 +23,10 @@ class CADIntegrationTests(unittest.TestCase):
         tree=ET.parse(path).getroot()
         self.assertEqual(tree.get('name'), 'dual_chess')
         includes=[n.get('filename') for n in tree.findall('x:include',NS)]
-        self.assertTrue(any(x.endswith('/arm_cad.macro.xacro') for x in includes))
-        self.assertTrue(any(x.endswith('/arm_cad.gazebo.xacro') for x in includes))
+        self.assertTrue(any(x.endswith('/scara_v2.macro.xacro') for x in includes))
         self.assertFalse(any(x.endswith('/arm.macro.xacro') for x in includes))
-        self.assertEqual(len(tree.findall('.//x:cad_chess_arm',NS)),2)
-        self.assertEqual({x.get('prefix') for x in tree.findall('.//x:cad_chess_arm',NS)}, {'robot1_','robot2_'})
+        self.assertEqual(len(tree.findall('.//x:scara_chess_arm',NS)),2)
+        self.assertEqual({x.get('prefix') for x in tree.findall('.//x:scara_chess_arm',NS)}, {'robot1_','robot2_'})
         for name in ['sim_gazebo','robot1_enabled','robot2_enabled','use_meshes']:
             self.assertIsNotNone(tree.find(f"x:arg[@name='{name}']",NS))
 
@@ -101,19 +100,13 @@ class CADIntegrationTests(unittest.TestCase):
         cad = (DESC/'urdf/arm/arm_cad.macro.xacro').read_text()
         self.assertNotIn('cad_home_', cad)
 
-    def test_matching_gazebo_plugins_and_ten_bridge_channels(self):
-        gz=ET.parse(DESC/'urdf/arm/arm_cad.gazebo.xacro').getroot()
-        macro=gz.find("x:macro[@name='cad_chess_arm_gz']",NS)
-        self.assertEqual(len(macro.findall('x:cad_hold_joint',NS)),4)
-        self.assertEqual(len(macro.findall('x:cad_hold_gripper_joint',NS)),1)
-        names=[n.get('joint') for n in macro.findall('x:cad_hold_joint',NS)]
-        self.assertEqual(names,['${prefix}base_yaw_joint','${prefix}joint1','${prefix}joint2','${prefix}joint3'])
+    def test_scara_six_bridge_channels(self):
+        import yaml
         bridge=(SRC/'dual_chess_gazebo/config/bridge.yaml').read_text()
-        matches=re.findall(r'ros_topic_name: "([^"]+)/cmd_pos"',bridge)
-        expected={f'/{robot}/{joint}' for robot in ('robot1','robot2')
-                  for joint in ('base_yaw_joint','joint1','joint2','joint3','gripper_finger_joint')}
-        self.assertEqual(set(matches),expected)
-        self.assertEqual(len(matches),10)
+        channels=[b['ros_topic_name'] for b in yaml.safe_load(bridge) if b['ros_topic_name'].endswith('/cmd_pos')]
+        expected={f'/{robot}/joint{i}/cmd_pos' for robot in ('robot1','robot2') for i in (1,2,3)}
+        self.assertEqual(set(channels),expected)
+        self.assertEqual(len(channels),6)
         self.assertIn('/world/chess_world/model/dual_chess/joint_state',bridge)
         self.assertIn('/clock',bridge)
 

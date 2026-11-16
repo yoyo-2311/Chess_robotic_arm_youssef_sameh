@@ -104,15 +104,9 @@ def test_dry_run_default_logs_but_never_acks():
     assert not any(t.endswith('/cmd_pos') for t in topics)
 
 
-def test_real_mode_publishes_commands_and_ack():
-    def scenario(st):
-        st.subs['/chess/move_plan'](_Msg(plan_json()))
-        tick_until_done(st)
-    st = run_main({'dry_run': False, 'sink': 'cmd_pos'}, scenario)
-    acks = [json.loads(d) for t, d in st.published if t == '/chess/robot_ack']
-    assert len(acks) == 1 and acks[0]['success'] and acks[0]['plan_id'] == 'n1'
-    cmd_topics = {t for t, _ in st.published if t.endswith('/cmd_pos')}
-    assert cmd_topics == {f'/robot1/{j}/cmd_pos' for j in ('shoulder_joint', 'elbow_joint', 'z_joint', 'gripper_finger_joint')}
+def test_live_legacy_executor_rejected_for_supplied_cad():
+    with pytest.raises(RuntimeError, match='placeholder planar IK'):
+        run_main({'dry_run': False, 'sink': 'cmd_pos'}, lambda st: None)
 
 
 def test_invalid_json_and_estop():
@@ -120,7 +114,7 @@ def test_invalid_json_and_estop():
         st.subs['/chess/move_plan'](_Msg('{not json'))
         st.subs['/chess/executor/estop'](_Msg(True))
         st.subs['/chess/move_plan'](_Msg(plan_json(pid='e1')))
-    st = run_main({'dry_run': False, 'sink': 'cmd_pos'}, scenario)
+    st = run_main({'dry_run': True, 'ack_in_dry_run': True, 'sink': 'log'}, scenario)
     status = [json.loads(d) for t, d in st.published if t == '/chess/executor/status']
     assert any(s.get('event') == 'plan_ignored' and 'invalid JSON' in s['reason'] for s in status)
     acks = [json.loads(d) for t, d in st.published if t == '/chess/robot_ack']
@@ -131,9 +125,9 @@ def test_speed_scale_parameter_overrides_config():
     def scenario(st):
         st.subs['/chess/move_plan'](_Msg(plan_json()))
         tick_until_done(st)
-    slow = run_main({'dry_run': False, 'sink': 'cmd_pos', 'speed_scale': 0.25}, scenario)
-    fast = run_main({'dry_run': False, 'sink': 'cmd_pos', 'speed_scale': 1.0}, scenario)
-    n = lambda s: sum(1 for t, _ in s.published if t == '/robot1/shoulder_joint/cmd_pos')
+    slow = run_main({'dry_run': True, 'ack_in_dry_run': True, 'sink': 'log', 'speed_scale': 0.25}, scenario)
+    fast = run_main({'dry_run': True, 'ack_in_dry_run': True, 'sink': 'log', 'speed_scale': 1.0}, scenario)
+    n = lambda s: sum(1 for line in s.logs if '[dry-run] robot1 cmd' in line)
     assert n(slow) > 1.5 * n(fast)
 
 
@@ -151,7 +145,7 @@ def test_safety_ready_is_opt_in_and_follows_state():
         st.subs['/chess/executor/estop'](_Msg(True))
         periodic(); seen.append(('estop', [d for t, d in st.published if t == '/chess/safety_ready'][-1]))
 
-    run_main({'dry_run': False, 'sink': 'cmd_pos', 'publish_safety_ready': True}, scenario)
+    run_main({'dry_run': True, 'ack_in_dry_run': True, 'sink': 'log', 'publish_safety_ready': True}, scenario)
     assert seen == [('idle', True), ('busy', False), ('estop', False)]
     off = run_main({}, lambda s: next(cb for p, cb in s.timers if abs(p - 0.5) < 1e-9)())
     assert not any(t == '/chess/safety_ready' for t, _ in off.published)

@@ -25,7 +25,7 @@ def generate_launch_description():
         DeclareLaunchArgument('robot1_enabled', default_value='true'),
         DeclareLaunchArgument('robot2_enabled', default_value='true'),
         DeclareLaunchArgument('use_meshes', default_value='false',
-                              description='Compatibility argument; v1.3 always uses CAD STL meshes'),
+                              description='Compatibility argument; supplied SCARA always uses CAD STL meshes'),
     ]
 
     robot_description = ParameterValue(

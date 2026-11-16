@@ -1,14 +1,8 @@
 <?xml version="1.0"?>
-<!-- v1.3.2: supplied full-scale 40cm CAD chessboard.
-     Do NOT substitute the former flat 40cm placeholder for this mesh.
-     The mesh has Y as its up-axis, starts at one outer corner (0,0,0)
-     and uses mm. Its playing squares are 43.75mm (not 50mm):
-     the outside frame is 400mm, while the playing area is 350mm wide.
-     Rotation +90deg about X -> CAD +Y becomes ROS +Z; CAD +Z -> ROS -Y.
-     Board center, fixed robot origins, and a1/h8 frame conventions preserved.
-     Collision is a conservative box+frame approximation because input STL
-     is not watertight and should not be the dynamic collision mesh.
--->
+<!-- Supplied Board_1_original.STL retained. XY dimensions scaled to 60%:
+     240 mm outer frame, 210 mm playing grid, 26.25 mm square pitch.
+     Vertical dimensions unchanged: playing surface z=10 mm, rim z=20.1892 mm.
+     CAD uses millimetres and Y-up. See board_params_cad.xacro and docs/08_scara_moveit.md. -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
   <xacro:include filename="$(find dual_chess_description)/urdf/board/board_params_cad.xacro"/>
 
@@ -19,7 +13,7 @@
                 rpy="${pi/2} 0 0"/>
         <geometry>
           <mesh filename="package://dual_chess_description/meshes/chess_board/Board_1_original.STL"
-                scale="0.001 0.001 0.001"/>
+                scale="${board_size/400} 0.001 ${board_size/400}"/>
         </geometry>
         <!-- STL has no per-square material colours. Preserve its geometry. -->
         <material name="board_wood"/>

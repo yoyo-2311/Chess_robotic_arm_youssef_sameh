@@ -35,7 +35,7 @@ def generate_launch_description():
         DeclareLaunchArgument('executor_enabled', default_value='false',
                               description='Start the robot executor (see chess_robot_executor; DRY-RUN by default)'),
         DeclareLaunchArgument('executor_dry_run', default_value='true',
-                              description='true = log commands only, never ack plans. false needs the final arm model'),
+                              description='true = log commands only, never ack plans. false is disabled: legacy executor uses placeholder IK; use the MoveIt launch'),
     ]
 
     gazebo = IncludeLaunchDescription(

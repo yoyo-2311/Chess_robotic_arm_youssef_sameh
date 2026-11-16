@@ -1,3 +1,5 @@
+> **SCARA integration (16 Nov 2026):** This package is retained as the original offline planar prototype. Its geometry and board settings describe the old example, not the active CAD scene. Live mode is disabled. Use `dual_chess_moveit_config` for CAD motion; see `docs/08_scara_moveit.md`.
+
 # chess_robot_executor
 
 Turns the chess brain's `/chess/move_plan` into SCARA joint trajectories and acknowledges on `/chess/robot_ack`.

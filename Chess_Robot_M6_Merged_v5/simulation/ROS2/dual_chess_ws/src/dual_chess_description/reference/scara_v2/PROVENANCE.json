@@ -1,0 +1,7 @@
+{
+  "archive": "Scara_ws_last.zip",
+  "archive_sha256": "1ef417bdf6c43dacc5011772e69f06d45266a419f1daa38b799820191d6e7a76",
+  "archive_source_directory": "dual_chess/src/scara_v2_ros_package",
+  "baseline_commit": "30a97e591bdd92fd49da5a5fbb5b46bda8aa25d1",
+  "source_preserved": true
+}

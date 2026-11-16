@@ -1,0 +1,11 @@
+{
+  "arm": "robot2",
+  "square": "home",
+  "height": 0.08,
+  "planning_error_code": 1,
+  "planning_time": 0.09763693500000001,
+  "planning_requests": 1,
+  "trajectory_points": 575,
+  "executed": true,
+  "execution_error_code": 1
+}

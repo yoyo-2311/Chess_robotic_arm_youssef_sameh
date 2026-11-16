@@ -1,0 +1,6207 @@
+{
+  "scope": "Square-centre endpoint position reach at world z=0.03 and 0.08 m; tool0=geometric fingertip centre. No pieces or grasp calibration.",
+  "collision_checked": true,
+  "paths_from_home_checked": true,
+  "arms": {
+    "robot1": {
+      "passed": 128,
+      "total": 128,
+      "targets": [
+        {
+          "square": "a1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749902980712147,
+                -1.3967114767773496,
+                2.1759746210105577
+              ],
+              "error": 5.721958498152797e-17
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 570,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749902487305084,
+                -1.3967114767785511,
+                2.175974621009349
+              ],
+              "error": 4.934070610739331e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 600,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749894359020708,
+                -1.3565777598926103,
+                2.0826025440751854
+              ],
+              "error": 1.8386366773734597e-15
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 547,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749893865811445,
+                -1.3565777598938311,
+                2.082602544074019
+              ],
+              "error": 4.932092748416407e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 571,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749888975798095,
+                -1.3395187416103558,
+                1.9706969671899892
+              ],
+              "error": 6.242980978941922e-13
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 519,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974988848270158,
+                -1.3395187416132905,
+                1.9706969671847006
+              ],
+              "error": 4.930962888325003e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 675,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749887110610596,
+                -1.343873145148816,
+                1.8403228294463267
+              ],
+              "error": 7.458580638644486e-11
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 512,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749886617529543,
+                -1.3438731454062498,
+                1.840322828899687
+              ],
+              "error": 4.9307865016552465e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 595,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498890942589446,
+                -1.3687302289967118,
+                1.6900723138415603
+              ],
+              "error": 2.521264072383756e-16
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 711,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749888601090402,
+                -1.368730228997842,
+                1.6900723138405735
+              ],
+              "error": 4.931685393754485e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 753,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749895357683372,
+                -1.4146389731246147,
+                1.5161611936591681
+              ],
+              "error": 7.636376960942442e-14
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 611,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749894864303031,
+                -1.414638973126118,
+                1.5161611936575303
+              ],
+              "error": 4.9338045458781535e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 560,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047499065531187296,
+                -1.4849563079307404,
+                1.3101638019428652
+              ],
+              "error": 4.5391906029001256e-11
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 601,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749906059386107,
+                -1.4849563082092478,
+                1.3101638014588037
+              ],
+              "error": 4.937323536613013e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 679,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749989161978239,
+                -2.542137389892246,
+                -0.6221241315036893
+              ],
+              "error": 3.8455021662245125e-11
+            },
+            {
+              "q": [
+                0.04749923936111749,
+                -1.5901270172814959,
+                1.0514111200755571
+              ],
+              "error": 4.416551461300242e-15
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 697,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.097499886666005,
+                -2.5421373895833574,
+                -0.6221241309785528
+              ],
+              "error": 4.953814039761951e-09
+            },
+            {
+              "q": [
+                0.09749923441850006,
+                -1.5901270172824873,
+                1.0514111200747158
+              ],
+              "error": 4.942617510433924e-09
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 758,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498766427506306,
+                -1.2203146174842883,
+                2.3270978011097823
+              ],
+              "error": 9.357993084592851e-16
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 608,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749876149944911,
+                -1.2203146174856505,
+                2.3270978011086076
+              ],
+              "error": 4.92805718480712e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 608,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749867335477347,
+                -1.182417017978187,
+                2.2273675768104177
+              ],
+              "error": 1.1667018660747763e-13
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 583,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749866842878074,
+                -1.1824170179802937,
+                2.2273675768086365
+              ],
+              "error": 4.925992128340826e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 583,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498612018863746,
+                -1.1698085232181585,
+                2.1101916874065827
+              ],
+              "error": 1.7257237288550494e-11
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 554,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749860709407625,
+                -1.1698085232897235,
+                2.1101916872872066
+              ],
+              "error": 4.924782304432572e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 554,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498585240530446,
+                -1.1792649958598302,
+                1.9763267673504985
+              ],
+              "error": 1.0530500229294491e-16
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 521,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749858031594659,
+                -1.179264995861062,
+                1.9763267673495497
+              ],
+              "error": 4.924583838195772e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 521,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749859610965421,
+                -1.208653342290132,
+                1.8251015524650664
+              ],
+              "error": 5.216368873895001e-15
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 483,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974985911840962,
+                -1.208653342291325,
+                1.8251015524641454
+              ],
+              "error": 4.92555808667352e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 513,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498648360078805,
+                -1.2573584904105848,
+                1.6538990245789134
+              ],
+              "error": 1.7390568584071431e-12
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 611,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974986434322339,
+                -1.257358490420859,
+                1.6538990245634104
+              ],
+              "error": 4.927844271841458e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 654,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498747166294084,
+                -1.3270039054184948,
+                1.4568490194275856
+              ],
+              "error": 5.561946577567963e-17
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 785,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749874223465788,
+                -1.327003905419524,
+                1.4568490194268278
+              ],
+              "error": 4.931636224762912e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 650,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749964340499069,
+                -2.572437051988243,
+                -0.7916546087035526
+              ],
+              "error": 6.43460367934642e-14
+            },
+            {
+              "q": [
+                0.04749890121107873,
+                -1.4235679427366807,
+                1.2209415977907123
+              ],
+              "error": 8.135805018169543e-15
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 788,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749963845719499,
+                -2.572437051987758,
+                -0.7916546087018216
+              ],
+              "error": 4.9477957150316205e-09
+            },
+            {
+              "q": [
+                0.09749889627392234,
+                -1.4235679427376378,
+                1.220941597790022
+              ],
+              "error": 4.93715690610476e-09
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 694,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749853869001304,
+                -1.0256932665850829,
+                2.4666029927302966
+              ],
+              "error": 1.4792876742789198e-12
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 643,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749853376688472,
+                -1.0256932665978464,
+                2.46660299272098
+              ],
+              "error": 4.923129723538449e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 643,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498438335373476,
+                -0.9955423155609862,
+                2.3580438055727324
+              ],
+              "error": 5.946834292503854e-11
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 616,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749843341438669,
+                -0.9955423159864406,
+                2.35804380524327
+              ],
+              "error": 4.920991073162238e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 616,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474983695334744,
+                -0.9924913783096511,
+                2.233494809739316
+              ],
+              "error": 8.275921921288956e-17
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 585,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749836461369304,
+                -0.992491378311057,
+                2.233494809738379
+              ],
+              "error": 4.919781374149758e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 585,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498335149298195,
+                -1.0114753924253488,
+                2.094191421652174
+              ],
+              "error": 2.690861991254922e-15
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 550,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749833022955477,
+                -1.0114753924266628,
+                2.0941914216513045
+              ],
+              "error": 4.919743682082027e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 550,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749833810656862,
+                -1.0492765559136803,
+                1.9398436365054688
+              ],
+              "error": 2.852455949026347e-13
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 511,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749833318552584,
+                -1.0492765559157715,
+                1.9398436365027187
+              ],
+              "error": 4.921047125559387e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 511,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749838174594158,
+                -1.1045181340103118,
+                1.7684169167028996
+              ],
+              "error": 2.7090983491301468e-11
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 469,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749837682211665,
+                -1.104518134142999,
+                1.7684169164867887
+              ],
+              "error": 4.923834881723109e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 498,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749847044287868,
+                -1.1779121645047814,
+                1.575327404945505
+              ],
+              "error": 7.318806362944029e-17
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 649,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749846551471826,
+                -1.1779121645058033,
+                1.5753274049448778
+              ],
+              "error": 4.928160407819262e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 812,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749940787436076,
+                -2.5751093970304977,
+                -0.9217682108885775
+              ],
+              "error": 2.6633514087369766e-16
+            },
+            {
+              "q": [
+                0.04749861097542282,
+                -1.2734176022135606,
+                1.351055199969894
+              ],
+              "error": 4.6066420515368844e-14
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 695,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749940293231578,
+                -2.575109397030667,
+                -0.9217682108878326
+              ],
+              "error": 4.942044967909979e-09
+            },
+            {
+              "q": [
+                0.09749860604108443,
+                -1.2734176022144876,
+                1.3510551999693465
+              ],
+              "error": 4.934339271519224e-09
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 694,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749834392476084,
+                -0.8054150589729114,
+                2.593722626839155
+              ],
+              "error": 6.352195643777113e-14
+            }
+          ],
+          "contacts": [
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 675,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749833900596014,
+                -0.8054150589752532,
+                2.5937226268377045
+              ],
+              "error": 4.918801990884968e-09
+            }
+          ],
+          "contacts": [
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 675,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749823569376803,
+                -0.79221658222305,
+                2.4737429613416317
+              ],
+              "error": 3.08850849483098e-10
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 645,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974982307769656,
+                -0.7922165846296755,
+                2.4737429597076694
+              ],
+              "error": 4.916785798105786e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 645,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474981594342609,
+                -0.8058523286142508,
+                2.3400575719423213
+              ],
+              "error": 3.2825093834107453e-15
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 612,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749815451876799,
+                -0.80585232861578,
+                2.3400575719414713
+              ],
+              "error": 4.915493429107242e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 612,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498117945013296,
+                -0.839681974954654,
+                2.1939848929983836
+              ],
+              "error": 6.690382076538566e-13
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 575,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974981104814823,
+                -0.8396819749566432,
+                2.193984892994008
+              ],
+              "error": 7.46353175118643e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 575,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749811392888397,
+                -0.8899500912583723,
+                2.0352252883512993
+              ],
+              "error": 1.7881667131039765e-11
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 535,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749810657488825,
+                -0.8899500912993007,
+                2.03522528823769
+              ],
+              "error": 7.354014814010027e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 535,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498150381681974,
+                -0.955089614366107,
+                1.861897263960492
+              ],
+              "error": 7.263086457077434e-17
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 492,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749814327325096,
+                -0.9550896143671133,
+                1.8618972639600084
+              ],
+              "error": 7.108430996861431e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 492,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498231121522023,
+                -1.0355452384928354,
+                1.6700189296183363
+              ],
+              "error": 1.2534502532787849e-16
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 444,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749822435526456,
+                -1.0355452384937394,
+                1.6700189296179477
+              ],
+              "error": 6.76625745739939e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 710,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749919186773064,
+                -2.5557752940715845,
+                -1.0225522781927783
+              ],
+              "error": 6.694873907660347e-11
+            },
+            {
+              "q": [
+                0.04749836181444478,
+                -1.1344111096401506,
+                1.4518392666526057
+              ],
+              "error": 4.314886011681155e-14
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 688,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749918693088319,
+                -2.55577529376753,
+                -1.0225522775769524
+              ],
+              "error": 4.936751424502166e-09
+            },
+            {
+              "q": [
+                0.09749835545359237,
+                -1.1344111096409584,
+                1.4518392666523205
+              ],
+              "error": 6.360852859206481e-09
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 701,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474981790396998,
+                -0.5524024355156806,
+                2.705721960790253
+              ],
+              "error": 8.470064025577032e-14
+            }
+          ],
+          "contacts": [
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 703,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974981741246898,
+                -0.5524024355177367,
+                2.7057219607889555
+              ],
+              "error": 4.915009621662853e-09
+            }
+          ],
+          "contacts": [
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 703,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749806240371201,
+                -0.5706517503569857,
+                2.57195753384614
+              ],
+              "error": 6.208759259556274e-17
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 669,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749805749020617,
+                -0.5706517503588937,
+                2.571957533845318
+              ],
+              "error": 4.913505838437779e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 669,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749797892245209,
+                -0.6102059675457576,
+                2.428052223383467
+              ],
+              "error": 1.7873545521950388e-16
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 633,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749797400991278,
+                -0.6102059675474024,
+                2.4280522233827626
+              ],
+              "error": 4.912539306016162e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 634,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749793103573171,
+                -0.6648030547458363,
+                2.2746682568530665
+              ],
+              "error": 3.2251158566412904e-13
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 595,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749792537112156,
+                -0.6648030547475722,
+                2.2746682568507217
+              ],
+              "error": 5.66460407759741e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 595,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749792108931412,
+                -0.7315177046440194,
+                2.1110284024156116
+              ],
+              "error": 9.687820888582956e-12
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 554,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749790945564747,
+                -0.7315177046605955,
+                2.1110284023582406
+              ],
+              "error": 1.163365520611368e-08
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 554,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047497951720606404,
+                -0.8094906721781017,
+                1.9350507135405068
+              ],
+              "error": 2.1457344368072987e-17
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 510,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749793124181441,
+                -0.8094906721785285,
+                1.9350507135405448
+              ],
+              "error": 2.0478792023809743e-08
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 510,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749802631118329,
+                -0.899566102837047,
+                1.742932641852313
+              ],
+              "error": 1.6318400914105224e-15
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 462,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749800097086896,
+                -0.8995661028370137,
+                1.7429326418528936
+              ],
+              "error": 2.534031422280918e-08
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 462,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749899930368432,
+                -2.5172061731640496,
+                -1.0985359656731963
+              ],
+              "error": 1.7260407725447356e-13
+            },
+            {
+              "q": [
+                0.047498149809272215,
+                -1.0047256538253864,
+                1.5278229547434252
+              ],
+              "error": 2.659702512463853e-13
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 656,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749899437166598,
+                -2.5172061731635105,
+                -1.0985359656712936
+              ],
+              "error": 4.9320185575976705e-09
+            },
+            {
+              "q": [
+                0.09749812684394253,
+                -1.0047256538252114,
+                1.5278229547443378
+              ],
+              "error": 2.2965329323197134e-08
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 837,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749804005600003,
+                -0.26474317434973926,
+                2.7970898534589734
+              ],
+              "error": 8.129174079621313e-17
+            }
+          ],
+          "contacts": [
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 726,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974980223060603,
+                -0.26474317435180256,
+                2.797089853457966
+              ],
+              "error": 1.774993981010031e-08
+            }
+          ],
+          "contacts": [
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 726,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047497915102651576,
+                -0.33373903284069756,
+                2.6484971646521323
+              ],
+              "error": 7.110250420355456e-17
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 689,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749790770950746,
+                -0.3337390328426855,
+                2.6484971646514537
+              ],
+              "error": 7.3931441109614526e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 689,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047497825230665126,
+                -0.4091198779001025,
+                2.494636776498521
+              ],
+              "error": 4.718958039861916e-17
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 650,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749782032146012,
+                -0.4091198779018196,
+                2.494636776497985
+              ],
+              "error": 4.909204973180763e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 650,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749777208595713,
+                -0.48992605461754546,
+                2.3344940898491937
+              ],
+              "error": 1.0217212022702886e-16
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 610,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749777192287534,
+                -0.489926054619156,
+                2.33449408984874
+              ],
+              "error": 1.6308182582431147e-10
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 610,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749775751582374,
+                -0.5763353846091239,
+                2.1663895316422583
+              ],
+              "error": 1.2697428321878947e-11
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 568,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749774975286755,
+                -0.5763353846296189,
+                2.166389531568581
+              ],
+              "error": 7.762948686778216e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 568,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749778379203716,
+                -0.6693290889780082,
+                1.9878073904707187
+              ],
+              "error": 2.3013707539344673e-17
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 523,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749776998639603,
+                -0.6693290889787707,
+                1.9878073904706297
+              ],
+              "error": 1.3805641102795609e-08
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 523,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474987323940668,
+                -2.611497690658532,
+                -1.3655943572250502
+              ],
+              "error": 6.895825841270652e-16
+            },
+            {
+              "q": [
+                0.047497853948724675,
+                -0.7708087215506262,
+                1.794881346287003
+              ],
+              "error": 5.505853813365076e-15
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 679,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749872746863228,
+                -2.6114976906592235,
+                -1.3655943572248417
+              ],
+              "error": 4.9254345325761855e-09
+            },
+            {
+              "q": [
+                0.09749783172194881,
+                -0.7708087215508368,
+                1.7948813462874362
+              ],
+              "error": 2.2226775615043423e-08
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 679,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749883268234754,
+                -2.4611875102951677,
+                -1.15189444158439
+              ],
+              "error": 9.02858539936502e-14
+            },
+            {
+              "q": [
+                0.047497972460055084,
+                -0.8841981615389133,
+                1.5811814307386565
+              ],
+              "error": 1.0244179040996501e-11
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 642,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749882775441737,
+                -2.461187510295261,
+                -1.1518944415834453
+              ],
+              "error": 4.927930910680952e-09
+            },
+            {
+              "q": [
+                0.09749793914432663,
+                -0.8841981615404593,
+                1.581181430736173
+              ],
+              "error": 3.331574046082148e-08
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 642,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474979218580357,
+                0.0439170218455678,
+                2.859010751411495
+              ],
+              "error": 3.579569841973705e-15
+            }
+          ],
+          "contacts": [
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 741,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749792185644839,
+                0.043917021842701395,
+                2.8590107514110743
+              ],
+              "error": 1.5870915700660496e-12
+            }
+          ],
+          "contacts": [
+            "robot1_link3 / robot1_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 741,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749779026001404,
+                -0.09245387210634187,
+                2.6979385579572437
+              ],
+              "error": 2.9805457210114955e-15
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 701,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749779025524408,
+                -0.092453872108586,
+                2.6979385579569115
+              ],
+              "error": 4.769948325554914e-12
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 701,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749769581276374,
+                -0.21035172853167133,
+                2.5365158472928
+              ],
+              "error": 4.0245584642661925e-16
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 661,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749769581166905,
+                -0.21035172853348474,
+                2.536515847292532
+              ],
+              "error": 1.0947492929786863e-12
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 661,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749763913718322,
+                -0.3204288214554883,
+                2.371498679161303
+              ],
+              "error": 7.137707304178184e-17
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 619,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749762255530592,
+                -0.32042882145664264,
+                2.371498679160992
+              ],
+              "error": 1.658187724648272e-08
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 619,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749762158982863,
+                -0.42812559557637464,
+                2.200235981533153
+              ],
+              "error": 2.531102733409561e-10
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 577,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974976215338428,
+                -0.4281255971956729,
+                2.2002359799884283
+              ],
+              "error": 5.5979110237053375e-11
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 577,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749764514696771,
+                -0.5371478870704363,
+                2.0197687085870077
+              ],
+              "error": 1.2616104187843202e-14
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 531,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749764306425063,
+                -0.5371478870715874,
+                2.019768708586762
+              ],
+              "error": 2.082715860911552e-09
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 531,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749859036474053,
+                -2.530968142128714,
+                -1.3968065334061555
+              ],
+              "error": 6.834017936133213e-17
+            },
+            {
+              "q": [
+                0.047497712606089204,
+                -0.6509040674665213,
+                1.8260935224643298
+              ],
+              "error": 4.962279521067516e-16
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 659,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974985854427997,
+                -2.5309681421295553,
+                -1.3968065334061213
+              ],
+              "error": 4.921940868854529e-09
+            },
+            {
+              "q": [
+                0.09749769687651479,
+                -0.6509040674670162,
+                1.8260935224646158
+              ],
+              "error": 1.5729574518177156e-08
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 483,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498693609012065,
+                -2.3892278813320886,
+                -1.1836587964179248
+              ],
+              "error": 8.686797987328509e-14
+            },
+            {
+              "q": [
+                0.04749782816143589,
+                -0.7736108555424532,
+                1.6129457854865235
+              ],
+              "error": 9.55360636184344e-13
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 624,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749868868449585,
+                -2.3892278813323458,
+                -1.1836587964171994
+              ],
+              "error": 4.924516530766591e-09
+            },
+            {
+              "q": [
+                0.09749780448156832,
+                -0.7736108555423353,
+                1.6129457854875433
+              ],
+              "error": 2.3679871852973748e-08
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 624,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047497819173631946,
+                0.33614484163673264,
+                2.8814179930801367
+              ],
+              "error": 4.682357407287395e-13
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 747,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749781917158544,
+                0.3361448416369017,
+                2.8814179930789257
+              ],
+              "error": 2.0389662200238753e-12
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 747,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749768492522401,
+                0.13375576369156916,
+                2.7152414569304044
+              ],
+              "error": 6.965090746187169e-12
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 705,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749768491996945,
+                0.13375576371429426,
+                2.715241456908305
+              ],
+              "error": 5.273712023310989e-12
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 705,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749758878061107,
+                -0.025136434175214207,
+                2.5509322656577096
+              ],
+              "error": 3.7627463607634873e-13
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 664,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749758875045017,
+                -0.025136434180010964,
+                2.5509322656558036
+              ],
+              "error": 3.016138727734976e-11
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_base_link / robot1_link3",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 664,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047497530844437474,
+                -0.1633026116207805,
+                2.384114725155382
+              ],
+              "error": 9.204751302765567e-14
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 623,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749753083608405,
+                -0.16330261162279683,
+                2.384114725154837
+              ],
+              "error": 8.353331915135392e-12
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2",
+            "robot1_link1 / robot1_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 623,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047497512259084586,
+                -0.29146696675769784,
+                2.211701462457518
+              ],
+              "error": 8.414750032627943e-17
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 579,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749751225800633,
+                -0.2914669667589033,
+                2.2117014624575178
+              ],
+              "error": 1.078248604066819e-12
+            }
+          ],
+          "contacts": [
+            "robot1_base_link / robot1_link2"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 579,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498387112474956,
+                -2.5612953598710684,
+                -1.6012563399157722
+              ],
+              "error": 1.2921056054935822e-12
+            },
+            {
+              "q": [
+                0.04749753488393395,
+                -0.4160370781098198,
+                2.030543328961844
+              ],
+              "error": 9.813077866773594e-17
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 534,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749838219556715,
+                -2.5612953598710275,
+                -1.6012563399088204
+              ],
+              "error": 4.916906826193967e-09
+            },
+            {
+              "q": [
+                0.09749753485170952,
+                -0.41603707811088725,
+                2.0305433289618433
+              ],
+              "error": 3.2224417579183874e-11
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 534,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749847876691983,
+                -2.43527971440456,
+                -1.4072840865850318
+              ],
+              "error": 1.2586013583571652e-16
+            },
+            {
+              "q": [
+                0.04749760143053079,
+                -0.5419403294195914,
+                1.8365710756433804
+              ],
+              "error": 4.3213821353423057e-13
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 486,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749847384772531,
+                -2.4352797144055365,
+                -1.407284086585173
+              ],
+              "error": 4.9191945240128555e-09
+            },
+            {
+              "q": [
+                0.09749760074571297,
+                -0.541940329421925,
+                1.8365710756402747
+              ],
+              "error": 6.848166617197986e-10
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 635,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749858299817711,
+                -2.3028466617736147,
+                -1.1942733195741726
+              ],
+              "error": 5.000849792384361e-13
+            },
+            {
+              "q": [
+                0.04749771599889391,
+                -0.6742819216969249,
+                1.6235603086320647
+              ],
+              "error": 4.559431594531833e-13
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 602,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974985780763801,
+                -2.3028466617715213,
+                -1.194273319570207
+              ],
+              "error": 4.92179502716557e-09
+            },
+            {
+              "q": [
+                0.09749769856998837,
+                -0.6742819216971062,
+                1.6235603086327475
+              ],
+              "error": 1.7428908672015678e-08
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 602,
+          "planning_attempts": 1
+        }
+      ]
+    },
+    "robot2": {
+      "passed": 128,
+      "total": 128,
+      "targets": [
+        {
+          "square": "a1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498582998173465,
+                -2.3028466617736143,
+                -1.1942733195741506
+              ],
+              "error": 4.985716341441963e-13
+            },
+            {
+              "q": [
+                0.04749771599889685,
+                -0.6742819216969208,
+                1.6235603086320527
+              ],
+              "error": 4.5473684968748657e-13
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 602,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749857807637968,
+                -2.3028466617715204,
+                -1.1942733195702069
+              ],
+              "error": 4.921795415743859e-09
+            },
+            {
+              "q": [
+                0.09749769857006917,
+                -0.6742819216970878,
+                1.6235603086328445
+              ],
+              "error": 1.7428827903578092e-08
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 602,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498478766919865,
+                -2.4352797144045595,
+                -1.4072840865850322
+              ],
+              "error": 1.988208040134332e-16
+            },
+            {
+              "q": [
+                0.04749760143052921,
+                -0.5419403294196188,
+                1.8365710756433475
+              ],
+              "error": 4.286880789620262e-13
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 635,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749847384772597,
+                -2.435279714405536,
+                -1.4072840865851728
+              ],
+              "error": 4.919193857878731e-09
+            },
+            {
+              "q": [
+                0.0974976007457128,
+                -0.5419403294219248,
+                1.8365710756402744
+              ],
+              "error": 6.848168143751703e-10
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 635,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749838711247791,
+                -2.561295359870949,
+                -1.601256339915678
+              ],
+              "error": 1.2903373427083466e-12
+            },
+            {
+              "q": [
+                0.04749753488393392,
+                -0.4160370781098193,
+                2.030543328961844
+              ],
+              "error": 9.053860682492399e-17
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 534,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749838219556692,
+                -2.5612953598710266,
+                -1.60125633990882
+              ],
+              "error": 4.916906978849681e-09
+            },
+            {
+              "q": [
+                0.09749753485170946,
+                -0.41603707811088686,
+                2.0305433289618438
+              ],
+              "error": 3.222447309006392e-11
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 667,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047497512259084614,
+                -0.29146696675769657,
+                2.2117014624575186
+              ],
+              "error": 1.2582426632399134e-16
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 579,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749751225800636,
+                -0.29146696675890255,
+                2.2117014624575178
+              ],
+              "error": 1.0781930913373935e-12
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 579,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047497530844436975,
+                -0.16330261162078427,
+                2.3841147251553836
+              ],
+              "error": 9.188762100975962e-14
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 623,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749753083608395,
+                -0.16330261162279647,
+                2.3841147251548365
+              ],
+              "error": 8.3534290601153e-12
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 623,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047497588780611125,
+                -0.02513643417523221,
+                2.5509322656577043
+              ],
+              "error": 3.74444611296006e-13
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 664,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749758875045024,
+                -0.025136434180010638,
+                2.5509322656558036
+              ],
+              "error": 3.0161304010639674e-11
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 664,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474976849252335,
+                0.13375576369260517,
+                2.715241456930723
+              ],
+              "error": 6.916867923804032e-12
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 705,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749768491996948,
+                0.13375576371429507,
+                2.7152414569083057
+              ],
+              "error": 5.2736565115024084e-12
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 705,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749781917362215,
+                0.33614484163675945,
+                2.8814179930800887
+              ],
+              "error": 4.56717843313032e-13
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 747,
+          "planning_attempts": 1
+        },
+        {
+          "square": "a8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749781917158544,
+                0.3361448416369031,
+                2.881417993078926
+              ],
+              "error": 2.038966218323664e-12
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 747,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749869360901176,
+                -2.3892278813321117,
+                -1.183658796417961
+              ],
+              "error": 9.10377354050271e-14
+            },
+            {
+              "q": [
+                0.04749782816144206,
+                -0.773610855542344,
+                1.6129457854867029
+              ],
+              "error": 9.759827100620592e-13
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 624,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749868868449492,
+                -2.3892278813323458,
+                -1.1836587964171992
+              ],
+              "error": 4.924517474455812e-09
+            },
+            {
+              "q": [
+                0.09749780448158979,
+                -0.7736108555423661,
+                1.612945785487505
+              ],
+              "error": 2.3679850369944786e-08
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 624,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498590364740544,
+                -2.5309681421287133,
+                -1.3968065334061552
+              ],
+              "error": 5.3860300581534765e-17
+            },
+            {
+              "q": [
+                0.04749771260608924,
+                -0.6509040674665196,
+                1.8260935224643304
+              ],
+              "error": 7.113720053178215e-16
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 483,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749858544279875,
+                -2.5309681421295553,
+                -1.3968065334061217
+              ],
+              "error": 4.921941812544383e-09
+            },
+            {
+              "q": [
+                0.09749769687661461,
+                -0.6509040674670191,
+                1.826093522464612
+              ],
+              "error": 1.572947470912459e-08
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 659,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047497645146966624,
+                -0.5371478870704434,
+                2.019768708587006
+              ],
+              "error": 1.3077679790304783e-14
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 531,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749764306423968,
+                -0.5371478870715871,
+                2.0197687085867617
+              ],
+              "error": 2.08272683824167e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 531,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474976215898045,
+                -0.42812559557670776,
+                2.200235981532992
+              ],
+              "error": 2.530694934328766e-10
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 577,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749762153384292,
+                -0.4281255971956727,
+                2.2002359799884283
+              ],
+              "error": 5.597899921439676e-11
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 577,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749763913718318,
+                -0.3204288214554869,
+                2.371498679161304
+              ],
+              "error": 1.551292896529412e-16
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 619,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749762255532629,
+                -0.32042882145664225,
+                2.3714986791609918
+              ],
+              "error": 1.658185686001298e-08
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 619,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047497695812763724,
+                -0.2103517285316708,
+                2.5365158472928
+              ],
+              "error": 4.355503409735122e-16
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 661,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749769581166907,
+                -0.21035172853348383,
+                2.536515847292532
+              ],
+              "error": 1.0946937802441454e-12
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 661,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749779026001405,
+                -0.09245387210634344,
+                2.697938557957242
+              ],
+              "error": 2.7737181451697092e-15
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 701,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749779025524406,
+                -0.09245387210858623,
+                2.6979385579569115
+              ],
+              "error": 4.7699483255751015e-12
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link",
+            "robot2_link3 / robot2_link1"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 701,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474979218580363,
+                0.04391702184557371,
+                2.859010751411495
+              ],
+              "error": 3.237231987354882e-15
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 741,
+          "planning_attempts": 1
+        },
+        {
+          "square": "b8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749792185644839,
+                0.04391702184270195,
+                2.8590107514110743
+              ],
+              "error": 1.5870915697626754e-12
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 741,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749883268234833,
+                -2.4611875102951384,
+                -1.1518944415843595
+              ],
+              "error": 8.613784126059379e-14
+            },
+            {
+              "q": [
+                0.047497972460076344,
+                -0.8841981615387033,
+                1.5811814307387608
+              ],
+              "error": 1.0254784280555608e-11
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 642,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749882775441708,
+                -2.461187510295261,
+                -1.151894441583446
+              ],
+              "error": 4.927931215992534e-09
+            },
+            {
+              "q": [
+                0.09749793914435806,
+                -0.8841981615406064,
+                1.5811814307360204
+              ],
+              "error": 3.3315708980875646e-08
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 642,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749873239406691,
+                -2.6114976906585325,
+                -1.3655943572250508
+              ],
+              "error": 7.625288763533214e-16
+            },
+            {
+              "q": [
+                0.04749785394872429,
+                -0.7708087215506227,
+                1.7948813462870128
+              ],
+              "error": 6.576355687383315e-15
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 679,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749872746863203,
+                -2.611497690659223,
+                -1.3655943572248412
+              ],
+              "error": 4.925434782374982e-09
+            },
+            {
+              "q": [
+                0.09749783172208097,
+                -0.7708087215508325,
+                1.7948813462874431
+              ],
+              "error": 2.2226643470752004e-08
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 679,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749778379203714,
+                -0.6693290889780074,
+                1.987807390470719
+              ],
+              "error": 2.964296775167217e-17
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 523,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749776998638711,
+                -0.6693290889787689,
+                1.987807390470631
+              ],
+              "error": 1.3805650040092307e-08
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 523,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749775751583111,
+                -0.5763353846093884,
+                2.1663895316419572
+              ],
+              "error": 1.2665928798357105e-11
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 568,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749774975284586,
+                -0.5763353846296189,
+                2.1663895315685804
+              ],
+              "error": 7.762970377760032e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 568,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749777208595715,
+                -0.48992605461754546,
+                2.334494089849194
+              ],
+              "error": 1.134885743283862e-16
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 610,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749777192287536,
+                -0.48992605461915634,
+                2.3344940898487394
+              ],
+              "error": 1.6308179806801235e-10
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 610,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474978252306651,
+                -0.4091198779001021,
+                2.494636776498521
+              ],
+              "error": 5.605063087764203e-17
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 650,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749782032145109,
+                -0.40911987790181864,
+                2.4946367764979853
+              ],
+              "error": 4.909214021498449e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 650,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047497915102651576,
+                -0.3337390328406975,
+                2.6484971646521323
+              ],
+              "error": 7.505561329662603e-17
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 689,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749790770950738,
+                -0.33373903284268464,
+                2.648497164651454
+              ],
+              "error": 7.393144194228381e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 689,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498040056000064,
+                -0.26474317434973893,
+                2.7970898534589734
+              ],
+              "error": 8.783938091597279e-17
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 726,
+          "planning_attempts": 1
+        },
+        {
+          "square": "c8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749802230607071,
+                -0.2647431743517984,
+                2.7970898534579676
+              ],
+              "error": 1.7749929387882017e-08
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 726,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474989993036865,
+                -2.51720617316408,
+                -1.0985359656732563
+              ],
+              "error": 1.7883024651499496e-13
+            },
+            {
+              "q": [
+                0.04749814980927198,
+                -1.0047256538253873,
+                1.5278229547434419
+              ],
+              "error": 2.6778065387414187e-13
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 656,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749899437166644,
+                -2.51720617316351,
+                -1.0985359656712936
+              ],
+              "error": 4.9320180857523e-09
+            },
+            {
+              "q": [
+                0.09749812684399174,
+                -1.0047256538251736,
+                1.527822954744386
+              ],
+              "error": 2.2965280084919646e-08
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 671,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749802631118343,
+                -0.8995661028370435,
+                1.7429326418523148
+              ],
+              "error": 1.9497280950644174e-15
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 462,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749800097079502,
+                -0.8995661028370133,
+                1.7429326418528939
+              ],
+              "error": 2.5340388177539927e-08
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 462,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474979517206064,
+                -0.8094906721781011,
+                1.935050713540507
+              ],
+              "error": 2.307899478410173e-17
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 510,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974979312418014,
+                -0.8094906721785291,
+                1.9350507135405441
+              ],
+              "error": 2.0478805013417635e-08
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 510,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749792108929708,
+                -0.7315177046439981,
+                2.111028402415631
+              ],
+              "error": 9.68925848663367e-12
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 554,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749790945564463,
+                -0.7315177046605963,
+                2.1110284023582397
+              ],
+              "error": 1.1633658023303472e-08
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 554,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749793103572679,
+                -0.664803054745829,
+                2.2746682568530576
+              ],
+              "error": 3.199455415866405e-13
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 595,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749792537112738,
+                -0.6648030547475717,
+                2.274668256850722
+              ],
+              "error": 5.664598248926243e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 595,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474979789224521,
+                -0.6102059675457571,
+                2.428052223383468
+              ],
+              "error": 3.136589202258858e-16
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 633,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749797400991543,
+                -0.6102059675474024,
+                2.4280522233827626
+              ],
+              "error": 4.912536669235971e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 633,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749806240371203,
+                -0.5706517503569856,
+                2.57195753384614
+              ],
+              "error": 6.069053483567753e-17
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 669,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749805749019677,
+                -0.570651750358893,
+                2.5719575338453184
+              ],
+              "error": 4.913515219822146e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 669,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749817903969837,
+                -0.5524024355157264,
+                2.7057219607902323
+              ],
+              "error": 8.516782110190947e-14
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 703,
+          "planning_attempts": 1
+        },
+        {
+          "square": "d8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974981741246797,
+                -0.5524024355177362,
+                2.7057219607889555
+              ],
+              "error": 4.915019738570434e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 703,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047499191867683366,
+                -2.555775294071508,
+                -1.0225522781925207
+              ],
+              "error": 6.69162170691074e-11
+            },
+            {
+              "q": [
+                0.04749836181444452,
+                -1.1344111096401701,
+                1.451839266652578
+              ],
+              "error": 4.027587575931699e-14
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 686,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749918693088445,
+                -2.55577529376753,
+                -1.0225522775769533
+              ],
+              "error": 4.936750133868398e-09
+            },
+            {
+              "q": [
+                0.0974983554535891,
+                -1.1344111096409546,
+                1.4518392666523168
+              ],
+              "error": 6.360856148245169e-09
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 795,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498231121522023,
+                -1.0355452384928352,
+                1.6700189296183368
+              ],
+              "error": 2.1007350883990738e-16
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 444,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749822435524416,
+                -1.0355452384937398,
+                1.670018929617946
+              ],
+              "error": 6.76627785774635e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 476,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749815038168197,
+                -0.9550896143661065,
+                1.8618972639604918
+              ],
+              "error": 3.9595799592289256e-17
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 492,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749814327325668,
+                -0.9550896143671136,
+                1.861897263960008
+              ],
+              "error": 7.108425306967401e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 492,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749811392890503,
+                -0.8899500912579328,
+                2.0352252883516093
+              ],
+              "error": 1.7896300991764895e-11
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 535,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749810657489179,
+                -0.8899500912993015,
+                2.035225288237688
+              ],
+              "error": 7.3540112474173414e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 535,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498117945015114,
+                -0.839681974954534,
+                2.1939848929984165
+              ],
+              "error": 6.618757007085875e-13
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 575,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749811048145007,
+                -0.839681974956643,
+                2.1939848929940085
+              ],
+              "error": 7.463563906019999e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 575,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498159434261555,
+                -0.8058523286142493,
+                2.3400575719423227
+              ],
+              "error": 3.3935682904261122e-15
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 611,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749815451876166,
+                -0.8058523286157799,
+                2.3400575719414713
+              ],
+              "error": 4.915499757378032e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 612,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498235693753034,
+                -0.7922165822233678,
+                2.473742961341397
+              ],
+              "error": 3.0880894295818556e-10
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 645,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749823077696719,
+                -0.7922165846296761,
+                2.4737429597076694
+              ],
+              "error": 4.916784188281037e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 645,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474983439247625,
+                -0.8054150589729082,
+                2.593722626839146
+              ],
+              "error": 6.263818739253299e-14
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 675,
+          "planning_attempts": 1
+        },
+        {
+          "square": "e8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749833900595734,
+                -0.8054150589752533,
+                2.5937226268377045
+              ],
+              "error": 4.918804794197744e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 675,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474994078743607,
+                -2.5751093970304963,
+                -0.9217682108885767
+              ],
+              "error": 2.6376925378252274e-16
+            },
+            {
+              "q": [
+                0.04749861097542371,
+                -1.273417602213553,
+                1.35105519996989
+              ],
+              "error": 4.533250615941892e-14
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 642,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749940293231492,
+                -2.5751093970306673,
+                -0.9217682108878339
+              ],
+              "error": 4.942045786700149e-09
+            },
+            {
+              "q": [
+                0.09749860604110464,
+                -1.2734176022144492,
+                1.3510551999693932
+              ],
+              "error": 4.934319065568355e-09
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 694,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498470442878714,
+                -1.177912164504781,
+                1.575327404945505
+              ],
+              "error": 2.7097246932071044e-17
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 510,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974984655147015,
+                -1.177912164505803,
+                1.5753274049448776
+              ],
+              "error": 4.92817719994215e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 655,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749838174594686,
+                -1.1045181340101453,
+                1.768416916703295
+              ],
+              "error": 2.714134983434584e-11
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 469,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749837682212313,
+                -1.1045181341429986,
+                1.7684169164867887
+              ],
+              "error": 4.923828414673939e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 560,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749833810657161,
+                -1.0492765559136827,
+                1.9398436365054632
+              ],
+              "error": 2.844292712549246e-13
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 511,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974983331855127,
+                -1.0492765559157715,
+                1.9398436365027187
+              ],
+              "error": 4.9210602817014795e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 511,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498335149298195,
+                -1.0114753924253512,
+                2.094191421652171
+              ],
+              "error": 2.3007332120794113e-15
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 550,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749833022954772,
+                -1.011475392426663,
+                2.094191421651304
+              ],
+              "error": 4.919750718119919e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 550,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749836953347444,
+                -0.9924913783096505,
+                2.233494809739316
+              ],
+              "error": 1.1236938283130691e-16
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 585,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749836461368737,
+                -0.9924913783110574,
+                2.2334948097383784
+              ],
+              "error": 4.9197870640417444e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 585,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498438335350904,
+                -0.9955423155615148,
+                2.3580438055724295
+              ],
+              "error": 5.940037454041514e-11
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 616,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749843341438726,
+                -0.9955423159864399,
+                2.35804380524327
+              ],
+              "error": 4.92099044866196e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 616,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0474985386900111,
+                -1.0256932665851464,
+                2.466602992730269
+              ],
+              "error": 1.4722545660997425e-12
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 643,
+          "planning_attempts": 1
+        },
+        {
+          "square": "f8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749853376689767,
+                -1.0256932665978467,
+                2.466602992720979
+              ],
+              "error": 4.923116761684734e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 643,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749964340499072,
+                -2.572437051988209,
+                -0.7916546087035085
+              ],
+              "error": 6.024352892339663e-14
+            },
+            {
+              "q": [
+                0.04749890121107936,
+                -1.4235679427366819,
+                1.2209415977907074
+              ],
+              "error": 7.630348773604608e-15
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 817,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749963845719137,
+                -2.572437051987758,
+                -0.7916546087018219
+              ],
+              "error": 4.947799323255553e-09
+            },
+            {
+              "q": [
+                0.09749889627389813,
+                -1.4235679427376295,
+                1.2209415977900353
+              ],
+              "error": 4.937181164494123e-09
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 715,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749874716629407,
+                -1.3270039054184943,
+                1.4568490194275856
+              ],
+              "error": 7.351626287044711e-17
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 773,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974987422346648,
+                -1.3270039054195235,
+                1.4568490194268282
+              ],
+              "error": 4.931629313624245e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 991,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749864836008432,
+                -1.2573584904105093,
+                1.6538990245789957
+              ],
+              "error": 1.7490019300276803e-12
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 479,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749864343222836,
+                -1.2573584904208595,
+                1.6538990245634095
+              ],
+              "error": 4.927849767444064e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 526,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749859610965414,
+                -1.2086533422901273,
+                1.8251015524650702
+              ],
+              "error": 5.718987620228786e-15
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 483,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749859118410131,
+                -1.2086533422913237,
+                1.825101552464146
+              ],
+              "error": 4.925552979648968e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 884,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498585240530446,
+                -1.1792649958598296,
+                1.976326767350499
+              ],
+              "error": 9.61011755206169e-17
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 521,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.0974985803159457,
+                -1.1792649958610613,
+                1.97632676734955
+              ],
+              "error": 4.92458474025227e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 521,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749861201887494,
+                -1.1698085232177655,
+                2.11019168740683
+              ],
+              "error": 1.728603575695381e-11
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 554,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749860709407909,
+                -1.1698085232897228,
+                2.110191687287207
+              ],
+              "error": 4.924779459485828e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 554,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749867335477196,
+                -1.182417017978226,
+                2.227367576810402
+              ],
+              "error": 1.1192779929542933e-13
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 583,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749866842878795,
+                -1.1824170179802942,
+                2.227367576808636
+              ],
+              "error": 4.9259849674010444e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 583,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498766427506264,
+                -1.2203146174842885,
+                2.3270978011097814
+              ],
+              "error": 8.853074200132619e-16
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 608,
+          "planning_attempts": 1
+        },
+        {
+          "square": "g8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749876149945258,
+                -1.2203146174856507,
+                2.327097801108607
+              ],
+              "error": 4.928053715359162e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 608,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h1",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047499891619797965,
+                -2.542137389892621,
+                -0.6221241315042667
+              ],
+              "error": 3.849795563743479e-11
+            },
+            {
+              "q": [
+                0.04749923936111765,
+                -1.5901270172814854,
+                1.0514111200755722
+              ],
+              "error": 5.609137625851889e-15
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 734,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h1",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749988666600735,
+                -2.5421373895833583,
+                -0.6221241309785553
+              ],
+              "error": 4.953811666661051e-09
+            },
+            {
+              "q": [
+                0.09749923441845969,
+                -1.5901270172824942,
+                1.0514111200747056
+              ],
+              "error": 4.942657894783285e-09
+            }
+          ],
+          "contacts": [],
+          "planning_error_code": 1,
+          "trajectory_points": 781,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h2",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749906553118728,
+                -1.4849563079308614,
+                1.3101638019426494
+              ],
+              "error": 4.537161067487433e-11
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 563,
+          "planning_attempts": 2
+        },
+        {
+          "square": "h2",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749906059384748,
+                -1.4849563082092474,
+                1.3101638014588033
+              ],
+              "error": 4.937337122968169e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 629,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h3",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749895357683576,
+                -1.4146389731245868,
+                1.5161611936591926
+              ],
+              "error": 7.903340948799912e-14
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 756,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h3",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749894864304828,
+                -1.414638973126118,
+                1.5161611936575294
+              ],
+              "error": 4.933786560265033e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 562,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h4",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749889094258948,
+                -1.3687302289967107,
+                1.6900723138415612
+              ],
+              "error": 3.4375987028134543e-16
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 674,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h4",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749888601090108,
+                -1.3687302289978416,
+                1.6900723138405738
+              ],
+              "error": 4.931688335845323e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 636,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h5",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749887110603702,
+                -1.3438731451482757,
+                1.8403228294470633
+              ],
+              "error": 7.467133247389354e-11
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 509,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h5",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749886617529512,
+                -1.343873145406249,
+                1.8403228288996873
+              ],
+              "error": 4.930786834722315e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 663,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h6",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749888975797907,
+                -1.3395187416102659,
+                1.9706969671900458
+              ],
+              "error": 6.267713978683816e-13
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 519,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h6",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749888482701433,
+                -1.33951874161329,
+                1.9706969671847008
+              ],
+              "error": 4.930964428758705e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link2 / robot2_base_link",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 540,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h7",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.047498943590207204,
+                -1.3565777598926108,
+                2.082602544075183
+              ],
+              "error": 1.432843787967409e-15
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 547,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h7",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749893865811399,
+                -1.3565777598938313,
+                2.082602544074018
+              ],
+              "error": 4.9320931925040875e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 569,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h8",
+          "height": 0.03,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.04749902980712148,
+                -1.3967114767773492,
+                2.1759746210105577
+              ],
+              "error": 1.2566871346510768e-16
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 570,
+          "planning_attempts": 1
+        },
+        {
+          "square": "h8",
+          "height": 0.08,
+          "reachable": true,
+          "valid": true,
+          "solutions": [
+            {
+              "q": [
+                0.09749902487305383,
+                -1.39671147677855,
+                2.1759746210093494
+              ],
+              "error": 4.934067668649479e-09
+            }
+          ],
+          "contacts": [
+            "robot2_link1 / robot2_link3",
+            "robot2_link3 / robot2_base_link"
+          ],
+          "planning_error_code": 1,
+          "trajectory_points": 662,
+          "planning_attempts": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# Local ROS build products and agent configuration
+/build/
+/install/
+/log/
+/.agents/
+/.aws/
+/.codex/
+__pycache__/
+.pytest_cache/

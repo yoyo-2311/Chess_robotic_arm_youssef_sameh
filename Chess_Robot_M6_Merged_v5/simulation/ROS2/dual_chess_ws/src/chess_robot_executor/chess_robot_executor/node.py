@@ -60,6 +60,8 @@ def main(args=None):
                 cfg = build_config({**cfg.raw, 'limits': {**cfg.raw['limits'], 'speed_scale': scale}})
             self.dry_run = bool(self.get_parameter('dry_run').value)
             self.ack_in_dry_run = bool(self.get_parameter('ack_in_dry_run').value)
+            if not self.dry_run:
+                raise RuntimeError('The legacy executor uses placeholder planar IK. Use dual_chess_moveit_config for the supplied CAD robot; chess pick-and-place integration is pending.')
             use_cmd = self.get_parameter('sink').value == 'cmd_pos' and not self.dry_run
             sink = CmdPosSink(self, cfg) if use_cmd else LogSink(self.get_logger().info)
             self.pub_ack = self.create_publisher(String, '/chess/robot_ack', 10)

@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.8)
+project(dual_chess_moveit_config)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY config launch DESTINATION share/${PROJECT_NAME})
+install(PROGRAMS scripts/check_square_reach.py scripts/plan_square.py DESTINATION lib/${PROJECT_NAME})
+ament_package()

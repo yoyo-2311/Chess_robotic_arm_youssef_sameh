@@ -55,13 +55,13 @@ class CADBoardTests(unittest.TestCase):
 
     def test_dimensions_and_real_square_pitch(self):
         p = numeric_board_properties()
-        self.assertAlmostEqual(p['board_size'], .4)
-        self.assertAlmostEqual(p['board_play_size'], .35)
-        self.assertAlmostEqual(p['board_square'], .04375)
-        self.assertAlmostEqual(p['board_rim_width'], .025)
+        self.assertAlmostEqual(p['board_size'], .24)
+        self.assertAlmostEqual(p['board_play_size'], .21)
+        self.assertAlmostEqual(p['board_square'], .02625)
+        self.assertAlmostEqual(p['board_rim_width'], .015)
         self.assertAlmostEqual(p['board_thickness'], .02018920517, places=8)
         self.assertAlmostEqual(p['board_play_surface_height'], .01)
-        self.assertAlmostEqual(p['robot_base_offset'], .30)
+        self.assertAlmostEqual(p['robot_base_offset'], .19)
         self.assertFalse((DESC/'urdf/board/board_params_placeholder.xacro').exists())
 
     def test_mesh_scale_and_frame_relationships(self):
@@ -71,7 +71,7 @@ class CADBoardTests(unittest.TestCase):
         vis=macro.find('link[@name="board_link"]/visual')
         self.assertEqual(vis.find('geometry/mesh').get('filename'),
                          'package://dual_chess_description/meshes/chess_board/Board_1_original.STL')
-        self.assertEqual(vis.find('geometry/mesh').get('scale'),'0.001 0.001 0.001')
+        self.assertEqual(vis.find('geometry/mesh').get('scale'),'${board_size/400} 0.001 ${board_size/400}')
         self.assertEqual(vis.find('origin').get('rpy'),'${pi/2} 0 0')
         self.assertEqual(vis.find('origin').get('xyz'),
                          '${-board_size/2} ${board_size/2} ${-board_thickness/2}')
@@ -92,29 +92,25 @@ class CADBoardTests(unittest.TestCase):
         for x in (low[0],high[0]):
             for y in (low[1],high[1]):
                 for z in (low[2],high[2]):
-                    transformed.append((.001*x-p['board_size']/2,
-                                        p['board_size']/2-.001*z,
+                    transformed.append(((p['board_size']/400)*x-p['board_size']/2,
+                                        p['board_size']/2-(p['board_size']/400)*z,
                                         .001*y))
-        for i,expected_lo,expected_hi in [(0,-.2,.2),(1,-.2,.2),(2,0,p['board_thickness'])]:
+        for i,expected_lo,expected_hi in [(0,-.12,.12),(1,-.12,.12),(2,0,p['board_thickness'])]:
             self.assertAlmostEqual(min(a[i] for a in transformed), expected_lo, places=7)
             self.assertAlmostEqual(max(a[i] for a in transformed), expected_hi, places=7)
         self.assertAlmostEqual(p['board_play_surface_height'],.010)
         # Physical grid spans [25,375] mm from either mesh edge.
-        self.assertAlmostEqual(3.5*p['board_square'],.153125)
-        self.assertAlmostEqual(.2-(25+.5*43.75)*.001,.153125)
+        self.assertAlmostEqual(3.5*p['board_square'],.091875)
+        self.assertAlmostEqual(.12-(25+.5*43.75)*.0006,.091875)
 
     def test_preserves_previous_arm_home_and_interface(self):
         top=(DESC/'urdf/dual_chess.urdf.xacro').read_text()
-        self.assertIn('arm_cad.gazebo.xacro',top)
+        self.assertIn('scara_v2.macro.xacro',top)
         self.assertIn('chess_board parent="world"',top)
-        gz=(DESC/'urdf/arm/arm_cad.gazebo.xacro').read_text()
-        for snippet in ('name="cad_home_base_yaw" value="${pi/2}"',
-                        'name="cad_home_shoulder" value="1.15"',
-                        'name="cad_home_elbow" value="0.35"'):
-            self.assertIn(snippet, gz)
         bridge=(SRC/'dual_chess_gazebo/config/bridge.yaml').read_text()
-        import re
-        self.assertEqual(len(re.findall(r'ros_topic_name: \"[^\"]+/cmd_pos\"', bridge)), 10)
+        import yaml
+        channels=[b['ros_topic_name'] for b in yaml.safe_load(bridge) if b['ros_topic_name'].endswith('/cmd_pos')]
+        self.assertEqual(len(channels),6)
         launch=(SRC/'dual_chess_bringup/launch/simulation.launch.py').read_text()
         self.assertIn('chess_brain.launch.py',launch)
         self.assertIn('chess_auto_coordinator',launch)

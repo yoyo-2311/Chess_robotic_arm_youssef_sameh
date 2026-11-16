@@ -3,11 +3,7 @@
 <package format="3">
   <name>dual_chess_description</name>
   <version>0.1.0</version>
-  <description>
-    Dual-arm chess robot description: Design-team CAD arm (joint1, joint2) plus TEMPORARY base yaw,
-    wrist (joint3) and gripper, supplied chessboard CAD, RViz configuration and display launch.
-    Joint limits, motor data, wrist/gripper and the base-yaw axis still require mechanical verification.
-  </description>
+  <description>Dual supplied SCARA CAD arms, resized chessboard, RViz description and launch files.</description>
   <maintainer email="TODO_your_email@example.com">Youssef Sameh</maintainer>
   <license>Apache-2.0</license>
 

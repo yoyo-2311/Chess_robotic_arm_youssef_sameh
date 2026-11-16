@@ -1,3 +1,7 @@
+Current integration: [SCARA and MoveIt analysis](08_scara_moveit.md). Start with the [workspace README](../README.md).
+
+Earlier documents below describe the baseline and may contain superseded dimensions and joint names.
+
 # Documentation index
 | File | Content |
 |---|---|

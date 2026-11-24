@@ -1,0 +1,60 @@
+{
+  "mode": "scripted",
+  "complete": true,
+  "result": "0-1",
+  "termination": "CHECKMATE",
+  "successful_robot_acks": 4,
+  "fresh_vision_commits": 4,
+  "game_over_disables_input": true,
+  "no_extra_engine_request_after_game_over": true,
+  "confirmed_plies": 4,
+  "history": [
+    {
+      "ply": 1,
+      "uci": "f2f3",
+      "san": "f3",
+      "side": "white",
+      "arm": "robot1"
+    },
+    {
+      "ply": 2,
+      "uci": "e7e5",
+      "san": "e5",
+      "side": "black",
+      "arm": "robot2"
+    },
+    {
+      "ply": 3,
+      "uci": "g2g4",
+      "san": "g4",
+      "side": "white",
+      "arm": "robot1"
+    },
+    {
+      "ply": 4,
+      "uci": "d8h4",
+      "san": "Qh4#",
+      "side": "black",
+      "arm": "robot2"
+    }
+  ],
+  "final_state": {
+    "schema_version": "1.0",
+    "fen": "rnb1kbnr/pppp1ppp/8/4p3/6Pq/5P2/PPPPP2P/RNBQKBNR w KQkq - 1 3",
+    "turn": "white",
+    "result": "0-1",
+    "synchronized": true,
+    "blocked": false,
+    "block_reason": null,
+    "pending_plan_id": null,
+    "pending_move": null,
+    "robot_ack_received": false,
+    "committed_plies": 4,
+    "legal_moves": []
+  },
+  "automatic_reply_ply_keys": [],
+  "elapsed_seconds": 105.36,
+  "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261123-164600-8d1076.log",
+  "maximum_qt_timer_gap_seconds": 0.0365162660000351,
+  "clean_shutdown": true
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+<xacro:macro name="workcell_enclosure" params="parent configuration">
+<link name="workcell_export"/>
+<joint name="workcell_export_joint" type="fixed"><parent link="${parent}"/><child link="workcell_export"/><origin xyz="${configuration['position'][0]} ${configuration['position'][1]} ${configuration['position'][2]}" rpy="${configuration['rpy'][0]} ${configuration['rpy'][1]} ${configuration['rpy'][2]}"/></joint>
+<link name="workcell_controle_box"><visual><geometry><mesh filename="package://chess_workcell_description/meshes/${configuration.get('mesh','controle_box.STL')}"/></geometry><material name="workcell_metal"><color rgba="0.5 0.55 0.6 1"/></material></visual><collision><geometry><mesh filename="package://chess_workcell_description/meshes/${configuration.get('mesh','controle_box.STL')}"/></geometry></collision></link>
+<joint name="workcell_box_joint" type="fixed"><parent link="workcell_export"/><child link="workcell_controle_box"/></joint>
+</xacro:macro>
+</robot>

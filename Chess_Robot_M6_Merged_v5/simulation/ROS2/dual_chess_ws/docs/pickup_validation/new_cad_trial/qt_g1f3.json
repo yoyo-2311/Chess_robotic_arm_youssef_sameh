@@ -1,0 +1,23 @@
+{
+  "move": "g1f3",
+  "transport": "qt",
+  "domain": 221,
+  "complete": false,
+  "error": "Backend heartbeat lost. Automatic progression remains paused; restart the simulated mode.",
+  "history": [],
+  "state": null,
+  "motion": null,
+  "status": "Error \u2022 Backend exited (code 1). Inspect Logs / errors.",
+  "pending": "No pending move",
+  "execution": "Execution / confirmation: \u2014",
+  "selected": null,
+  "inflight": null,
+  "initial_joints": {},
+  "max_joint_travel": {},
+  "automatic_reply_keys": [],
+  "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261123-210755-50cc59.log",
+  "qt_ticks": 121,
+  "max_qt_gap": 0.032992211999953724,
+  "elapsed": 2.686571066002216,
+  "clean_shutdown": true
+}

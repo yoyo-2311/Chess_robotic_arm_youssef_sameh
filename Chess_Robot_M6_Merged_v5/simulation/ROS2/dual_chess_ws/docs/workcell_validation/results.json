@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-23",
+  "scope": "ROS 2 Jazzy, native and offscreen Qt, MoveIt mock ros2_control, mock gripper, existing mock vision; not physical hardware or new-workcell Gazebo dynamics",
+  "profile": "src/chess_workcell_description/config/workcell_sim.yaml",
+  "profile_sha256": "8f11105bbbff690650b4a66002c4490e81bfd086674d98cccf5d90866f50f635",
+  "build": "10 packages passed",
+  "pytest": "217 passed",
+  "colcon_test": "185 tests, 0 errors, 0 failures, 0 skipped",
+  "static_audit": "passed",
+  "check_urdf": "passed",
+  "ik_only_audit": "384 targets; zero IK failures; not collision certification",
+  "native_manual": "Wayland Qt/RViz backend ready, configured homes, clean close",
+  "native_moveit": "Wayland Qt/RViz backend ready, software stop prevented readiness, clean close",
+  "checks": [
+    {
+      "scenario": "new_cad_trial6/g1f3",
+      "passed": true,
+      "report": "docs/pickup_validation/new_cad_trial6/qt_g1f3.json",
+      "confirmed_history": [
+        "c2c4",
+        "e7e5",
+        "g1f3",
+        "b8c6"
+      ],
+      "automatic_reply_keys": [
+        3
+      ],
+      "max_qt_event_gap_seconds": 0.04233344699969166,
+      "clean_shutdown": true
+    },
+    {
+      "scenario": "new_cad_regression/g1h3",
+      "passed": true,
+      "report": "docs/pickup_validation/new_cad_regression/qt_g1h3.json",
+      "confirmed_history": [
+        "c2c4",
+        "e7e5",
+        "g1h3",
+        "g7g6"
+      ],
+      "automatic_reply_keys": [
+        3
+      ],
+      "max_qt_event_gap_seconds": 0.06080304699935368,
+      "clean_shutdown": true
+    },
+    {
+      "scenario": "new_cad_regression/b1c3",
+      "passed": true,
+      "report": "docs/pickup_validation/new_cad_regression/qt_b1c3.json",
+      "confirmed_history": [
+        "c2c4",
+        "e7e5",
+        "b1c3",
+        "f8b4"
+      ],
+      "automatic_reply_keys": [
+        3
+      ],
+      "max_qt_event_gap_seconds": 0.04823327400299604,
+      "clean_shutdown": true
+    },
+    {
+      "scenario": "new_cad_regression/e2e4",
+      "passed": true,
+      "report": "docs/pickup_validation/new_cad_regression/qt_e2e4.json",
+      "confirmed_history": [
+        "c2c4",
+        "e7e5",
+        "e2e4",
+        "g8f6"
+      ],
+      "automatic_reply_keys": [
+        3
+      ],
+      "max_qt_event_gap_seconds": 0.04697911400216981,
+      "clean_shutdown": true
+    },
+    {
+      "scenario": "new_cad_delayed_vision/g1f3",
+      "passed": true,
+      "report": "docs/pickup_validation/new_cad_delayed_vision/qt_g1f3.json",
+      "confirmed_history": [
+        "c2c4",
+        "e7e5",
+        "g1f3",
+        "b8c6"
+      ],
+      "automatic_reply_keys": [
+        3
+      ],
+      "max_qt_event_gap_seconds": 0.07017940099831321,
+      "clean_shutdown": true
+    },
+    {
+      "scenario": "legacy_adaptive_regression/g1f3",
+      "passed": true,
+      "report": "docs/pickup_validation/legacy_adaptive_regression/qt_g1f3.json",
+      "confirmed_history": [
+        "c2c4",
+        "e7e5",
+        "g1f3",
+        "b8c6"
+      ],
+      "automatic_reply_keys": [
+        3
+      ],
+      "max_qt_event_gap_seconds": 0.05557229999976698,
+      "clean_shutdown": true
+    },
+    {
+      "scenario": "new_cad_gripper_failure",
+      "passed": true,
+      "expected_injected_failure": "White / robot1 g1f3 \u2022 approach pick \u2022 Execution stopped; reconciliation required \u2022 gripper_operation_failed",
+      "confirmed_plies": 2,
+      "automatic_reply_keys": [],
+      "clean_shutdown": true,
+      "report": "docs/pickup_validation/new_cad_failure/qt_g1f3.json"
+    },
+    {
+      "scenario": "new_cad_gripper_failure_isolated_repeat",
+      "passed": true,
+      "runner_exit_code": 0,
+      "clean_shutdown": true,
+      "confirmed_plies": 2,
+      "automatic_reply_keys": [],
+      "report": "docs/pickup_validation/new_cad_failure_repeat/qt_g1f3.json"
+    }
+  ],
+  "not_verified": [
+    "Real mounting/support/floor geometry",
+    "Real gripper contact and grasp calibration",
+    "New-enclosure Gazebo physics",
+    "All legal moves across complete physical-controller chess games",
+    "Real vision and embedded hardware"
+  ]
+}

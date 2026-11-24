@@ -54,8 +54,27 @@ The supplied gripper is fixed. The new pipeline uses an explicit mock gripper ha
 
 The existing chess brain retains rule validation and confirmed game state. Robot success alone never commits a move: a fresh matching vision observation is also required. Failed or partial movement cannot advance confirmed FEN. Mock vision is synthetic test evidence and must not be used to confirm a physical board.
 
-## Evidence and history
+## Local Qt desktop application
+
+The desktop launches the existing visualization, MoveIt, Gazebo, mock chess and chess-logic modes, and adds a Human vs Stockfish simulated match with robot1 White and robot2 Black. From this workspace:
+
+```bash
+./scripts/install_desktop_dependencies.sh
+source /opt/ros/jazzy/setup.bash
+colcon build --symlink-install
+./scripts/run_desktop.sh
+```
+
+See [desktop installation, first match, modes, geometry and verification](docs/10_desktop_application.md). This is a local application; all game-state commits still belong to Chess Brain and require fresh vision confirmation.
+
+## Earlier evidence and history
 
 Current reports: `docs/extension_validation/`. Current architecture/commands: [test guide](docs/09_configurable_motion_interfaces.md).
 
 [Earlier SCARA integration](docs/08_scara_moveit.md) and [pre-SCARA README](docs/reference_pre_scara_README.md) are historical. The unchanged original was uploaded before edits as commit `30a97e591bdd92fd49da5a5fbb5b46bda8aa25d1` on [the backup branch](https://github.com/yoyo-2311/Chess_robotic_arm_youssef_sameh/tree/backup/original-before-scara-2026-11-16).
+
+## New CAD workcell
+
+The supplied AssemBase enclosure and board are integrated without replacing the robot or vision. See [new workcell setup, simulation profile and validation](docs/13_new_workcell.md). Its mounting values are explicitly provisional; use the documented `--geometry-file` command to select it.
+
+Current layout: [measured A/B seat alignment, provisional yaw, and reach constraints](docs/14_mount_alignment.md). The seated model cannot reach any chess square with the supplied vertical travel; use the report before attempting a match.

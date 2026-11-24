@@ -1,0 +1,109 @@
+# EXPERIMENT ONLY: unmeasured upper-body grasp, not an approved hardware profile.
+# Board, mounts, TCP, piece dimensions and collision thresholds match the default.
+board:
+  length: 0.24
+  width: 0.24
+  square_size_x: 0.02625
+  square_size_y: 0.02625
+  thickness: 0.020189205169677735
+  surface_height: 0.01
+  position:
+  - 0.0
+  - 0.0
+  - 0.0
+  rpy:
+  - 0.0
+  - 0.0
+  - 0.0
+  grid_mode: fit_board
+  border_x: 0.015
+  border_y: 0.015
+support:
+  enabled: true
+  size:
+  - 0.24
+  - 0.24
+  - 0.01
+  position:
+  - 0.0
+  - 0.0
+  - -0.005
+  rpy:
+  - 0.0
+  - 0.0
+  - 0.0
+mounts:
+  robot1:
+    position:
+    - 0.0
+    - -0.19
+    - 0.04
+    rpy:
+    - 0.0
+    - 0.0
+    - 1.5707963267948966
+  robot2:
+    position:
+    - 0.0
+    - 0.19
+    - 0.04
+    rpy:
+    - 0.0
+    - 0.0
+    - -1.5707963267948966
+tool:
+  position:
+  - 0.007
+  - -0.0287
+  - 0.0
+pieces:
+  heights:
+    p: 0.018
+    n: 0.022
+    b: 0.024
+    r: 0.02
+    q: 0.025
+    k: 0.026
+  radius: 0.003
+motion:
+  grasp_fraction: 0.9
+  approach_clearance: 0.012
+  transfer_clearance: 0.012
+  place_clearance: 0.001
+  velocity_scale: 0.4
+  acceleration_scale: 0.4
+  cartesian_step: 0.002
+  minimum_cartesian_fraction: 1.0
+  operator_timeout: 120.0
+  max_board_tilt: 0.035
+capture_bins:
+  robot1:
+    origin:
+    - 0.14
+    - -0.042
+    - 0.025
+    step:
+    - 0.0
+    - 0.012
+    - 0.0
+    row_step:
+    - 0.012
+    - 0.0
+    - 0.0
+    columns: 8
+    slots: 16
+  robot2:
+    origin:
+    - -0.14
+    - -0.042
+    - 0.025
+    step:
+    - 0.0
+    - 0.012
+    - 0.0
+    row_step:
+    - -0.012
+    - 0.0
+    - 0.0
+    columns: 8
+    slots: 16

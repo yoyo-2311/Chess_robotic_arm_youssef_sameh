@@ -1,0 +1,66 @@
+  1 white e4      e2e4 1010.6ms
+  2 black e6      e7e6 209.1ms
+  3 white Nc3     b1c3 1001.9ms
+  4 black d5      d7d5 200.3ms
+  5 white d4      d2d4 1002.2ms
+  6 black dxe4    d5e4 202.0ms
+  7 white Nxe4    c3e4 1001.9ms
+  8 black Nc6     b8c6 200.8ms
+  9 white Bd3     f1d3 1000.9ms
+ 10 black Qxd4    d8d4 201.6ms
+ 11 white Nf3     g1f3 1001.2ms
+ 12 black Qd8     d4d8 200.2ms
+ 13 white Qe2     d1e2 1002.1ms
+ 14 black a6      a7a6 201.1ms
+ 15 white Bg5     c1g5 1001.9ms
+ 16 black Qd5     d8d5 201.8ms
+ 17 white O-O     e1g1 1000.9ms
+ 18 black Qd7     d5d7 200.7ms
+ 19 white Rfd1    f1d1 1001.3ms
+ 20 black h6      h7h6 201.8ms
+ 21 white Bf4     g5f4 1002.1ms
+ 22 black Nge7    g8e7 200.4ms
+ 23 white Bb5     d3b5 1003.2ms
+ 24 black Nd5     e7d5 202.1ms
+ 25 white Ne5     f3e5 1000.9ms
+ 26 black Nxf4    d5f4 202.6ms
+ 27 white Qf3     e2f3 1001.4ms
+ 28 black Qxd1+   d7d1 201.3ms
+ 29 white Rxd1    a1d1 1002.0ms
+ 30 black axb5    a6b5 201.5ms
+ 31 white Qxf4    f3f4 1001.6ms
+ 32 black f6      f7f6 200.9ms
+ 33 white Nxc6    e5c6 1001.7ms
+ 34 black Be7     f8e7 201.4ms
+ 35 white Qxc7    f4c7 1000.5ms
+ 36 black bxc6    b7c6 200.5ms
+ 37 white Rd8+    d1d8 1001.2ms
+ 38 black Kf7     e8f7 201.9ms
+ 39 white Rxh8    d8h8 1001.5ms
+ 40 black Kg6     f7g6 201.0ms
+ 41 white Rg8     h8g8 1002.0ms
+ 42 black Ra3     a8a3 200.6ms
+ 43 white Qxe7    c7e7 1000.6ms
+ 44 black f5      f6f5 200.2ms
+ 45 white bxa3    b2a3 203.5ms
+ 46 black c5      c6c5 78.2ms
+ 47 white Rxg7+   g8g7 74.1ms
+ 48 black Kh5     g6h5 4.4ms
+ 49 white Rg5+    g7g5 9.0ms
+ 50 black Kh4     h5h4 5.7ms
+ 51 white Rg8+    g5g8 9.1ms
+ 52 black Kh5     h4h5 4.3ms
+ 53 white Ng3#    e4g3 8.2ms
+{
+  "mode": "SIMULATED_PERFECT_VISION_AND_EXECUTION",
+  "white_preset": "strong",
+  "black_preset": "easy",
+  "result": "1-0",
+  "stop_reason": "game_over",
+  "plies_committed": 53,
+  "average_think_ms": 507.05,
+  "max_think_ms": 1010.56,
+  "elapsed_wall_s": 27.13,
+  "errors": [],
+  "notice": "Not a camera, ROS execution, safety, or hardware validation test. A ply cutoff is NOT a draw."
+}

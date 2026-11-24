@@ -1,0 +1,3991 @@
+ambient {
+  r: 0.4
+  g: 0.4
+  b: 0.4
+  a: 1
+}
+background {
+  r: 0.7
+  g: 0.7
+  b: 0.7
+  a: 1
+}
+shadows: true
+grid: true
+model {
+  name: "ground_plane"
+  id: 4
+  pose {
+    position {
+      z: -0.23158465271301065
+    }
+    orientation {
+      w: 1
+    }
+  }
+  link {
+    id: 5
+    name: "link"
+    pose {
+      position {
+      }
+      orientation {
+        w: 1
+      }
+    }
+    visual {
+      name: "visual"
+      id: 6
+      parent_id: 5
+      cast_shadows: true
+      pose {
+        position {
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        type: PLANE
+        plane {
+          normal {
+            z: 1
+          }
+          size {
+            x: 10
+            y: 10
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.75
+          g: 0.75
+          b: 0.75
+          a: 1
+        }
+        diffuse {
+          r: 0.75
+          g: 0.75
+          b: 0.75
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+  }
+}
+model {
+  name: "chess_workcell"
+  id: 10
+  pose {
+    position {
+      x: -0.522123332705935
+      y: -0.689524212328646
+      z: -1.11365698223419
+    }
+    orientation {
+      x: -0.70710678118654746
+      w: 0.70710678118654757
+    }
+  }
+  link {
+    id: 11
+    name: "enclosure"
+    pose {
+      position {
+      }
+      orientation {
+        w: 1
+      }
+    }
+    visual {
+      name: "enclosure_visual"
+      id: 12
+      parent_id: 11
+      cast_shadows: true
+      pose {
+        position {
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/install/chess_workcell_description/share/chess_workcell_description/meshes/controle_box_refined.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+    }
+  }
+}
+model {
+  name: "dual_chess"
+  id: 14
+  pose {
+    position {
+    }
+    orientation {
+      w: 1
+    }
+  }
+  link {
+    id: 15
+    name: "board_link"
+    pose {
+      position {
+      }
+      orientation {
+        w: 1
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__board_configurable_visual_visual"
+      id: 16
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          z: 0.01
+        }
+        orientation {
+          x: 0.70710678118654724
+          w: 0.70710678118654779
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://chess_workcell_description/meshes/chess_board.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 0.81249994
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 0.81249994
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__board_a1_visual_1"
+      id: 17
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.091875000000000012
+          y: -0.091875000000000012
+          z: 0.011
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.01575
+            y: 0.01575
+            z: 0.002
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__board_h8_visual_2"
+      id: 18
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.091875000000000012
+          y: 0.091875000000000012
+          z: 0.011
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.01575
+            y: 0.01575
+            z: 0.002
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.81249994
+          b: 0.25
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.81249994
+          b: 0.25
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_a1_visual_visual_3"
+      id: 19
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.091875000000000012
+          y: -0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_a2_visual_visual_4"
+      id: 20
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.091875000000000012
+          y: -0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_a3_visual_visual_5"
+      id: 21
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.091875000000000012
+          y: -0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_a4_visual_visual_6"
+      id: 22
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.091875000000000012
+          y: -0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_a5_visual_visual_7"
+      id: 23
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.091875000000000012
+          y: 0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_a6_visual_visual_8"
+      id: 24
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.091875000000000012
+          y: 0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_a7_visual_visual_9"
+      id: 25
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.091875000000000012
+          y: 0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_a8_visual_visual_10"
+      id: 26
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.091875000000000012
+          y: 0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_b1_visual_visual_11"
+      id: 27
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.065625
+          y: -0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_b2_visual_visual_12"
+      id: 28
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.065625
+          y: -0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_b3_visual_visual_13"
+      id: 29
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.065625
+          y: -0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_b4_visual_visual_14"
+      id: 30
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.065625
+          y: -0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_b5_visual_visual_15"
+      id: 31
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.065625
+          y: 0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_b6_visual_visual_16"
+      id: 32
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.065625
+          y: 0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_b7_visual_visual_17"
+      id: 33
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.065625
+          y: 0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_b8_visual_visual_18"
+      id: 34
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.065625
+          y: 0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_c1_visual_visual_19"
+      id: 35
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.039375000000000007
+          y: -0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_c2_visual_visual_20"
+      id: 36
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.039375000000000007
+          y: -0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_c3_visual_visual_21"
+      id: 37
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.039375000000000007
+          y: -0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_c4_visual_visual_22"
+      id: 38
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.039375000000000007
+          y: -0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_c5_visual_visual_23"
+      id: 39
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.039375000000000007
+          y: 0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_c6_visual_visual_24"
+      id: 40
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.039375000000000007
+          y: 0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_c7_visual_visual_25"
+      id: 41
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.039375000000000007
+          y: 0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_c8_visual_visual_26"
+      id: 42
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.039375000000000007
+          y: 0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_d1_visual_visual_27"
+      id: 43
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.013125
+          y: -0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_d2_visual_visual_28"
+      id: 44
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.013125
+          y: -0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_d3_visual_visual_29"
+      id: 45
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.013125
+          y: -0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_d4_visual_visual_30"
+      id: 46
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.013125
+          y: -0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_d5_visual_visual_31"
+      id: 47
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.013125
+          y: 0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_d6_visual_visual_32"
+      id: 48
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.013125
+          y: 0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_d7_visual_visual_33"
+      id: 49
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.013125
+          y: 0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_d8_visual_visual_34"
+      id: 50
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: -0.013125
+          y: 0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_e1_visual_visual_35"
+      id: 51
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.013125
+          y: -0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_e2_visual_visual_36"
+      id: 52
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.013125
+          y: -0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_e3_visual_visual_37"
+      id: 53
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.013125
+          y: -0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_e4_visual_visual_38"
+      id: 54
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.013125
+          y: -0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_e5_visual_visual_39"
+      id: 55
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.013125
+          y: 0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_e6_visual_visual_40"
+      id: 56
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.013125
+          y: 0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_e7_visual_visual_41"
+      id: 57
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.013125
+          y: 0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_e8_visual_visual_42"
+      id: 58
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.013125
+          y: 0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_f1_visual_visual_43"
+      id: 59
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.039375000000000007
+          y: -0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_f2_visual_visual_44"
+      id: 60
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.039375000000000007
+          y: -0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_f3_visual_visual_45"
+      id: 61
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.039375000000000007
+          y: -0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_f4_visual_visual_46"
+      id: 62
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.039375000000000007
+          y: -0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_f5_visual_visual_47"
+      id: 63
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.039375000000000007
+          y: 0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_f6_visual_visual_48"
+      id: 64
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.039375000000000007
+          y: 0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_f7_visual_visual_49"
+      id: 65
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.039375000000000007
+          y: 0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_f8_visual_visual_50"
+      id: 66
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.039375000000000007
+          y: 0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_g1_visual_visual_51"
+      id: 67
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.065625
+          y: -0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_g2_visual_visual_52"
+      id: 68
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.065625
+          y: -0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_g3_visual_visual_53"
+      id: 69
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.065625
+          y: -0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_g4_visual_visual_54"
+      id: 70
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.065625
+          y: -0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_g5_visual_visual_55"
+      id: 71
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.065625
+          y: 0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_g6_visual_visual_56"
+      id: 72
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.065625
+          y: 0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_g7_visual_visual_57"
+      id: 73
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.065625
+          y: 0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_g8_visual_visual_58"
+      id: 74
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.065625
+          y: 0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_h1_visual_visual_59"
+      id: 75
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.091875000000000012
+          y: -0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_h2_visual_visual_60"
+      id: 76
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.091875000000000012
+          y: -0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_h3_visual_visual_61"
+      id: 77
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.091875000000000012
+          y: -0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_h4_visual_visual_62"
+      id: 78
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.091875000000000012
+          y: -0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_h5_visual_visual_63"
+      id: 79
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.091875000000000012
+          y: 0.013125
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_h6_visual_visual_64"
+      id: 80
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.091875000000000012
+          y: 0.039375000000000007
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_h7_visual_visual_65"
+      id: 81
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.091875000000000012
+          y: 0.065625
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 1
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "board_link_fixed_joint_lump__square_h8_visual_visual_66"
+      id: 82
+      parent_id: 15
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.091875000000000012
+          y: 0.091875000000000012
+          z: 0.0106
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        box {
+          size {
+            x: 0.02585625
+            y: 0.02585625
+            z: 0.0008
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        diffuse {
+          r: 0.125
+          g: 0.125
+          b: 0.125
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+  }
+  link {
+    id: 84
+    name: "robot1_mount"
+    pose {
+      position {
+        x: -0.39689999348785848
+        y: 0.098100012561542008
+        z: 0.40452133173637611
+      }
+      orientation {
+        z: 1
+        w: 6.123233995736766e-17
+      }
+    }
+    visual {
+      name: "robot1_mount_fixed_joint_lump__robot1_base_link_visual"
+      id: 85
+      parent_id: 84
+      cast_shadows: true
+      pose {
+        position {
+        }
+        orientation {
+          x: -0.70710678118654724
+          w: 0.70710678118654779
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://dual_chess_description/meshes/scara_v2/base_link.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.661764741
+          g: 0.686274529
+          b: 0.686274529
+          a: 1
+        }
+        diffuse {
+          r: 0.661764741
+          g: 0.686274529
+          b: 0.686274529
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+  }
+  link {
+    id: 87
+    name: "robot1_link1"
+    pose {
+      position {
+        x: -0.42814999348785848
+        y: 0.134055012561542
+        z: 0.49042133173636632
+      }
+      orientation {
+        x: -4.3297802811774658e-17
+        y: -0.70710678118654724
+        z: 0.70710678118654779
+        w: 6.123233995736766e-17
+      }
+    }
+    visual {
+      name: "robot1_link1_visual"
+      id: 88
+      parent_id: 87
+      cast_shadows: true
+      pose {
+        position {
+          y: -5.5511151231257827e-17
+          z: 2.7755575615628914e-17
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://dual_chess_description/meshes/scara_v2/link1.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+  }
+  link {
+    id: 90
+    name: "robot1_link2"
+    pose {
+      position {
+        x: -0.39689999348785854
+        y: 0.19010001256154202
+        z: 0.49042133173636621
+      }
+      orientation {
+        x: 0.99914570654219659
+        y: 0.041326227511290538
+        z: -3.7459669636933032e-06
+        w: -1.9868332631593267e-06
+      }
+    }
+    visual {
+      name: "robot1_link2_visual"
+      id: 91
+      parent_id: 90
+      cast_shadows: true
+      pose {
+        position {
+          x: 5.5511151231257827e-17
+          y: 1.1102230246251565e-16
+          z: 1.6653345369377348e-16
+        }
+        orientation {
+          x: -3.9704669402545328e-22
+          z: 4.19840169884178e-18
+          w: 1
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://dual_chess_description/meshes/scara_v2/link2.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+  }
+  link {
+    id: 93
+    name: "robot1_link3"
+    pose {
+      position {
+        x: -0.41011339973918248
+        y: 0.34955364710034531
+        z: 0.44977201651946236
+      }
+      orientation {
+        x: 4.3788863854078783e-06
+        y: 2.2323668744801397e-06
+        z: 0.99452831448474788
+        w: 0.10446737128868784
+      }
+    }
+    visual {
+      name: "robot1_link3_visual"
+      id: 94
+      parent_id: 93
+      cast_shadows: true
+      pose {
+        position {
+          x: -5.5511151231257827e-17
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://dual_chess_description/meshes/scara_v2/link3.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "robot1_link3_fixed_joint_lump__robot1_link4_visual_1"
+      id: 95
+      parent_id: 93
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.017566999999999944
+          y: -0.18776
+          z: -0.06775
+        }
+        orientation {
+          x: 0.70032474387509958
+          y: -0.097709210000019656
+          z: -0.09770885109471
+          w: 0.70032217144340092
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://dual_chess_description/meshes/scara_v2/link4.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "robot1_link3_fixed_joint_lump__robot1_link5_visual_2"
+      id: 96
+      parent_id: 93
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.0093172520585397857
+          y: -0.2051666533722809
+          z: -0.074050069790854475
+        }
+        orientation {
+          x: 0.70032474387509958
+          y: -0.097709210000019656
+          z: -0.09770885109471
+          w: 0.70032217144340092
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://dual_chess_description/meshes/scara_v2/link5.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+  }
+  link {
+    id: 100
+    name: "robot2_mount"
+    pose {
+      position {
+        x: 0.39689996209272432
+        y: -0.098099991107503851
+        z: 0.40452133173637611
+      }
+      orientation {
+        w: 1
+      }
+    }
+    visual {
+      name: "robot2_mount_fixed_joint_lump__robot2_base_link_visual"
+      id: 101
+      parent_id: 100
+      cast_shadows: true
+      pose {
+        position {
+        }
+        orientation {
+          x: -0.70710678118654724
+          w: 0.70710678118654779
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://dual_chess_description/meshes/scara_v2/base_link.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.661764741
+          g: 0.686274529
+          b: 0.686274529
+          a: 1
+        }
+        diffuse {
+          r: 0.661764741
+          g: 0.686274529
+          b: 0.686274529
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+  }
+  link {
+    id: 103
+    name: "robot2_link1"
+    pose {
+      position {
+        x: 0.42814996209272432
+        y: -0.13405499110750385
+        z: 0.49042133173636632
+      }
+      orientation {
+        x: -0.70710678118654724
+        w: 0.70710678118654779
+      }
+    }
+    visual {
+      name: "robot2_link1_visual"
+      id: 104
+      parent_id: 103
+      cast_shadows: true
+      pose {
+        position {
+          y: 5.5511151231257827e-17
+          z: 2.7755575615628914e-17
+        }
+        orientation {
+          w: 1
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://dual_chess_description/meshes/scara_v2/link1.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+  }
+  link {
+    id: 106
+    name: "robot2_link2"
+    pose {
+      position {
+        x: 0.39689996209272432
+        y: -0.19009999110750386
+        z: 0.49042133173636621
+      }
+      orientation {
+        x: -0.041326227511290586
+        y: 0.9991457065421967
+        z: -1.9868332634876951e-06
+        w: 3.7459669637701185e-06
+      }
+    }
+    visual {
+      name: "robot2_link2_visual"
+      id: 107
+      parent_id: 106
+      cast_shadows: true
+      pose {
+        position {
+          x: 1.6653345369377348e-16
+          y: -2.7755575615628914e-17
+          z: 5.5511151231257827e-17
+        }
+        orientation {
+          x: -4.2351647362715017e-22
+          y: -1.0587911840678754e-22
+          z: 9.67938610735709e-18
+          w: 1
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://dual_chess_description/meshes/scara_v2/link2.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+  }
+  link {
+    id: 109
+    name: "robot2_link3"
+    pose {
+      position {
+        x: 0.41011336834404832
+        y: -0.34955362564630721
+        z: 0.44977201651946253
+      }
+      orientation {
+        x: 2.2323668744837955e-06
+        y: -4.3788863854426753e-06
+        z: -0.10446737128868783
+        w: 0.9945283144847481
+      }
+    }
+    visual {
+      name: "robot2_link3_visual"
+      id: 110
+      parent_id: 109
+      cast_shadows: true
+      pose {
+        position {
+          x: 5.5511151231257827e-17
+          z: 5.5511151231257827e-17
+        }
+        orientation {
+          y: 1.852884572118782e-22
+          w: 1
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://dual_chess_description/meshes/scara_v2/link3.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "robot2_link3_fixed_joint_lump__robot2_link4_visual_1"
+      id: 111
+      parent_id: 109
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.017567000000000055
+          y: -0.18776
+          z: -0.067749999999999949
+        }
+        orientation {
+          x: 0.70032474387509958
+          y: -0.097709210000019656
+          z: -0.09770885109471
+          w: 0.70032217144340092
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://dual_chess_description/meshes/scara_v2/link4.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+    visual {
+      name: "robot2_link3_fixed_joint_lump__robot2_link5_visual_2"
+      id: 112
+      parent_id: 109
+      cast_shadows: true
+      pose {
+        position {
+          x: 0.0093172520585398967
+          y: -0.2051666533722809
+          z: -0.07405006979085442
+        }
+        orientation {
+          x: 0.70032474387509958
+          y: -0.097709210000019656
+          z: -0.09770885109471
+          w: 0.70032217144340092
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://dual_chess_description/meshes/scara_v2/link5.STL"
+          scale {
+            x: 1
+            y: 1
+            z: 1
+          }
+        }
+      }
+      material {
+        ambient {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        diffuse {
+          r: 0.990196109
+          g: 1
+          b: 1
+          a: 1
+        }
+        specular {
+          a: 1
+        }
+        emissive {
+          a: 1
+        }
+        lighting: true
+      }
+    }
+  }
+}
+light {
+  name: "sun"
+  type: DIRECTIONAL
+  pose {
+    position {
+      z: 5
+    }
+    orientation {
+      w: 1
+    }
+  }
+  diffuse {
+    r: 0.9
+    g: 0.9
+    b: 0.9
+    a: 1
+  }
+  specular {
+    r: 0.3
+    g: 0.3
+    b: 0.3
+    a: 1
+  }
+  attenuation_constant: 1
+  attenuation_linear: 1
+  direction {
+    x: -0.4
+    y: 0.2
+    z: -0.9
+  }
+  range: 10
+  cast_shadows: true
+  id: 8
+  parent_id: 1
+  intensity: 1
+  visualize_visual: true
+}
+origin_visual: true
+

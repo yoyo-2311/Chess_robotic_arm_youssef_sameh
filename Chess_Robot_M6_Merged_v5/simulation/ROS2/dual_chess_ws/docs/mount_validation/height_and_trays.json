@@ -1,0 +1,671 @@
+{
+  "scope": "FK global numerical optimization (seeded), plus exact-chain endpoint IK. Not a collision/path proof.",
+  "arms": {
+    "robot1": {
+      "tcp_z_min": 0.34701663950440814,
+      "tcp_z_max": 0.4470239935769586,
+      "minimizer_joint_values": {
+        "robot1_joint1": 8.2649165289439e-14,
+        "robot1_joint2": 1.9902851527224263,
+        "robot1_joint3": 0.018986824210547766
+      },
+      "board_surface_z": 0.01,
+      "highest_tested_board_approach_z": 0.074,
+      "capture_trays": [
+        {
+          "slot": 0,
+          "stage": "place",
+          "world": [
+            0.14,
+            -0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 0,
+          "stage": "approach",
+          "world": [
+            0.14,
+            -0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 1,
+          "stage": "place",
+          "world": [
+            0.14,
+            -0.030000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 1,
+          "stage": "approach",
+          "world": [
+            0.14,
+            -0.030000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 2,
+          "stage": "place",
+          "world": [
+            0.14,
+            -0.018000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 2,
+          "stage": "approach",
+          "world": [
+            0.14,
+            -0.018000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 3,
+          "stage": "place",
+          "world": [
+            0.14,
+            -0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 3,
+          "stage": "approach",
+          "world": [
+            0.14,
+            -0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 4,
+          "stage": "place",
+          "world": [
+            0.14,
+            0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 4,
+          "stage": "approach",
+          "world": [
+            0.14,
+            0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 5,
+          "stage": "place",
+          "world": [
+            0.14,
+            0.017999999999999995,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 5,
+          "stage": "approach",
+          "world": [
+            0.14,
+            0.017999999999999995,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 6,
+          "stage": "place",
+          "world": [
+            0.14,
+            0.030000000000000006,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 6,
+          "stage": "approach",
+          "world": [
+            0.14,
+            0.030000000000000006,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 7,
+          "stage": "place",
+          "world": [
+            0.14,
+            0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 7,
+          "stage": "approach",
+          "world": [
+            0.14,
+            0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 8,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            -0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 8,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            -0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 9,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            -0.030000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 9,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            -0.030000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 10,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            -0.018000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 10,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            -0.018000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 11,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            -0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 11,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            -0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 12,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 12,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 13,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            0.017999999999999995,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 13,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            0.017999999999999995,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 14,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            0.030000000000000006,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 14,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            0.030000000000000006,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 15,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 15,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        }
+      ]
+    },
+    "robot2": {
+      "tcp_z_min": 0.34701663950440814,
+      "tcp_z_max": 0.4470239935769586,
+      "minimizer_joint_values": {
+        "robot2_joint1": 8.2649165289439e-14,
+        "robot2_joint2": 1.9902851527224263,
+        "robot2_joint3": 0.018986824210547766
+      },
+      "board_surface_z": 0.01,
+      "highest_tested_board_approach_z": 0.074,
+      "capture_trays": [
+        {
+          "slot": 0,
+          "stage": "place",
+          "world": [
+            -0.14,
+            -0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 0,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            -0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 1,
+          "stage": "place",
+          "world": [
+            -0.14,
+            -0.030000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 1,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            -0.030000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 2,
+          "stage": "place",
+          "world": [
+            -0.14,
+            -0.018000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 2,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            -0.018000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 3,
+          "stage": "place",
+          "world": [
+            -0.14,
+            -0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 3,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            -0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 4,
+          "stage": "place",
+          "world": [
+            -0.14,
+            0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 4,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 5,
+          "stage": "place",
+          "world": [
+            -0.14,
+            0.017999999999999995,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 5,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            0.017999999999999995,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 6,
+          "stage": "place",
+          "world": [
+            -0.14,
+            0.030000000000000006,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 6,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            0.030000000000000006,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 7,
+          "stage": "place",
+          "world": [
+            -0.14,
+            0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 7,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 8,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            -0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 8,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            -0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 9,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            -0.030000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 9,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            -0.030000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 10,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            -0.018000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 10,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            -0.018000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 11,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            -0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 11,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            -0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 12,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 12,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 13,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            0.017999999999999995,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 13,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            0.017999999999999995,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 14,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            0.030000000000000006,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 14,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            0.030000000000000006,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 15,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 15,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        }
+      ]
+    }
+  }
+}

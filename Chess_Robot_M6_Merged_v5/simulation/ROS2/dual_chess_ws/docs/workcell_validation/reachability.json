@@ -1,0 +1,15 @@
+{
+  "geometry": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/src/chess_workcell_description/config/workcell_sim.yaml",
+  "sha256": "8f11105bbbff690650b4a66002c4490e81bfd086674d98cccf5d90866f50f635",
+  "scope": "Position IK only; does not certify collision clearance or trajectories",
+  "arms": {
+    "robot1": {
+      "tested": 192,
+      "unreachable": []
+    },
+    "robot2": {
+      "tested": 192,
+      "unreachable": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "move": "b1c3",
+  "transport": "qt",
+  "domain": 222,
+  "complete": false,
+  "setup_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+  "error": "White / robot1 b1c3 \u2022 approach pick \u2022 Execution stopped; reconciliation required \u2022 gripper_operation_failed",
+  "expected_failure_visible_without_commit": true,
+  "history": [
+    {
+      "ply": 1,
+      "uci": "c2c4",
+      "san": "c4",
+      "side": "white",
+      "arm": "robot1"
+    },
+    {
+      "ply": 2,
+      "uci": "e7e5",
+      "san": "e5",
+      "side": "black",
+      "arm": "robot2"
+    }
+  ],
+  "state": {
+    "schema_version": "1.0",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+    "turn": "white",
+    "result": null,
+    "synchronized": true,
+    "blocked": true,
+    "block_reason": "robot_execution_failed_or_not_safe",
+    "pending_plan_id": "af9b8c239bc14df8b249e8d78e673bf2",
+    "pending_move": "b1c3",
+    "robot_ack_received": false,
+    "committed_plies": 2,
+    "last_rejection": null,
+    "legal_moves": [
+      "g1h3",
+      "g1f3",
+      "d1a4",
+      "d1b3",
+      "d1c2",
+      "b1c3",
+      "b1a3",
+      "c4c5",
+      "h2h3",
+      "g2g3",
+      "f2f3",
+      "e2e3",
+      "d2d3",
+      "b2b3",
+      "a2a3",
+      "h2h4",
+      "g2g4",
+      "f2f4",
+      "e2e4",
+      "d2d4",
+      "b2b4",
+      "a2a4"
+    ]
+  },
+  "motion": {
+    "schema_version": 1,
+    "status": "blocked",
+    "plan_id": "",
+    "geometry_revision": 0,
+    "simulation_grasp": true
+  },
+  "status": "Paused \u2022 White / robot1 b1c3 \u2022 approach pick \u2022 Execution stopped; reconciliation required \u2022 gripper_operation_failed",
+  "pending": "Pending: White / robot1 b1c3 \u2022 approach pick",
+  "execution": "Motion result: White / robot1 b1c3 \u2022 approach pick \u2022 Execution stopped; reconciliation required \u2022 gripper_operation_failed",
+  "selected": null,
+  "inflight": {
+    "request_id": "69860b0a0331435db94115a947fe0260",
+    "ply": 2,
+    "sent": 21188.488175822,
+    "side": "white",
+    "uci": "b1c3",
+    "action": "uci",
+    "accepted": true,
+    "plan_id": "af9b8c239bc14df8b249e8d78e673bf2"
+  },
+  "initial_joints": {
+    "robot1_joint1": 0.0900598165415693,
+    "robot1_joint2": -6.172588351183095e-05,
+    "robot1_joint3": 6.215439597145666e-05,
+    "robot2_joint1": 0.08990842567109503,
+    "robot2_joint2": -8.179447292350233e-05,
+    "robot2_joint3": -1.1719698132947083e-05
+  },
+  "max_joint_travel": {
+    "robot1_joint1": 0,
+    "robot1_joint2": 0,
+    "robot1_joint3": 0,
+    "robot2_joint1": 0,
+    "robot2_joint2": 0,
+    "robot2_joint3": 0
+  },
+  "automatic_reply_keys": [],
+  "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261123-193411-0dc3a0.log",
+  "qt_ticks": 2699,
+  "max_qt_gap": 0.03665858800013666,
+  "elapsed": 54.299052819998906,
+  "clean_shutdown": true
+}

@@ -1,0 +1,43 @@
+{
+  "manual": {
+    "both_arms_feedback": true,
+    "publishers": [
+      "dual_scara_desktop_bridge"
+    ]
+  },
+  "switch": {
+    "old_owned_group_gone_before_new_backend": true
+  },
+  "moveit": {
+    "plan_only_keeps_joints": true,
+    "execute_and_home_both_arms": true,
+    "empty_square_probe": true
+  },
+  "software_stop": {
+    "mode_stays_running": true,
+    "motion_disabled": true
+  },
+  "failure": {
+    "confirmed_fen_unchanged": true,
+    "mode_not_shutdown_by_failure": true,
+    "next_move_disabled": true
+  },
+  "delayed_vision": {
+    "ack_does_not_change_board": true,
+    "fresh_vision_commits_once": true,
+    "duplicate_click_ignored": true
+  },
+  "promotion": {
+    "explicit_operator_token_confirmation": true,
+    "confirmed_queen_displayed": true
+  },
+  "logic_only": {
+    "brain_state_visible": true,
+    "missing_external_vision_reported": true,
+    "motion_disabled": true
+  },
+  "gazebo": {
+    "clock_and_joint_feedback": true,
+    "direct_position_controls_enabled": true
+  }
+}

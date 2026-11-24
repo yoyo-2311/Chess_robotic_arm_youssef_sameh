@@ -1,0 +1,4 @@
+Starting >>> dual_scara_desktop
+Finished <<< dual_scara_desktop [0.75s]
+
+Summary: 1 package finished [0.86s]

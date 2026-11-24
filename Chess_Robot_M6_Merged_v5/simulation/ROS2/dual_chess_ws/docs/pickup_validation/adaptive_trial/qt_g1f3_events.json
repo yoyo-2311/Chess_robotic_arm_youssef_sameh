@@ -1,0 +1,4216 @@
+[
+  {
+    "t": 2.1286,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": false,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 2.727,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "no_vision_received"
+    }
+  },
+  {
+    "t": 2.7274,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": false,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 3.2273,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 3.2277,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 3.7268,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 3.7272,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 4.1291,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 4.2267,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 4.2271,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 4.7268,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 4.727,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 5.0132,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "operation": "apply collision scene",
+      "operation_id": "6cd7656c2c074d8eb83943a548dd5328",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 5.0385,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "operation": "apply collision scene",
+      "operation_id": "6cd7656c2c074d8eb83943a548dd5328",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 5.047,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "ready",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "detail": "Scene and controllers available; gripper handshake required for chess moves"
+    }
+  },
+  {
+    "t": 5.0471,
+    "kind": "geometry",
+    "data": {
+      "revision": 0,
+      "frame_id": "world",
+      "configuration": {
+        "board": {
+          "length": 0.24,
+          "width": 0.24,
+          "square_size_x": 0.02625,
+          "square_size_y": 0.02625,
+          "thickness": 0.020189205169677735,
+          "surface_height": 0.01,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "grid_mode": "fit_board",
+          "border_x": 0.015,
+          "border_y": 0.015
+        },
+        "support": {
+          "enabled": true,
+          "size": [
+            0.24,
+            0.24,
+            0.01
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -0.005
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mounts": {
+          "robot1": {
+            "position": [
+              0.0,
+              -0.19,
+              0.04
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              1.5707963267948966
+            ]
+          },
+          "robot2": {
+            "position": [
+              0.0,
+              0.19,
+              0.04
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              -1.5707963267948966
+            ]
+          }
+        },
+        "tool": {
+          "position": [
+            0.007,
+            -0.0287,
+            0.0
+          ]
+        },
+        "pieces": {
+          "heights": {
+            "p": 0.018,
+            "n": 0.022,
+            "b": 0.024,
+            "r": 0.02,
+            "q": 0.025,
+            "k": 0.026
+          },
+          "radius": 0.003
+        },
+        "motion": {
+          "grasp_fraction": 0.65,
+          "approach_clearance": 0.012,
+          "transfer_clearance": 0.012,
+          "place_clearance": 0.001,
+          "velocity_scale": 0.4,
+          "acceleration_scale": 0.4,
+          "cartesian_step": 0.002,
+          "minimum_cartesian_fraction": 1.0,
+          "operator_timeout": 120.0,
+          "max_board_tilt": 0.035,
+          "grasp_search_fractions": [
+            0.8,
+            0.9,
+            0.98,
+            1.0
+          ]
+        },
+        "capture_bins": {
+          "robot1": {
+            "origin": [
+              0.14,
+              -0.042,
+              0.025
+            ],
+            "step": [
+              0.0,
+              0.012,
+              0.0
+            ],
+            "row_step": [
+              0.012,
+              0.0,
+              0.0
+            ],
+            "columns": 8,
+            "slots": 16
+          },
+          "robot2": {
+            "origin": [
+              -0.14,
+              -0.042,
+              0.025
+            ],
+            "step": [
+              0.0,
+              0.012,
+              0.0
+            ],
+            "row_step": [
+              -0.012,
+              0.0,
+              0.0
+            ],
+            "columns": 8,
+            "slots": 16
+          }
+        }
+      },
+      "placeholders": true
+    }
+  },
+  {
+    "t": 5.1587,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "idle",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 5.1588,
+    "kind": "safety",
+    "data": true
+  },
+  {
+    "t": 5.159,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": true
+    }
+  },
+  {
+    "t": 5.1592,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 5.2267,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 5.2271,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 5.6597,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "idle",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 5.6597,
+    "kind": "safety",
+    "data": true
+  },
+  {
+    "t": 5.66,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": true
+    }
+  },
+  {
+    "t": 5.6604,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 5.7265,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 5.7268,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 5.799037275999581,
+    "kind": "published_command",
+    "data": {
+      "action": "uci",
+      "uci": "c2c4",
+      "request_id": "setup-f6dc5ea2c02b48c39a2e279a950769ca"
+    }
+  },
+  {
+    "t": 5.801,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "uci",
+      "request_id": "setup-f6dc5ea2c02b48c39a2e279a950769ca",
+      "ok": true,
+      "status": "manual_plan_published",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd"
+    }
+  },
+  {
+    "t": 5.801,
+    "kind": "plan",
+    "data": {
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "uci": "c2c4",
+      "san": "c4",
+      "side": "white",
+      "piece": "P",
+      "from_sq": "c2",
+      "to_sq": "c4",
+      "before_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "expected_fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
+      "actions": [
+        {
+          "kind": "move",
+          "source": "c2",
+          "target": "c4",
+          "piece": null,
+          "source_cell": {
+            "row": 6,
+            "col": 2
+          },
+          "target_cell": {
+            "row": 4,
+            "col": 2
+          }
+        }
+      ],
+      "created_at": 1795460378.296608,
+      "captured": null,
+      "capture_sq": null,
+      "is_castling": false,
+      "promotion": null,
+      "gives_check": false,
+      "eval_cp": null,
+      "think_ms": null,
+      "schema_version": "1.0",
+      "from_cell": {
+        "row": 6,
+        "col": 2
+      },
+      "to_cell": {
+        "row": 4,
+        "col": 2
+      }
+    }
+  },
+  {
+    "t": 5.8013,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 5.8021,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "accepted",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "request_id": "ee3d6ae820de441ca6ac5e669136eabd"
+    }
+  },
+  {
+    "t": 5.804,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "preflight",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4"
+    }
+  },
+  {
+    "t": 6.0265,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "operation": "apply collision scene",
+      "operation_id": "3ab7ec19077e4b6bba0bfa05bfe3a4e7",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 6.0376,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "operation": "apply collision scene",
+      "operation_id": "3ab7ec19077e4b6bba0bfa05bfe3a4e7",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.0378,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "stage",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity"
+    }
+  },
+  {
+    "t": 6.0799,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "operation": "check robot1 descent branch 1",
+      "operation_id": "92a0f631d0984f929aeff1a7afbb10fb",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 6.093,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "operation": "check robot1 descent branch 1",
+      "operation_id": "92a0f631d0984f929aeff1a7afbb10fb",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.0936,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "operation": "check robot1 descent branch 2",
+      "operation_id": "bc96eb5aa25d4e5fa7e8d8d9dbf07c50",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 6.1289,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 6.1603,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity"
+    }
+  },
+  {
+    "t": 6.1603,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 6.1607,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 6.1611,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 6.2265,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 6.2269,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 6.2472,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "operation": "check robot1 descent branch 2",
+      "operation_id": "bc96eb5aa25d4e5fa7e8d8d9dbf07c50",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.3425,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "descent_checked",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "above": [
+        -0.039375,
+        -0.065625,
+        0.0597
+      ],
+      "feasible_branches": 1,
+      "candidates": [
+        {
+          "approach_joints": [
+            0.07719843833538713,
+            -0.995542315561984,
+            2.3580438055720037
+          ],
+          "fraction": 1.0,
+          "code": 1
+        },
+        {
+          "approach_joints": [
+            0.07719917669538405,
+            2.6769532679804513,
+            -1.9287568161737647
+          ],
+          "fraction": 0.0,
+          "code": 1,
+          "start_contacts": [
+            "robot1_base_link/robot1_link3",
+            "robot1_link3/robot1_link1"
+          ],
+          "endpoint_joints": [
+            0.03919917669538767,
+            2.676953267980459,
+            -1.9287568161746396
+          ],
+          "endpoint_contacts": [
+            "robot1_base_link/robot1_link3",
+            "robot1_link3/robot1_link1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "t": 6.3437,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "operation": "plan robot1 approach/home (attempt 1/5)",
+      "operation_id": "e6e5f8cc07e6430c953536a2fa3f0409",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 6.5555,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "operation": "plan robot1 approach/home (attempt 1/5)",
+      "operation_id": "e6e5f8cc07e6430c953536a2fa3f0409",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.5563,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "operation": "plan robot1 vertical motion",
+      "operation_id": "ae4c5860436c4a9cb53cdf385ae93771",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 6.5667,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "operation": "plan robot1 vertical motion",
+      "operation_id": "ae4c5860436c4a9cb53cdf385ae93771",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.5678,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "operation": "apply collision scene",
+      "operation_id": "8a248e307b4640dfa4fc76f01e544194",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 6.5783,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "operation": "apply collision scene",
+      "operation_id": "8a248e307b4640dfa4fc76f01e544194",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.5791,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "operation": "apply collision scene",
+      "operation_id": "9e574f13715e47fd8fd9f09451c135d5",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 6.5894,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "stage": "pickup_preflight",
+      "source": "c2",
+      "target": "c4",
+      "world": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "grasp_fraction": 0.65,
+      "detail": "Check pickup and placement before any arm/gripper activity",
+      "operation": "apply collision scene",
+      "operation_id": "9e574f13715e47fd8fd9f09451c135d5",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.5897,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "stage",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "placement_preflight",
+      "world": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "grasp_fraction": 0.65
+    }
+  },
+  {
+    "t": 6.6344,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "placement_preflight",
+      "world": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "grasp_fraction": 0.65,
+      "operation": "check robot1 descent branch 1",
+      "operation_id": "1bf2f721b6b74e5ca6a9ddc7e652fe24",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 6.6448,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "placement_preflight",
+      "world": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "grasp_fraction": 0.65,
+      "operation": "check robot1 descent branch 1",
+      "operation_id": "1bf2f721b6b74e5ca6a9ddc7e652fe24",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.6456,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "placement_preflight",
+      "world": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "grasp_fraction": 0.65,
+      "operation": "check robot1 descent branch 2",
+      "operation_id": "6c60ea5e20c44aad90e1201b65e520e7",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 6.6586,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "placement_preflight",
+      "world": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "grasp_fraction": 0.65
+    }
+  },
+  {
+    "t": 6.6587,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 6.6591,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 6.6591,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 6.7263,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 6.7266,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 6.8099,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "placement_preflight",
+      "world": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "grasp_fraction": 0.65,
+      "operation": "check robot1 descent branch 2",
+      "operation_id": "6c60ea5e20c44aad90e1201b65e520e7",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.8962,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "descent_checked",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "stage": "placement_preflight",
+      "world": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "grasp_fraction": 0.65,
+      "above": [
+        -0.039375,
+        -0.013125,
+        0.0597
+      ],
+      "feasible_branches": 1,
+      "candidates": [
+        {
+          "approach_joints": [
+            0.07719833514929833,
+            -1.0114753924262916,
+            2.0941914216515705
+          ],
+          "fraction": 1.0,
+          "code": 1
+        },
+        {
+          "approach_joints": [
+            0.07719917209348116,
+            3.04071515124108,
+            -1.66490443258239
+          ],
+          "fraction": 0.0,
+          "code": 1,
+          "start_contacts": [
+            "robot1_base_link/robot1_link2",
+            "robot1_base_link/robot1_link3",
+            "robot1_link3/robot1_link1"
+          ],
+          "endpoint_joints": [
+            0.040199172093482116,
+            3.040715151235835,
+            -1.6649044325875222
+          ],
+          "endpoint_contacts": [
+            "robot1_base_link/robot1_link2",
+            "robot1_base_link/robot1_link3",
+            "robot1_link3/robot1_link1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "t": 6.898,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "placement_preflight",
+      "world": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "grasp_fraction": 0.65,
+      "operation": "apply collision scene",
+      "operation_id": "b7caff5a2cb443b895c7622a8f72b2b4",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 6.9083,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "placement_preflight",
+      "world": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "grasp_fraction": 0.65,
+      "operation": "apply collision scene",
+      "operation_id": "b7caff5a2cb443b895c7622a8f72b2b4",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.9089,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "placement_preflight",
+      "world": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "grasp_fraction": 0.65,
+      "operation": "apply collision scene",
+      "operation_id": "82047fe60b7a463ca986168958df1da0",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 6.9193,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "placement_preflight",
+      "world": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "grasp_fraction": 0.65,
+      "operation": "apply collision scene",
+      "operation_id": "82047fe60b7a463ca986168958df1da0",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.9196,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "grasp_selected",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "placement_preflight",
+      "world": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "grasp_fraction": 0.65,
+      "pickup": [
+        -0.039375,
+        -0.065625,
+        0.0217
+      ],
+      "placement": [
+        -0.039375,
+        -0.013125,
+        0.022699999999999998
+      ],
+      "detail": "Both descents passed with the carried piece; no activity yet"
+    }
+  },
+  {
+    "t": 6.9198,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "stage",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 6.9204,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick",
+      "operation": "gripper open",
+      "operation_id": "bee065d5e87647f99e9fe2003635d408",
+      "phase": "waiting",
+      "timeout_seconds": 5.0
+    }
+  },
+  {
+    "t": 6.9225,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick",
+      "operation": "gripper open",
+      "operation_id": "bee065d5e87647f99e9fe2003635d408",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.9236,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick",
+      "operation": "controller goal acceptance",
+      "operation_id": "ef5dcd116fd14d37824c2ac984f81e2e",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 6.9353,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick",
+      "operation": "controller goal acceptance",
+      "operation_id": "ef5dcd116fd14d37824c2ac984f81e2e",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 6.9357,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick",
+      "operation": "controller execution result",
+      "operation_id": "10ad61460a8c4209acbe85aa9f02bb2e",
+      "phase": "waiting",
+      "timeout_seconds": 26.394974235
+    }
+  },
+  {
+    "t": 7.1584,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 7.1584,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 7.159,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 7.159,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 7.2264,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 7.2267,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 7.6585,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 7.6585,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 7.6587,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 7.6589,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 7.7265,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 7.7268,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 8.1288,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 8.1592,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 8.1593,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 8.1597,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 8.1598,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 8.2264,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 8.2268,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 8.6583,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 8.6583,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 8.6587,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 8.659,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 8.7269,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 8.7273,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 9.1596,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 9.1596,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 9.1598,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 9.1601,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 9.2264,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 9.2267,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 9.6596,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 9.6597,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 9.6602,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 9.6605,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 9.7265,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 9.7269,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 10.129,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 10.1586,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 10.1587,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 10.1591,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 10.1595,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 10.2263,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 10.2267,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 10.6585,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 10.6585,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 10.6589,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 10.6591,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 10.7265,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 10.7267,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 11.1585,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 11.1585,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 11.1589,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 11.1593,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 11.2265,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 11.2268,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 11.6583,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 11.6584,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 11.6587,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 11.6591,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 11.7265,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 11.7269,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 12.1286,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 12.1585,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 12.1586,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 12.1588,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 12.1591,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 12.2263,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 12.2265,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 12.6583,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 12.6583,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 12.6586,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 12.659,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 12.7263,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 12.7265,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 13.1585,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick"
+    }
+  },
+  {
+    "t": 13.1586,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 13.1589,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 13.1593,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 13.2266,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 13.227,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 13.3625,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick",
+      "operation": "controller execution result",
+      "operation_id": "10ad61460a8c4209acbe85aa9f02bb2e",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 13.3635,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick",
+      "operation": "plan robot1 vertical motion",
+      "operation_id": "2742e5d07f8a4ebe8bb5104817691f71",
+      "phase": "waiting",
+      "timeout_seconds": 30.0
+    }
+  },
+  {
+    "t": 13.4748,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "operation",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick",
+      "operation": "plan robot1 vertical motion",
+      "operation_id": "2742e5d07f8a4ebe8bb5104817691f71",
+      "phase": "completed"
+    }
+  },
+  {
+    "t": 13.4753,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "failed",
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "arm": "robot1",
+      "side": "white",
+      "uci": "c2c4",
+      "source": "c2",
+      "target": "c4",
+      "stage": "approach_pick",
+      "request_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "reason": "cartesian_path_incomplete: robot1 target=[-0.039375, -0.065625, 0.0217] fraction=0.8000 code=1",
+      "physical_state_confirmed": false,
+      "reconciliation_required": true,
+      "safe_rejection": false
+    }
+  },
+  {
+    "t": 13.4757,
+    "kind": "event",
+    "data": {
+      "event": "robot_ack_response",
+      "ok": false,
+      "status": "blocked",
+      "reason": "robot_execution_failed_or_not_safe"
+    }
+  },
+  {
+    "t": 13.4757,
+    "kind": "ack",
+    "data": {
+      "plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "success": false,
+      "arm_parked": false,
+      "gripper_released": false,
+      "reason": "cartesian_path_incomplete: robot1 target=[-0.039375, -0.065625, 0.0217] fraction=0.8000 code=1"
+    }
+  },
+  {
+    "t": 13.4761,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": true,
+      "block_reason": "robot_execution_failed_or_not_safe",
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 13.6586,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "blocked",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 13.6586,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 13.6588,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 13.659,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": true,
+      "block_reason": "robot_execution_failed_or_not_safe",
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 13.7264,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 13.7266,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": true,
+      "block_reason": "robot_execution_failed_or_not_safe",
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 14.1291,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": true,
+      "block_reason": "robot_execution_failed_or_not_safe",
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 14.1603,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "blocked",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 14.1604,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 14.1606,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 14.1608,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": true,
+      "block_reason": "robot_execution_failed_or_not_safe",
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 14.2266,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 14.2271,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": true,
+      "block_reason": "robot_execution_failed_or_not_safe",
+      "pending_plan_id": "ee3d6ae820de441ca6ac5e669136eabd",
+      "pending_move": "c2c4",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "last_rejection": null,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  }
+]

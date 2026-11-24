@@ -1,0 +1,7 @@
+[
+  {
+    "parameter": "motion.grasp_fraction",
+    "default": 0.65,
+    "experimental": 0.9
+  }
+]

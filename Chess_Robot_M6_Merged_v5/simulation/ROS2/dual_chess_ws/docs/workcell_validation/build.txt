@@ -1,0 +1,22 @@
+Starting >>> chess_workcell_description
+Starting >>> chess_brain_handover
+Starting >>> chess_auto_coordinator
+Starting >>> chess_robot_executor
+Finished <<< chess_auto_coordinator [1.27s]
+Finished <<< chess_brain_handover [1.28s]
+Finished <<< chess_workcell_description [1.29s]
+Starting >>> dual_chess_description
+Finished <<< chess_robot_executor [1.31s]
+Finished <<< dual_chess_description [0.07s]
+Starting >>> chess_motion_interface
+Starting >>> dual_chess_gazebo
+Finished <<< dual_chess_gazebo [0.19s]
+Starting >>> dual_chess_bringup
+Finished <<< dual_chess_bringup [0.06s]
+Finished <<< chess_motion_interface [0.78s]
+Starting >>> dual_chess_moveit_config
+Finished <<< dual_chess_moveit_config [0.07s]
+Starting >>> dual_scara_desktop
+Finished <<< dual_scara_desktop [0.79s]
+
+Summary: 10 packages finished [3.14s]

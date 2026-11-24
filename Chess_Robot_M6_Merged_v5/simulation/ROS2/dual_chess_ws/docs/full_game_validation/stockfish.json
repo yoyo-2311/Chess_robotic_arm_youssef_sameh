@@ -1,0 +1,238 @@
+{
+  "mode": "stockfish",
+  "complete": false,
+  "result": null,
+  "error": "robot_execution_failed_or_not_safe",
+  "recent_motion_status": [
+    {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "5d51058500fd4e19af013adc84253d64",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    },
+    {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "5d51058500fd4e19af013adc84253d64",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    },
+    {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "5d51058500fd4e19af013adc84253d64",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    },
+    {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "5d51058500fd4e19af013adc84253d64",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    },
+    {
+      "schema_version": 1,
+      "status": "stage",
+      "plan_id": "5d51058500fd4e19af013adc84253d64",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "stage": "grasp",
+      "piece": "chess_piece_d2"
+    },
+    {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "5d51058500fd4e19af013adc84253d64",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    },
+    {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "5d51058500fd4e19af013adc84253d64",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    },
+    {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "5d51058500fd4e19af013adc84253d64",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    },
+    {
+      "schema_version": 1,
+      "status": "stage",
+      "plan_id": "5d51058500fd4e19af013adc84253d64",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "stage": "transfer",
+      "piece": "chess_piece_d2"
+    },
+    {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "5d51058500fd4e19af013adc84253d64",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    },
+    {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "5d51058500fd4e19af013adc84253d64",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    },
+    {
+      "schema_version": 1,
+      "status": "failed",
+      "plan_id": "5d51058500fd4e19af013adc84253d64",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "request_id": "5d51058500fd4e19af013adc84253d64",
+      "reason": "cartesian_path_incomplete: fraction=0.7895 code=1",
+      "physical_state_confirmed": false,
+      "reconciliation_required": true
+    }
+  ],
+  "recent_events": [
+    {
+      "event": "safety_signal",
+      "ready": false
+    },
+    {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    },
+    {
+      "event": "safety_signal",
+      "ready": false
+    },
+    {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    },
+    {
+      "event": "safety_signal",
+      "ready": false
+    },
+    {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    },
+    {
+      "event": "safety_signal",
+      "ready": false
+    },
+    {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    },
+    {
+      "event": "safety_signal",
+      "ready": false
+    },
+    {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    },
+    {
+      "event": "safety_signal",
+      "ready": false
+    },
+    {
+      "event": "robot_ack_response",
+      "ok": false,
+      "status": "blocked",
+      "reason": "robot_execution_failed_or_not_safe"
+    }
+  ],
+  "confirmed_board_unchanged_by_failed_pending_move": true,
+  "confirmed_plies": 2,
+  "history": [
+    {
+      "ply": 1,
+      "uci": "e2e4",
+      "san": "e4",
+      "side": "white",
+      "arm": "robot1"
+    },
+    {
+      "ply": 2,
+      "uci": "d7d5",
+      "san": "d5",
+      "side": "black",
+      "arm": "robot2"
+    }
+  ],
+  "final_state": {
+    "schema_version": "1.0",
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+    "turn": "white",
+    "result": null,
+    "synchronized": true,
+    "blocked": true,
+    "block_reason": "robot_execution_failed_or_not_safe",
+    "pending_plan_id": "5d51058500fd4e19af013adc84253d64",
+    "pending_move": "d2d3",
+    "robot_ack_received": false,
+    "committed_plies": 2,
+    "legal_moves": [
+      "g1h3",
+      "g1f3",
+      "g1e2",
+      "f1a6",
+      "f1b5",
+      "f1c4",
+      "f1d3",
+      "f1e2",
+      "e1e2",
+      "d1h5",
+      "d1g4",
+      "d1f3",
+      "d1e2",
+      "b1c3",
+      "b1a3",
+      "e4d5",
+      "e4e5",
+      "h2h3",
+      "g2g3",
+      "f2f3",
+      "d2d3",
+      "c2c3",
+      "b2b3",
+      "a2a3",
+      "h2h4",
+      "g2g4",
+      "f2f4",
+      "d2d4",
+      "c2c4",
+      "b2b4",
+      "a2a4"
+    ]
+  },
+  "automatic_reply_ply_keys": [
+    1
+  ],
+  "elapsed_seconds": 65.62,
+  "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261123-164606-e811f1.log",
+  "maximum_qt_timer_gap_seconds": 0.03544614800011914,
+  "clean_shutdown": true
+}

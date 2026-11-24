@@ -1,0 +1,121 @@
+{
+  "move": "g1f3",
+  "transport": "qt",
+  "domain": 221,
+  "complete": false,
+  "setup_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+  "safe_rejection_recovered": true,
+  "rejection_notice": "Rejected before any arm/gripper activity: no_collision_free_descent: robot1 target=[0.065625, -0.091875, 0.0243]; contacts=['robot1_link3/robot1_link1', 'robot1_link4/chess_piece_h2']; fractions=[0.8947, 0.0]. Choose another legal move.",
+  "recovery_move": "b1c3",
+  "error": "Stockfish move safely rejected. Automatic retry disabled; use explicit recovery.",
+  "history": [
+    {
+      "ply": 1,
+      "uci": "c2c4",
+      "san": "c4",
+      "side": "white",
+      "arm": "robot1"
+    },
+    {
+      "ply": 2,
+      "uci": "e7e5",
+      "san": "e5",
+      "side": "black",
+      "arm": "robot2"
+    },
+    {
+      "ply": 3,
+      "uci": "b1c3",
+      "san": "Nc3",
+      "side": "white",
+      "arm": "robot1"
+    }
+  ],
+  "state": {
+    "schema_version": "1.0",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR b KQkq - 1 2",
+    "turn": "black",
+    "result": null,
+    "synchronized": true,
+    "blocked": false,
+    "block_reason": null,
+    "pending_plan_id": null,
+    "pending_move": null,
+    "robot_ack_received": false,
+    "committed_plies": 3,
+    "last_rejection": {
+      "plan_id": "c493b187bfb148b6916e7d49ef60d73a",
+      "before_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR b KQkq - 1 2",
+      "reason": "no_collision_free_descent: robot2 target=[-0.065625, 0.091875, 0.0243]; contacts=['robot2_link1/robot2_link3', 'robot2_link4/chess_piece_a7']; fractions=[0.8947, 0.0]",
+      "status": "rejected_before_activity"
+    },
+    "legal_moves": [
+      "g8e7",
+      "g8h6",
+      "g8f6",
+      "f8e7",
+      "f8d6",
+      "f8c5",
+      "f8b4",
+      "f8a3",
+      "e8e7",
+      "d8e7",
+      "d8f6",
+      "d8g5",
+      "d8h4",
+      "b8c6",
+      "b8a6",
+      "h7h6",
+      "g7g6",
+      "f7f6",
+      "d7d6",
+      "c7c6",
+      "b7b6",
+      "a7a6",
+      "e5e4",
+      "h7h5",
+      "g7g5",
+      "f7f5",
+      "d7d5",
+      "c7c5",
+      "b7b5",
+      "a7a5"
+    ]
+  },
+  "motion": {
+    "schema_version": 1,
+    "status": "idle",
+    "plan_id": "",
+    "geometry_revision": 0,
+    "simulation_grasp": true
+  },
+  "status": "Paused \u2022 Stockfish move safely rejected. Automatic retry disabled; use explicit recovery.",
+  "pending": "No pending move",
+  "execution": "Rejected before any arm/gripper activity: no_collision_free_descent: robot2 target=[-0.065625, 0.091875, 0.0243]; contacts=['robot2_link1/robot2_link3', 'robot2_link4/chess_piece_a7']; fractions=[0.8947, 0.0]. Stockfish automatic retry disabled; use explicit recovery.",
+  "selected": null,
+  "inflight": null,
+  "initial_joints": {
+    "robot1_joint1": 0.09002903297422453,
+    "robot1_joint2": -6.951839067041874e-05,
+    "robot1_joint3": 6.246059434488412e-06,
+    "robot2_joint1": 0.09005438424623571,
+    "robot2_joint2": -4.698994485663167e-05,
+    "robot2_joint3": -2.236899230624556e-05
+  },
+  "max_joint_travel": {
+    "robot1_joint1": 0.04823026654671813,
+    "robot1_joint2": 1.220284796286917,
+    "robot1_joint3": 2.327091555052212,
+    "robot2_joint1": 0,
+    "robot2_joint2": 0,
+    "robot2_joint3": 0
+  },
+  "automatic_reply_keys": [
+    3
+  ],
+  "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261123-193251-281f37.log",
+  "qt_ticks": 3918,
+  "max_qt_gap": 0.054701467997801956,
+  "elapsed": 78.68652615500105,
+  "clean_shutdown": true
+}

@@ -1,0 +1,13 @@
+{
+  "mode": "SIMULATED_PERFECT_VISION_AND_EXECUTION",
+  "white_preset": "strong",
+  "black_preset": "easy",
+  "result": "1-0",
+  "stop_reason": "game_over",
+  "plies_committed": 53,
+  "average_think_ms": 507.05,
+  "max_think_ms": 1010.56,
+  "elapsed_wall_s": 27.13,
+  "errors": [],
+  "notice": "Not a camera, ROS execution, safety, or hardware validation test. A ply cutoff is NOT a draw."
+}

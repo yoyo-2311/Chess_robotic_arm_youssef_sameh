@@ -55,6 +55,12 @@ class Geometry:
             v = self.raw['motion'][key]
             if not 0 < v <= 1:
                 raise ValueError(f'{key} must be in (0,1]')
+        for arm,values in self.raw['motion'].get('home',{}).items():
+            if arm not in ['robot1','robot2'] or len(values)!=3 or not all(math.isfinite(float(v)) for v in values):
+                raise ValueError('home poses must have three finite joint values per arm')
+        candidates=self.raw['motion'].get('grasp_search_fractions',[])
+        if not isinstance(candidates,list) or len(candidates)>8 or any(isinstance(v,bool) or not isinstance(v,(int,float)) or not math.isfinite(v) or not 0<v<=1 for v in candidates):
+            raise ValueError('grasp_search_fractions must contain at most eight fractions in (0,1]')
         for arm, bin in self.raw['capture_bins'].items():
             if not isinstance(bin['slots'], int) or bin['slots'] < 1:
                 raise ValueError('capture bin slots must be positive integers')
@@ -101,9 +107,16 @@ class Geometry:
     def grasp(self, symbol):
         return self.piece_height(symbol)*self.raw['motion']['grasp_fraction']
 
-    def travel(self, carried_height=0.):
+    def home(self,arm):
+        return self.raw['motion'].get('home',{}).get(arm,[.09,0.,0.])
+
+    def grasp_fractions(self):
+        values=[self.raw['motion']['grasp_fraction'],*self.raw['motion'].get('grasp_search_fractions',[])]
+        return list(dict.fromkeys(float(v) for v in values))
+
+    def travel(self, carried_height=0., grasp_fraction=None):
         m = self.raw['motion']
-        return max(self.raw['pieces']['heights'].values()) + max(m['transfer_clearance'],m['approach_clearance']) + carried_height*m['grasp_fraction']
+        return max(self.raw['pieces']['heights'].values()) + max(m['transfer_clearance'],m['approach_clearance']) + carried_height*(m['grasp_fraction'] if grasp_fraction is None else grasp_fraction)
 
     def bin_local(self, arm, slot):
         b = self.raw['capture_bins'][arm]

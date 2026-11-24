@@ -1,0 +1,5 @@
+robot name is: chess_workcell
+---------- Successfully Parsed XML ---------------
+root Link: world has 1 child(ren)
+    child(1):  workcell_controle_box
+        child(1):  workcell_chess_board

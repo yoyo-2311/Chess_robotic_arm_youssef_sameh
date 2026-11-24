@@ -1,5 +1,6 @@
 """Owned planning-scene objects, including support, configurable board and pieces."""
 import copy
+from contextlib import contextmanager
 import numpy as np
 from scipy.spatial.transform import Rotation
 from geometry_msgs.msg import Pose
@@ -51,7 +52,21 @@ class Scene:
             scene.object_colors.append(color)
             self.ids.add(obj.id)
         rot = g.T[:3, :3]
-        add(object_msg('chess_board_body', [b['length'], b['width'], b['surface_height']], g.world([0, 0, b['surface_height']/2]), rot), [.45,.28,.12,1.])
+        if g.raw.get('workcell',{}).get('enabled',False):
+            from chess_workcell_description.assembly import Assembly,read_stl
+            from shape_msgs.msg import Mesh,MeshTriangle
+            from geometry_msgs.msg import Point
+            for name,path,t in Assembly().components(g.raw):
+                triangles=read_stl(path);mesh=Mesh()
+                for triangle in triangles:
+                    index=len(mesh.vertices)
+                    mesh.vertices.extend(Point(x=float(v[0]),y=float(v[1]),z=float(v[2])) for v in triangle)
+                    mesh.triangles.append(MeshTriangle(vertex_indices=[index,index+1,index+2]))
+                obj=CollisionObject(id=name);obj.header.frame_id='world';obj.operation=CollisionObject.ADD
+                obj.meshes=[mesh];obj.mesh_poses=[pose(t[:3,3],t[:3,:3])]
+                add(obj,[.45,.5,.55,1.] if name=='workcell_controle_box' else [.45,.28,.12,1.])
+        else:
+            add(object_msg('chess_board_body', [b['length'], b['width'], b['surface_height']], g.world([0, 0, b['surface_height']/2]), rot), [.45,.28,.12,1.])
         rx, ry = (b['length']-8*b['square_size_x'])/2, (b['width']-8*b['square_size_y'])/2
         for name, size, centre in [
             ('left', [rx,b['width'],b['thickness']-b['surface_height']], [-b['length']/2+rx/2,0,(b['surface_height']+b['thickness'])/2]),
@@ -108,6 +123,43 @@ class Scene:
             j = matrix.entry_names.index(link)
             matrix.entry_values[i].enabled[j] = matrix.entry_values[j].enabled[i] = allowed
         self.backend.apply(PlanningScene(is_diff=True, allowed_collision_matrix=matrix))
+
+    @contextmanager
+    def preview_attachment(self, name, arm, grasp_state):
+        """Scoped planner-only payload. No robot/gripper command or FEN change.
+
+        The caller holds the motion lock. Build the attachment in tool-local
+        coordinates at the hypothetical grasp, not at the parked live TCP.
+        Restore the source object even when feasibility checks fail. An uncertain
+        scene update propagates as a blocking error, never a safe rejection.
+        """
+        if self.attached is not None:
+            raise RuntimeError('Cannot preview over a real attachment')
+        req=GetPlanningScene.Request(components=PlanningSceneComponents(components=PlanningSceneComponents.ALLOWED_COLLISION_MATRIX))
+        matrix=copy.deepcopy(self.backend.wait(self.get_client.call_async(req)).scene.allowed_collision_matrix)
+        piece=self.pieces[name]
+        original=self.piece_object(name,piece['symbol'],piece['local'])
+        joints=dict(zip(grasp_state.joint_state.name,grasp_state.joint_state.position))
+        tool=self.backend.model.matrix(arm+'_tool0',joints)
+        world=np.eye(4);world[:3,:3]=self.geometry.T[:3,:3];world[:3,3]=self.geometry.world(piece['local'])
+        relative=np.linalg.inv(tool) @ world
+        obj=copy.deepcopy(original);obj.header.frame_id=arm+'_tool0'
+        obj.primitive_poses=[pose(relative[:3,3],relative[:3,:3])]
+        try:
+            self.backend.apply(PlanningScene(is_diff=True,world=PlanningSceneWorld(collision_objects=[CollisionObject(id=name,operation=CollisionObject.REMOVE)])))
+            scene=PlanningScene(is_diff=True);scene.robot_state.is_diff=True
+            scene.robot_state.attached_collision_objects=[AttachedCollisionObject(link_name=arm+'_tool0',object=obj,touch_links=[arm+'_tool0',arm+'_link4',arm+'_link5'])]
+            self.backend.apply(scene)
+            yield
+        finally:
+            scene=PlanningScene(is_diff=True);scene.robot_state.is_diff=True
+            scene.robot_state.attached_collision_objects=[AttachedCollisionObject(link_name=arm+'_tool0',object=CollisionObject(id=name,operation=CollisionObject.REMOVE))]
+            try:
+                self.backend.apply(scene)
+                self.backend.apply(PlanningScene(is_diff=True,world=PlanningSceneWorld(collision_objects=[original]),allowed_collision_matrix=matrix))
+            except Exception as exc:
+                from .backend import MotionError
+                raise MotionError('service_or_action_timeout: payload preview restoration uncertain: '+str(exc)) from exc
 
     def attach(self, name, arm):
         piece = self.pieces[name]

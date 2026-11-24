@@ -1,0 +1,3460 @@
+{
+  "cases": [
+    {
+      "scenario": "manual",
+      "result": "passed",
+      "both_arm_slider_feedback": true,
+      "single_publisher": true
+    },
+    {
+      "scenario": "moveit_plan",
+      "arm": "robot1",
+      "result": "unreachable",
+      "reason": "unreachable_approach: world=[0.013125000000000001, -0.013125000000000001, 0.048]; check board/support/mount geometry"
+    },
+    {
+      "scenario": "moveit_execute",
+      "arm": "robot1",
+      "result": "unreachable",
+      "reason": "unreachable_approach: world=[0.013125000000000001, -0.013125000000000001, 0.048]; check board/support/mount geometry"
+    },
+    {
+      "scenario": "moveit_home",
+      "arm": "robot1",
+      "result": "mock_controller_execution_passed"
+    },
+    {
+      "scenario": "moveit_plan",
+      "arm": "robot2",
+      "result": "unreachable",
+      "reason": "unreachable_approach: world=[0.013125000000000001, -0.013125000000000001, 0.048]; check board/support/mount geometry"
+    },
+    {
+      "scenario": "moveit_execute",
+      "arm": "robot2",
+      "result": "unreachable",
+      "reason": "unreachable_approach: world=[0.013125000000000001, -0.013125000000000001, 0.048]; check board/support/mount geometry"
+    },
+    {
+      "scenario": "moveit_home",
+      "arm": "robot2",
+      "result": "mock_controller_execution_passed"
+    },
+    {
+      "scenario": "After c4 e5: g1f3",
+      "uci": "g1f3",
+      "result": "rejected_before_activity",
+      "reason": "unreachable_g1_grasp: world=[0.065625, -0.09187500000000001, 0.024300000000000002]; check board/support/mount geometry",
+      "confirmed_fen_unchanged": true,
+      "ready_for_another_human_move": true,
+      "no_automatic_reply": true,
+      "h2_pawn_present": true
+    },
+    {
+      "scenario": "Capture e4d5",
+      "uci": "e4d5",
+      "result": "rejected_before_activity",
+      "reason": "unreachable_d5_grasp: world=[-0.013125000000000001, 0.013125000000000001, 0.0217]; check board/support/mount geometry",
+      "confirmed_fen_unchanged": true,
+      "ready_for_another_human_move": true,
+      "no_automatic_reply": true
+    },
+    {
+      "scenario": "Castling e1g1",
+      "uci": "e1g1",
+      "result": "rejected_before_activity",
+      "reason": "unreachable_e1_grasp: world=[0.013125000000000001, -0.09187500000000001, 0.0269]; check board/support/mount geometry",
+      "confirmed_fen_unchanged": true,
+      "ready_for_another_human_move": true,
+      "no_automatic_reply": true
+    },
+    {
+      "scenario": "En passant e5d6",
+      "uci": "e5d6",
+      "result": "rejected_before_activity",
+      "reason": "unreachable_d5_grasp: world=[-0.013125000000000001, 0.013125000000000001, 0.0217]; check board/support/mount geometry",
+      "confirmed_fen_unchanged": true,
+      "ready_for_another_human_move": true,
+      "no_automatic_reply": true
+    },
+    {
+      "scenario": "Promotion a7a8q",
+      "uci": "a7a8q",
+      "result": "rejected_before_activity",
+      "reason": "unreachable_a7_grasp: world=[-0.09187500000000001, 0.065625, 0.0217]; check board/support/mount geometry",
+      "confirmed_fen_unchanged": true,
+      "ready_for_another_human_move": true,
+      "no_automatic_reply": true
+    },
+    {
+      "scenario": "stockfish_human_white",
+      "uci": "e2e4",
+      "result": "rejected_before_activity",
+      "reason": "unreachable_e2_grasp: world=[0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry",
+      "confirmed_fen_unchanged": true,
+      "ready_for_another_human_move": true,
+      "no_automatic_reply": true
+    },
+    {
+      "scenario": "stockfish_human_black",
+      "result": "opening_robot1_rejected",
+      "one_opening_request": true,
+      "no_retry_or_commit": true,
+      "reason": "unreachable_d2_grasp: world=[-0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry",
+      "status": "Paused \u2022 White / robot1 d2d4 \u2022 Rejected before any arm/gripper activity: unreachable_d2_grasp: world=[-0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry. Stockfish automatic retry disabled; use explicit recovery."
+    },
+    {
+      "scenario": "probe_error",
+      "error": "Gazebo \u2014 physics and direct joint controls \u2022 Waiting for Gazebo spawn, clock and joint feedback | White / robot1 d2d4 \u2022 Rejected before any arm/gripper activity: unreachable_d2_grasp: world=[-0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry. Stockfish automatic retry disabled; use explicit recovery."
+    }
+  ],
+  "events": [
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "initializing",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35426.470256436
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "initializing",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35426.970099893
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "69314d8590e74322ab18700a6be3517c",
+        "phase": "waiting",
+        "timeout_seconds": 30.0
+      },
+      "time": 35427.204200223
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "69314d8590e74322ab18700a6be3517c",
+        "phase": "completed"
+      },
+      "time": 35427.2576714
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "ready",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "detail": "Scene and controllers available; gripper handshake required for chess moves"
+      },
+      "time": 35427.270467499
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35427.469820396
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35427.976280772
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "5195829d752b4c9f90588a8797a4a016",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "5195829d752b4c9f90588a8797a4a016"
+      },
+      "time": 35428.146071414
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "rejected",
+        "plan_id": "5195829d752b4c9f90588a8797a4a016",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "5195829d752b4c9f90588a8797a4a016",
+        "reason": "unreachable_approach: world=[0.013125000000000001, -0.013125000000000001, 0.048]; check board/support/mount geometry",
+        "physical_state_confirmed": false,
+        "reconciliation_required": false,
+        "safe_rejection": false
+      },
+      "time": 35428.236179304
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35428.470271964
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35428.974433496
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "3398916ac6a2425a8ede71511f753caf",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "3398916ac6a2425a8ede71511f753caf"
+      },
+      "time": 35429.143285365
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "rejected",
+        "plan_id": "3398916ac6a2425a8ede71511f753caf",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "3398916ac6a2425a8ede71511f753caf",
+        "reason": "unreachable_approach: world=[0.013125000000000001, -0.013125000000000001, 0.048]; check board/support/mount geometry",
+        "physical_state_confirmed": false,
+        "reconciliation_required": false,
+        "safe_rejection": false
+      },
+      "time": 35429.235309045
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35429.478725493
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35429.970080789
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "8d4d827afd5c4c228712bad5fc5c292f",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "8d4d827afd5c4c228712bad5fc5c292f"
+      },
+      "time": 35430.143437061
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "8d4d827afd5c4c228712bad5fc5c292f",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "plan robot1 approach/home (attempt 1/5)",
+        "operation_id": "e09a3e994d6f4c9b9bbc8c9f6d4a2a51",
+        "phase": "waiting",
+        "timeout_seconds": 30.0
+      },
+      "time": 35430.144729043
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "8d4d827afd5c4c228712bad5fc5c292f",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "plan robot1 approach/home (attempt 1/5)",
+        "operation_id": "e09a3e994d6f4c9b9bbc8c9f6d4a2a51",
+        "phase": "completed"
+      },
+      "time": 35430.195725539
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "8d4d827afd5c4c228712bad5fc5c292f",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "controller goal acceptance",
+        "operation_id": "b3e8e44f52d1458c88070fa5a4e40cad",
+        "phase": "waiting",
+        "timeout_seconds": 30.0
+      },
+      "time": 35430.196203721
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "8d4d827afd5c4c228712bad5fc5c292f",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "controller goal acceptance",
+        "operation_id": "b3e8e44f52d1458c88070fa5a4e40cad",
+        "phase": "completed"
+      },
+      "time": 35430.206622771
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "8d4d827afd5c4c228712bad5fc5c292f",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "controller execution result",
+        "operation_id": "a3bb034f13c0478ba78f797c1cfbf5ed",
+        "phase": "waiting",
+        "timeout_seconds": 20.056949771
+      },
+      "time": 35430.206840081
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "8d4d827afd5c4c228712bad5fc5c292f",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "controller execution result",
+        "operation_id": "a3bb034f13c0478ba78f797c1cfbf5ed",
+        "phase": "completed"
+      },
+      "time": 35430.338954324
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "succeeded",
+        "plan_id": "8d4d827afd5c4c228712bad5fc5c292f",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "8d4d827afd5c4c228712bad5fc5c292f",
+        "awaiting_vision": false,
+        "executed": true,
+        "mode": "controller_execution"
+      },
+      "time": 35430.339310477
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35430.470258158
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35430.969905505
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "e367280a0dbc4941ba4d464c5ffd4257",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "e367280a0dbc4941ba4d464c5ffd4257"
+      },
+      "time": 35431.133378563
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "rejected",
+        "plan_id": "e367280a0dbc4941ba4d464c5ffd4257",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "e367280a0dbc4941ba4d464c5ffd4257",
+        "reason": "unreachable_approach: world=[0.013125000000000001, -0.013125000000000001, 0.048]; check board/support/mount geometry",
+        "physical_state_confirmed": false,
+        "reconciliation_required": false,
+        "safe_rejection": false
+      },
+      "time": 35431.21593273
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35431.469903346
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35431.971180419
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "b6f78ce4e18a4f9c9379559f8c16ddd0",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "b6f78ce4e18a4f9c9379559f8c16ddd0"
+      },
+      "time": 35432.13382565
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "rejected",
+        "plan_id": "b6f78ce4e18a4f9c9379559f8c16ddd0",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "b6f78ce4e18a4f9c9379559f8c16ddd0",
+        "reason": "unreachable_approach: world=[0.013125000000000001, -0.013125000000000001, 0.048]; check board/support/mount geometry",
+        "physical_state_confirmed": false,
+        "reconciliation_required": false,
+        "safe_rejection": false
+      },
+      "time": 35432.210644519
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35432.471207944
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35432.97013617
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "c115bd151b6042c3aba98abc4676166c",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "c115bd151b6042c3aba98abc4676166c"
+      },
+      "time": 35433.124660356
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "c115bd151b6042c3aba98abc4676166c",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "plan robot2 approach/home (attempt 1/5)",
+        "operation_id": "8b336d9a2317477180519172bbca5468",
+        "phase": "waiting",
+        "timeout_seconds": 30.0
+      },
+      "time": 35433.125904012
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "c115bd151b6042c3aba98abc4676166c",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "plan robot2 approach/home (attempt 1/5)",
+        "operation_id": "8b336d9a2317477180519172bbca5468",
+        "phase": "completed"
+      },
+      "time": 35433.146398681
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "c115bd151b6042c3aba98abc4676166c",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "controller goal acceptance",
+        "operation_id": "22e6660b47564f2e8cbc156ee8a06590",
+        "phase": "waiting",
+        "timeout_seconds": 30.0
+      },
+      "time": 35433.146789873
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "c115bd151b6042c3aba98abc4676166c",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "controller goal acceptance",
+        "operation_id": "22e6660b47564f2e8cbc156ee8a06590",
+        "phase": "completed"
+      },
+      "time": 35433.157390462
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "c115bd151b6042c3aba98abc4676166c",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "controller execution result",
+        "operation_id": "02e407a2974a444a98290cec40e7959a",
+        "phase": "waiting",
+        "timeout_seconds": 20.016443138
+      },
+      "time": 35433.157812092
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "c115bd151b6042c3aba98abc4676166c",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "controller execution result",
+        "operation_id": "02e407a2974a444a98290cec40e7959a",
+        "phase": "completed"
+      },
+      "time": 35433.240118966
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "succeeded",
+        "plan_id": "c115bd151b6042c3aba98abc4676166c",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "c115bd151b6042c3aba98abc4676166c",
+        "awaiting_vision": false,
+        "executed": true,
+        "mode": "controller_execution"
+      },
+      "time": 35433.24056908
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35433.472778788
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35433.969933471
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": false,
+        "status": "no_vision_received"
+      },
+      "time": 35457.143734448
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35457.643955802
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35458.143937774
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35458.644444668
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "initializing",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35459.064181927
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": false
+      },
+      "time": 35459.064433011
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35459.143720897
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "initializing",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35459.564414586
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": false
+      },
+      "time": 35459.564796805
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35459.643832397
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "0340e24ba04348e19590010f3071f85c",
+        "phase": "waiting",
+        "timeout_seconds": 30.0
+      },
+      "time": 35459.840195618
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "0340e24ba04348e19590010f3071f85c",
+        "phase": "completed"
+      },
+      "time": 35459.869046289
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "ready",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "detail": "Scene and controllers available; gripper handshake required for chess moves"
+      },
+      "time": 35459.881087262
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35460.065683805
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35460.065983009
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35460.144040813
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35460.564171502
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35460.564430687
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35460.643887997
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "uci",
+        "request_id": "916e80081bd24227bb2e61a76a5d8e34",
+        "ok": true,
+        "status": "manual_plan_published",
+        "plan_id": "f710a8b335594a11bbd3834000566ac8"
+      },
+      "time": 35460.747972639
+    },
+    {
+      "kind": "plan",
+      "data": {
+        "plan_id": "f710a8b335594a11bbd3834000566ac8",
+        "uci": "g1f3",
+        "san": "Nf3",
+        "side": "white",
+        "piece": "N",
+        "from_sq": "g1",
+        "to_sq": "f3",
+        "before_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+        "expected_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq - 1 2",
+        "actions": [
+          {
+            "kind": "move",
+            "source": "g1",
+            "target": "f3",
+            "piece": null,
+            "source_cell": {
+              "row": 7,
+              "col": 6
+            },
+            "target_cell": {
+              "row": 5,
+              "col": 5
+            }
+          }
+        ],
+        "created_at": 1795469574.4118078,
+        "captured": null,
+        "capture_sq": null,
+        "is_castling": false,
+        "promotion": null,
+        "gives_check": false,
+        "eval_cp": null,
+        "think_ms": null,
+        "schema_version": "1.0",
+        "from_cell": {
+          "row": 7,
+          "col": 6
+        },
+        "to_cell": {
+          "row": 5,
+          "col": 5
+        }
+      },
+      "time": 35460.748014829
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "f710a8b335594a11bbd3834000566ac8",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "f710a8b335594a11bbd3834000566ac8"
+      },
+      "time": 35460.748811394
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "preflight",
+        "plan_id": "f710a8b335594a11bbd3834000566ac8",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "g1f3"
+      },
+      "time": 35460.752310105
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "rejected",
+        "plan_id": "f710a8b335594a11bbd3834000566ac8",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "g1f3",
+        "request_id": "f710a8b335594a11bbd3834000566ac8",
+        "reason": "unreachable_g1_grasp: world=[0.065625, -0.09187500000000001, 0.024300000000000002]; check board/support/mount geometry",
+        "physical_state_confirmed": false,
+        "reconciliation_required": false,
+        "safe_rejection": true
+      },
+      "time": 35460.843776119
+    },
+    {
+      "kind": "ack",
+      "data": {
+        "plan_id": "f710a8b335594a11bbd3834000566ac8",
+        "success": false,
+        "arm_parked": false,
+        "gripper_released": false,
+        "reason": "unreachable_g1_grasp: world=[0.065625, -0.09187500000000001, 0.024300000000000002]; check board/support/mount geometry",
+        "safe_rejection": true,
+        "before_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+        "arm_activity": false,
+        "gripper_activity": false,
+        "scene_restored": true
+      },
+      "time": 35460.843824482
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "robot_ack_response",
+        "ok": true,
+        "plan_id": "f710a8b335594a11bbd3834000566ac8",
+        "before_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+        "reason": "unreachable_g1_grasp: world=[0.065625, -0.09187500000000001, 0.024300000000000002]; check board/support/mount geometry",
+        "status": "rejected_before_activity",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35460.844103327
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35461.064316602
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35461.064561323
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35461.143931679
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35461.564393817
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35461.564640719
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35461.643952789
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": false,
+        "status": "no_vision_received"
+      },
+      "time": 35484.859968142
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35485.113914225
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35485.61367944
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35486.113601821
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35486.613642391
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "initializing",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35486.636158938
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": false
+      },
+      "time": 35486.636661252
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "e5ba6cefc9d149288a675985664f3d1d",
+        "phase": "waiting",
+        "timeout_seconds": 30.0
+      },
+      "time": 35486.663302311
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "e5ba6cefc9d149288a675985664f3d1d",
+        "phase": "completed"
+      },
+      "time": 35486.683909751
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "ready",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "detail": "Scene and controllers available; gripper handshake required for chess moves"
+      },
+      "time": 35486.695193999
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35487.1136572
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35487.137395061
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35487.137691627
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35487.613468034
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35487.637273938
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35487.637529096
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "uci",
+        "request_id": "b9b0c4d01bd1417185f4b33cf9957a79",
+        "ok": true,
+        "status": "manual_plan_published",
+        "plan_id": "9d793950577b4d919ad82fcacd3a7446"
+      },
+      "time": 35487.78780931
+    },
+    {
+      "kind": "plan",
+      "data": {
+        "plan_id": "9d793950577b4d919ad82fcacd3a7446",
+        "uci": "e4d5",
+        "san": "exd5",
+        "side": "white",
+        "piece": "P",
+        "from_sq": "e4",
+        "to_sq": "d5",
+        "before_fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+        "expected_fen": "rnbqkbnr/ppp1pppp/8/3P4/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 2",
+        "actions": [
+          {
+            "kind": "remove",
+            "source": "d5",
+            "target": null,
+            "piece": null,
+            "source_cell": {
+              "row": 3,
+              "col": 3
+            }
+          },
+          {
+            "kind": "move",
+            "source": "e4",
+            "target": "d5",
+            "piece": null,
+            "source_cell": {
+              "row": 4,
+              "col": 4
+            },
+            "target_cell": {
+              "row": 3,
+              "col": 3
+            }
+          }
+        ],
+        "created_at": 1795469601.4517384,
+        "captured": "p",
+        "capture_sq": "d5",
+        "is_castling": false,
+        "promotion": null,
+        "gives_check": false,
+        "eval_cp": null,
+        "think_ms": null,
+        "schema_version": "1.0",
+        "from_cell": {
+          "row": 4,
+          "col": 4
+        },
+        "to_cell": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      "time": 35487.7878736
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "9d793950577b4d919ad82fcacd3a7446",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "9d793950577b4d919ad82fcacd3a7446"
+      },
+      "time": 35487.789639596
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "preflight",
+        "plan_id": "9d793950577b4d919ad82fcacd3a7446",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "e4d5"
+      },
+      "time": 35487.826457935
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "rejected",
+        "plan_id": "9d793950577b4d919ad82fcacd3a7446",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "e4d5",
+        "request_id": "9d793950577b4d919ad82fcacd3a7446",
+        "reason": "unreachable_d5_grasp: world=[-0.013125000000000001, 0.013125000000000001, 0.0217]; check board/support/mount geometry",
+        "physical_state_confirmed": false,
+        "reconciliation_required": false,
+        "safe_rejection": true
+      },
+      "time": 35487.897677731
+    },
+    {
+      "kind": "ack",
+      "data": {
+        "plan_id": "9d793950577b4d919ad82fcacd3a7446",
+        "success": false,
+        "arm_parked": false,
+        "gripper_released": false,
+        "reason": "unreachable_d5_grasp: world=[-0.013125000000000001, 0.013125000000000001, 0.0217]; check board/support/mount geometry",
+        "safe_rejection": true,
+        "before_fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+        "arm_activity": false,
+        "gripper_activity": false,
+        "scene_restored": true
+      },
+      "time": 35487.898077659
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "robot_ack_response",
+        "ok": true,
+        "plan_id": "9d793950577b4d919ad82fcacd3a7446",
+        "before_fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+        "reason": "unreachable_d5_grasp: world=[-0.013125000000000001, 0.013125000000000001, 0.0217]; check board/support/mount geometry",
+        "status": "rejected_before_activity",
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35487.898734792
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35488.113792692
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35488.136627738
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35488.137043117
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+      },
+      "time": 35488.61390539
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35488.63612063
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35488.636508392
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": false,
+        "status": "no_vision_received"
+      },
+      "time": 35511.640423997
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1"
+      },
+      "time": 35512.140369268
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1"
+      },
+      "time": 35512.640608887
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1"
+      },
+      "time": 35513.140400794
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1"
+      },
+      "time": 35513.640485338
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "initializing",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35513.665330089
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": false
+      },
+      "time": 35513.665576333
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "d2b83270fee848f4a3ecdc12c7c1a5cf",
+        "phase": "waiting",
+        "timeout_seconds": 30.0
+      },
+      "time": 35513.947046411
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "d2b83270fee848f4a3ecdc12c7c1a5cf",
+        "phase": "completed"
+      },
+      "time": 35513.972961354
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "ready",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "detail": "Scene and controllers available; gripper handshake required for chess moves"
+      },
+      "time": 35513.984820172
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1"
+      },
+      "time": 35514.140803403
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35514.165416757
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35514.16565421
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1"
+      },
+      "time": 35514.640627251
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35514.666142851
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35514.666387441
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "uci",
+        "request_id": "8da42d40420c49afbdffc27fc00d842d",
+        "ok": true,
+        "status": "manual_plan_published",
+        "plan_id": "820a449a510e478da3a716f0adec5d03"
+      },
+      "time": 35514.822211835
+    },
+    {
+      "kind": "plan",
+      "data": {
+        "plan_id": "820a449a510e478da3a716f0adec5d03",
+        "uci": "e1g1",
+        "san": "O-O",
+        "side": "white",
+        "piece": "K",
+        "from_sq": "e1",
+        "to_sq": "g1",
+        "before_fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1",
+        "expected_fen": "r3k2r/8/8/8/8/8/8/R4RK1 b kq - 1 1",
+        "actions": [
+          {
+            "kind": "move",
+            "source": "e1",
+            "target": "g1",
+            "piece": null,
+            "source_cell": {
+              "row": 7,
+              "col": 4
+            },
+            "target_cell": {
+              "row": 7,
+              "col": 6
+            }
+          },
+          {
+            "kind": "move",
+            "source": "h1",
+            "target": "f1",
+            "piece": null,
+            "source_cell": {
+              "row": 7,
+              "col": 7
+            },
+            "target_cell": {
+              "row": 7,
+              "col": 5
+            }
+          }
+        ],
+        "created_at": 1795469628.486095,
+        "captured": null,
+        "capture_sq": null,
+        "is_castling": true,
+        "promotion": null,
+        "gives_check": false,
+        "eval_cp": null,
+        "think_ms": null,
+        "schema_version": "1.0",
+        "from_cell": {
+          "row": 7,
+          "col": 4
+        },
+        "to_cell": {
+          "row": 7,
+          "col": 6
+        }
+      },
+      "time": 35514.822256612
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "820a449a510e478da3a716f0adec5d03",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "820a449a510e478da3a716f0adec5d03"
+      },
+      "time": 35514.837646261
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "preflight",
+        "plan_id": "820a449a510e478da3a716f0adec5d03",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "e1g1"
+      },
+      "time": 35514.844065826
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "rejected",
+        "plan_id": "820a449a510e478da3a716f0adec5d03",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "e1g1",
+        "request_id": "820a449a510e478da3a716f0adec5d03",
+        "reason": "unreachable_e1_grasp: world=[0.013125000000000001, -0.09187500000000001, 0.0269]; check board/support/mount geometry",
+        "physical_state_confirmed": false,
+        "reconciliation_required": false,
+        "safe_rejection": true
+      },
+      "time": 35514.945423022
+    },
+    {
+      "kind": "ack",
+      "data": {
+        "plan_id": "820a449a510e478da3a716f0adec5d03",
+        "success": false,
+        "arm_parked": false,
+        "gripper_released": false,
+        "reason": "unreachable_e1_grasp: world=[0.013125000000000001, -0.09187500000000001, 0.0269]; check board/support/mount geometry",
+        "safe_rejection": true,
+        "before_fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1",
+        "arm_activity": false,
+        "gripper_activity": false,
+        "scene_restored": true
+      },
+      "time": 35514.945648702
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "robot_ack_response",
+        "ok": true,
+        "plan_id": "820a449a510e478da3a716f0adec5d03",
+        "before_fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1",
+        "reason": "unreachable_e1_grasp: world=[0.013125000000000001, -0.09187500000000001, 0.0269]; check board/support/mount geometry",
+        "status": "rejected_before_activity",
+        "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1"
+      },
+      "time": 35514.946011492
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1"
+      },
+      "time": 35515.140698861
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35515.1861216
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35515.186545975
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1"
+      },
+      "time": 35515.640574628
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35515.665571963
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35515.665812938
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": false,
+        "status": "no_vision_received"
+      },
+      "time": 35538.656995142
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1"
+      },
+      "time": 35539.157229866
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1"
+      },
+      "time": 35539.657120109
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1"
+      },
+      "time": 35540.156783154
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": false
+      },
+      "time": 35540.893690079
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "initializing",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35540.893745065
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1"
+      },
+      "time": 35540.894365177
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "initializing",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35541.135618728
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": false
+      },
+      "time": 35541.136085328
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1"
+      },
+      "time": 35541.156861731
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "a8d21ae215ac48f1b7b101435a25b21d",
+        "phase": "waiting",
+        "timeout_seconds": 30.0
+      },
+      "time": 35541.416322002
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "a8d21ae215ac48f1b7b101435a25b21d",
+        "phase": "completed"
+      },
+      "time": 35541.438523362
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "ready",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "detail": "Scene and controllers available; gripper handshake required for chess moves"
+      },
+      "time": 35541.449588394
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35541.636964697
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35541.63734938
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1"
+      },
+      "time": 35541.656768521
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35542.135458187
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35542.135701869
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1"
+      },
+      "time": 35542.157175728
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "uci",
+        "request_id": "a3bf327a084240d186861896b0dab8e1",
+        "ok": true,
+        "status": "manual_plan_published",
+        "plan_id": "fd9bb2e5c5f54e42919d1d59d5ede511"
+      },
+      "time": 35542.281612445
+    },
+    {
+      "kind": "plan",
+      "data": {
+        "plan_id": "fd9bb2e5c5f54e42919d1d59d5ede511",
+        "uci": "e5d6",
+        "san": "exd6",
+        "side": "white",
+        "piece": "P",
+        "from_sq": "e5",
+        "to_sq": "d6",
+        "before_fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1",
+        "expected_fen": "4k3/8/3P4/8/8/8/8/4K3 b - - 0 1",
+        "actions": [
+          {
+            "kind": "remove",
+            "source": "d5",
+            "target": null,
+            "piece": null,
+            "source_cell": {
+              "row": 3,
+              "col": 3
+            }
+          },
+          {
+            "kind": "move",
+            "source": "e5",
+            "target": "d6",
+            "piece": null,
+            "source_cell": {
+              "row": 3,
+              "col": 4
+            },
+            "target_cell": {
+              "row": 2,
+              "col": 3
+            }
+          }
+        ],
+        "created_at": 1795469655.9455318,
+        "captured": "p",
+        "capture_sq": "d5",
+        "is_castling": false,
+        "promotion": null,
+        "gives_check": false,
+        "eval_cp": null,
+        "think_ms": null,
+        "schema_version": "1.0",
+        "from_cell": {
+          "row": 3,
+          "col": 4
+        },
+        "to_cell": {
+          "row": 2,
+          "col": 3
+        }
+      },
+      "time": 35542.281703163
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "fd9bb2e5c5f54e42919d1d59d5ede511",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "fd9bb2e5c5f54e42919d1d59d5ede511"
+      },
+      "time": 35542.340265136
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "preflight",
+        "plan_id": "fd9bb2e5c5f54e42919d1d59d5ede511",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "e5d6"
+      },
+      "time": 35542.346493735
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "rejected",
+        "plan_id": "fd9bb2e5c5f54e42919d1d59d5ede511",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "e5d6",
+        "request_id": "fd9bb2e5c5f54e42919d1d59d5ede511",
+        "reason": "unreachable_d5_grasp: world=[-0.013125000000000001, 0.013125000000000001, 0.0217]; check board/support/mount geometry",
+        "physical_state_confirmed": false,
+        "reconciliation_required": false,
+        "safe_rejection": true
+      },
+      "time": 35542.445955074
+    },
+    {
+      "kind": "ack",
+      "data": {
+        "plan_id": "fd9bb2e5c5f54e42919d1d59d5ede511",
+        "success": false,
+        "arm_parked": false,
+        "gripper_released": false,
+        "reason": "unreachable_d5_grasp: world=[-0.013125000000000001, 0.013125000000000001, 0.0217]; check board/support/mount geometry",
+        "safe_rejection": true,
+        "before_fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1",
+        "arm_activity": false,
+        "gripper_activity": false,
+        "scene_restored": true
+      },
+      "time": 35542.446527744
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "robot_ack_response",
+        "ok": true,
+        "plan_id": "fd9bb2e5c5f54e42919d1d59d5ede511",
+        "before_fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1",
+        "reason": "unreachable_d5_grasp: world=[-0.013125000000000001, 0.013125000000000001, 0.0217]; check board/support/mount geometry",
+        "status": "rejected_before_activity",
+        "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1"
+      },
+      "time": 35542.446885945
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35542.635738543
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35542.636292831
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1"
+      },
+      "time": 35542.657163475
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35543.13557378
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35543.135843309
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1"
+      },
+      "time": 35543.156964612
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": false,
+        "status": "no_vision_received"
+      },
+      "time": 35566.151121107
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/P7/8/8/8/8/8/4K3 w - - 0 1"
+      },
+      "time": 35566.651154931
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/P7/8/8/8/8/8/4K3 w - - 0 1"
+      },
+      "time": 35567.150839067
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/P7/8/8/8/8/8/4K3 w - - 0 1"
+      },
+      "time": 35567.651060986
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "e07ea152f0c54158b79ad07658ecca8d",
+        "phase": "waiting",
+        "timeout_seconds": 30.0
+      },
+      "time": 35567.887207638
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "e07ea152f0c54158b79ad07658ecca8d",
+        "phase": "completed"
+      },
+      "time": 35567.909661286
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "ready",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "detail": "Scene and controllers available; gripper handshake required for chess moves"
+      },
+      "time": 35567.931048072
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/P7/8/8/8/8/8/4K3 w - - 0 1"
+      },
+      "time": 35568.15116555
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35568.159207246
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35568.159601795
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/P7/8/8/8/8/8/4K3 w - - 0 1"
+      },
+      "time": 35568.651062333
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35568.65914468
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35568.65918181
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "uci",
+        "request_id": "d1d9f99d1d6e44508b80bb84614fb4b4",
+        "ok": true,
+        "status": "manual_plan_published",
+        "plan_id": "1b898f8966864b25a3d64be92e7f7727"
+      },
+      "time": 35568.78672802
+    },
+    {
+      "kind": "plan",
+      "data": {
+        "plan_id": "1b898f8966864b25a3d64be92e7f7727",
+        "uci": "a7a8q",
+        "san": "a8=Q+",
+        "side": "white",
+        "piece": "P",
+        "from_sq": "a7",
+        "to_sq": "a8",
+        "before_fen": "4k3/P7/8/8/8/8/8/4K3 w - - 0 1",
+        "expected_fen": "Q3k3/8/8/8/8/8/8/4K3 b - - 0 1",
+        "actions": [
+          {
+            "kind": "move",
+            "source": "a7",
+            "target": "a8",
+            "piece": null,
+            "source_cell": {
+              "row": 1,
+              "col": 0
+            },
+            "target_cell": {
+              "row": 0,
+              "col": 0
+            }
+          },
+          {
+            "kind": "promote",
+            "source": "a8",
+            "target": "a8",
+            "piece": "q",
+            "source_cell": {
+              "row": 0,
+              "col": 0
+            },
+            "target_cell": {
+              "row": 0,
+              "col": 0
+            }
+          }
+        ],
+        "created_at": 1795469682.4506962,
+        "captured": null,
+        "capture_sq": null,
+        "is_castling": false,
+        "promotion": "q",
+        "gives_check": true,
+        "eval_cp": null,
+        "think_ms": null,
+        "schema_version": "1.0",
+        "from_cell": {
+          "row": 1,
+          "col": 0
+        },
+        "to_cell": {
+          "row": 0,
+          "col": 0
+        }
+      },
+      "time": 35568.786776526
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "1b898f8966864b25a3d64be92e7f7727",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "1b898f8966864b25a3d64be92e7f7727"
+      },
+      "time": 35568.78746883
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "preflight",
+        "plan_id": "1b898f8966864b25a3d64be92e7f7727",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "a7a8q"
+      },
+      "time": 35568.789580608
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "rejected",
+        "plan_id": "1b898f8966864b25a3d64be92e7f7727",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "a7a8q",
+        "request_id": "1b898f8966864b25a3d64be92e7f7727",
+        "reason": "unreachable_a7_grasp: world=[-0.09187500000000001, 0.065625, 0.0217]; check board/support/mount geometry",
+        "physical_state_confirmed": false,
+        "reconciliation_required": false,
+        "safe_rejection": true
+      },
+      "time": 35568.839303025
+    },
+    {
+      "kind": "ack",
+      "data": {
+        "plan_id": "1b898f8966864b25a3d64be92e7f7727",
+        "success": false,
+        "arm_parked": false,
+        "gripper_released": false,
+        "reason": "unreachable_a7_grasp: world=[-0.09187500000000001, 0.065625, 0.0217]; check board/support/mount geometry",
+        "safe_rejection": true,
+        "before_fen": "4k3/P7/8/8/8/8/8/4K3 w - - 0 1",
+        "arm_activity": false,
+        "gripper_activity": false,
+        "scene_restored": true
+      },
+      "time": 35568.839528003
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "robot_ack_response",
+        "ok": true,
+        "plan_id": "1b898f8966864b25a3d64be92e7f7727",
+        "before_fen": "4k3/P7/8/8/8/8/8/4K3 w - - 0 1",
+        "reason": "unreachable_a7_grasp: world=[-0.09187500000000001, 0.065625, 0.0217]; check board/support/mount geometry",
+        "status": "rejected_before_activity",
+        "fen": "4k3/P7/8/8/8/8/8/4K3 w - - 0 1"
+      },
+      "time": 35568.839894793
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/P7/8/8/8/8/8/4K3 w - - 0 1"
+      },
+      "time": 35569.150976795
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35569.242096938
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35569.242552806
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "4k3/P7/8/8/8/8/8/4K3 w - - 0 1"
+      },
+      "time": 35569.651794014
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35569.659062977
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35569.659507052
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "initializing",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35594.897178897
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "initializing",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35595.152403589
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": false
+      },
+      "time": 35595.152823376
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35595.17235286
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "001cf9f5d01e4ee9bc983c9ddea55ab6",
+        "phase": "waiting",
+        "timeout_seconds": 30.0
+      },
+      "time": 35595.578835072
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "001cf9f5d01e4ee9bc983c9ddea55ab6",
+        "phase": "completed"
+      },
+      "time": 35595.620531699
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "ready",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "detail": "Scene and controllers available; gripper handshake required for chess moves"
+      },
+      "time": 35595.631824642
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35595.652728425
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35595.653074864
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35595.671978216
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35596.152670736
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35596.153229065
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35596.172290537
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "uci",
+        "request_id": "4fda39d120d64a7da71973d5bfcb8b5e",
+        "ok": true,
+        "status": "manual_plan_published",
+        "plan_id": "27d23e7fb94e4d909b96239284228578"
+      },
+      "time": 35596.285922786
+    },
+    {
+      "kind": "plan",
+      "data": {
+        "plan_id": "27d23e7fb94e4d909b96239284228578",
+        "uci": "e2e4",
+        "san": "e4",
+        "side": "white",
+        "piece": "P",
+        "from_sq": "e2",
+        "to_sq": "e4",
+        "before_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "expected_fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "actions": [
+          {
+            "kind": "move",
+            "source": "e2",
+            "target": "e4",
+            "piece": null,
+            "source_cell": {
+              "row": 6,
+              "col": 4
+            },
+            "target_cell": {
+              "row": 4,
+              "col": 4
+            }
+          }
+        ],
+        "created_at": 1795469709.9497871,
+        "captured": null,
+        "capture_sq": null,
+        "is_castling": false,
+        "promotion": null,
+        "gives_check": false,
+        "eval_cp": null,
+        "think_ms": null,
+        "schema_version": "1.0",
+        "from_cell": {
+          "row": 6,
+          "col": 4
+        },
+        "to_cell": {
+          "row": 4,
+          "col": 4
+        }
+      },
+      "time": 35596.286019889
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "27d23e7fb94e4d909b96239284228578",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "27d23e7fb94e4d909b96239284228578"
+      },
+      "time": 35596.289286903
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "preflight",
+        "plan_id": "27d23e7fb94e4d909b96239284228578",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "e2e4"
+      },
+      "time": 35596.291864291
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "rejected",
+        "plan_id": "27d23e7fb94e4d909b96239284228578",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "e2e4",
+        "request_id": "27d23e7fb94e4d909b96239284228578",
+        "reason": "unreachable_e2_grasp: world=[0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry",
+        "physical_state_confirmed": false,
+        "reconciliation_required": false,
+        "safe_rejection": true
+      },
+      "time": 35596.429031311
+    },
+    {
+      "kind": "ack",
+      "data": {
+        "plan_id": "27d23e7fb94e4d909b96239284228578",
+        "success": false,
+        "arm_parked": false,
+        "gripper_released": false,
+        "reason": "unreachable_e2_grasp: world=[0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry",
+        "safe_rejection": true,
+        "before_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "arm_activity": false,
+        "gripper_activity": false,
+        "scene_restored": true
+      },
+      "time": 35596.429269149
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "robot_ack_response",
+        "ok": true,
+        "plan_id": "27d23e7fb94e4d909b96239284228578",
+        "before_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "reason": "unreachable_e2_grasp: world=[0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry",
+        "status": "rejected_before_activity",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35596.429888511
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35596.65240821
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35596.65269458
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35596.672154155
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35597.153255354
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35597.153834043
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35597.172198013
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "210a99467a6a4577b0044c85a01adefe",
+        "phase": "waiting",
+        "timeout_seconds": 30.0
+      },
+      "time": 35622.190120792
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "operation",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "operation": "apply collision scene",
+        "operation_id": "210a99467a6a4577b0044c85a01adefe",
+        "phase": "completed"
+      },
+      "time": 35622.20767998
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "ready",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "detail": "Scene and controllers available; gripper handshake required for chess moves"
+      },
+      "time": 35622.226738136
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35622.260390539
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35622.260797242
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": false,
+        "status": "no_vision_received"
+      },
+      "time": 35622.280171269
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35622.761681392
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35622.76195066
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35622.78036521
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35623.261370188
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35623.261612274
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35623.280379316
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35623.761456318
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "next",
+        "request_id": "febfc63c0cdb456a9e8b6bd99b16beb9",
+        "ok": true,
+        "status": "plan_published",
+        "plan_id": "e2adb4cfe89348f2be16f85dfd085f49"
+      },
+      "time": 35623.829267762
+    },
+    {
+      "kind": "plan",
+      "data": {
+        "plan_id": "e2adb4cfe89348f2be16f85dfd085f49",
+        "uci": "d2d4",
+        "san": "d4",
+        "side": "white",
+        "piece": "P",
+        "from_sq": "d2",
+        "to_sq": "d4",
+        "before_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "expected_fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "actions": [
+          {
+            "kind": "move",
+            "source": "d2",
+            "target": "d4",
+            "piece": null,
+            "source_cell": {
+              "row": 6,
+              "col": 3
+            },
+            "target_cell": {
+              "row": 4,
+              "col": 3
+            }
+          }
+        ],
+        "created_at": 1795469737.4928699,
+        "captured": null,
+        "capture_sq": null,
+        "is_castling": false,
+        "promotion": null,
+        "gives_check": false,
+        "eval_cp": 40,
+        "think_ms": 509.079401002964,
+        "schema_version": "1.0",
+        "from_cell": {
+          "row": 6,
+          "col": 3
+        },
+        "to_cell": {
+          "row": 4,
+          "col": 3
+        }
+      },
+      "time": 35623.829344507
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": false,
+        "status": "not_ready_for_sync"
+      },
+      "time": 35623.830172244
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35623.83077756
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "accepted",
+        "plan_id": "e2adb4cfe89348f2be16f85dfd085f49",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "request_id": "e2adb4cfe89348f2be16f85dfd085f49"
+      },
+      "time": 35623.831264712
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "preflight",
+        "plan_id": "e2adb4cfe89348f2be16f85dfd085f49",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "d2d4"
+      },
+      "time": 35623.83393305
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "rejected",
+        "plan_id": "e2adb4cfe89348f2be16f85dfd085f49",
+        "geometry_revision": 0,
+        "simulation_grasp": true,
+        "arm": "robot1",
+        "side": "white",
+        "uci": "d2d4",
+        "request_id": "e2adb4cfe89348f2be16f85dfd085f49",
+        "reason": "unreachable_d2_grasp: world=[-0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry",
+        "physical_state_confirmed": false,
+        "reconciliation_required": false,
+        "safe_rejection": true
+      },
+      "time": 35623.918915314
+    },
+    {
+      "kind": "ack",
+      "data": {
+        "plan_id": "e2adb4cfe89348f2be16f85dfd085f49",
+        "success": false,
+        "arm_parked": false,
+        "gripper_released": false,
+        "reason": "unreachable_d2_grasp: world=[-0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry",
+        "safe_rejection": true,
+        "before_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "arm_activity": false,
+        "gripper_activity": false,
+        "scene_restored": true
+      },
+      "time": 35623.920376724
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "robot_ack_response",
+        "ok": true,
+        "plan_id": "e2adb4cfe89348f2be16f85dfd085f49",
+        "before_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "reason": "unreachable_d2_grasp: world=[-0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry",
+        "status": "rejected_before_activity",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35623.920833715
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35624.260452603
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35624.260699709
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35624.280274893
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35624.760802398
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35624.761257136
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35624.780540262
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35625.280506695
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35625.284360336
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35625.284856837
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35625.760797999
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35625.7610389
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35625.780233087
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35626.260645254
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35626.261292782
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35626.28037114
+    },
+    {
+      "kind": "motion",
+      "data": {
+        "schema_version": 1,
+        "status": "idle",
+        "plan_id": "",
+        "geometry_revision": 0,
+        "simulation_grasp": true
+      },
+      "time": 35626.760570551
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "safety_signal",
+        "ready": true
+      },
+      "time": 35626.760971406
+    },
+    {
+      "kind": "event",
+      "data": {
+        "event": "command_response",
+        "action": "sync",
+        "request_id": null,
+        "ok": true,
+        "status": "synchronized",
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+      },
+      "time": 35626.780279279
+    }
+  ],
+  "clean_shutdown": true,
+  "max_qt_timer_gap": 0.057055862998822704
+}

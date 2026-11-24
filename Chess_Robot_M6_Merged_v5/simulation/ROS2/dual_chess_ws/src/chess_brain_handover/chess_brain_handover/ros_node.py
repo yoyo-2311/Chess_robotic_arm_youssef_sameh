@@ -143,6 +143,13 @@ def main(args=None):
         def on_robot_ack(self, msg):
             try:
                 data = self.parse(msg)
+                if data.get('safe_rejection') is True and data.get('success') is False:
+                    response = self.game.reject_unexecuted(data['plan_id'],before_fen=data.get('before_fen'),
+                        arm_activity=data.get('arm_activity'),gripper_activity=data.get('gripper_activity'),
+                        scene_restored=data.get('scene_restored'),reason=data.get('reason','preflight rejected'))
+                    self.safety_ready = False  # Require the next backend readiness assertion after release.
+                    self.event({'event':'robot_ack_response', **response})
+                    return
                 response = self.game.robot_ack(
                     data["plan_id"], success=data.get("success") is True,
                     arm_parked=data.get("arm_parked") is True,

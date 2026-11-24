@@ -7,3 +7,6 @@
 /.codex/
 __pycache__/
 .pytest_cache/
+# Local desktop dependencies, launch logs and QA screenshots
+.qt-deps/
+.desktop-state/

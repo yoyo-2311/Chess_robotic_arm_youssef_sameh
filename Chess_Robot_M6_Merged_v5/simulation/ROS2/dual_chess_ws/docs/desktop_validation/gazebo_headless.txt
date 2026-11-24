@@ -1,0 +1,6 @@
+This plugin does not support propagateSizeHints()
+[WARN] [1795441777.791967839] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[WARN] [1795441777.791987775] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+Qt backend smoke and clean close passed: gazebo

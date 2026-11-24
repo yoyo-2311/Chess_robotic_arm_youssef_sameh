@@ -7,7 +7,7 @@ setup(
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'], zip_safe=True,
+    tests_require=['pytest'], install_requires=['setuptools'], zip_safe=True,
     maintainer='Dual Chess Integration Team',
     maintainer_email='noreply@example.com',
     description='Passive-by-default ROS 2 high-level chess auto game coordinator',

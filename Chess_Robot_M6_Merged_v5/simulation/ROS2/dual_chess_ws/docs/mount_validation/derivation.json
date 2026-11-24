@@ -1,0 +1,76 @@
+{
+  "reference_frame": "world",
+  "units": "metres/radians",
+  "seats": [
+    {
+      "center": [
+        -0.3999999920545845,
+        1.0727018384670828e-08,
+        -0.03299997692413115
+      ],
+      "radius": 0.14000000308253968,
+      "fit_max_error": 3.193143902069373e-08,
+      "rim_vertices": 22
+    },
+    {
+      "center": [
+        0.3999999606594503,
+        1.0727019772449609e-08,
+        -0.03299997692413115
+      ],
+      "radius": 0.13999999323105672,
+      "fit_max_error": 4.178292367651437e-08,
+      "rim_vertices": 22
+    }
+  ],
+  "physical_base_face": {
+    "center_native": [
+      0.0030999985667259757,
+      0.4375213086605072,
+      0.09810000183452353
+    ],
+    "radius": 0.13970000139631586,
+    "fit_max_error": 1.0298229463634456e-08,
+    "rim_vertices": 26,
+    "normal_native": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "mounts": {
+    "robot1": {
+      "position": [
+        -0.3968999934878585,
+        0.09810001256154201,
+        0.40452133173637606
+      ],
+      "rpy": [
+        0.0,
+        0.0,
+        3.141592653589793
+      ]
+    },
+    "robot2": {
+      "position": [
+        0.3968999620927243,
+        -0.09809999110750385,
+        0.40452133173637606
+      ],
+      "rpy": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "yaw_status": "Unconfirmed: retained configured yaw; unkeyed circular platform has no mating frame or bolt pattern",
+  "robot1_seat": "A",
+  "assignment_confirmed": false,
+  "assignment_status": "UNCONFIRMED preview: robot1/White on A; robot2/Black on B; user has no seat identity information yet",
+  "mesh_sha256": {
+    "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/src/chess_workcell_description/meshes/controle_box.STL": "499db3676569e763914adbcd480c08d7d349946391f82d726de483dbfe5fcee3",
+    "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/src/chess_workcell_description/meshes/controle_box_refined.STL": "10bae1eaeb032f1f31b4939027240761dad2226ffd071ad6d29da4a1b8ebe401",
+    "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/src/dual_chess_description/meshes/scara_v2/base_link.STL": "55276dbb74f3f108c6f42012664babb24bc6ce1bed31348e6ba9fabff7cd4731"
+  }
+}

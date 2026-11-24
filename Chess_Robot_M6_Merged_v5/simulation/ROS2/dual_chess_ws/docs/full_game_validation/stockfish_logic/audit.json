@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "plies": 53,
+  "result": "1-0",
+  "termination": "CHECKMATE",
+  "captures": 15,
+  "castlings": 1,
+  "en_passant": 0,
+  "promotions": 0,
+  "all_moves_legal": true,
+  "all_san_correct": true,
+  "all_fen_transitions_match": true,
+  "unique_plan_ids": true,
+  "unique_vision_capture_ids": true,
+  "no_moves_after_terminal_state": true,
+  "final_fen": "2b3R1/4Q3/4p2p/1pp2p1k/8/P5N1/P1P2PPP/6K1 b - - 6 27",
+  "scope": "Logic only; execution and camera observations are synthetic."
+}

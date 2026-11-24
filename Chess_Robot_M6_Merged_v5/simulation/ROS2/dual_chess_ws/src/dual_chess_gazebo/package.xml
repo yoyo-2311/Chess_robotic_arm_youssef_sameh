@@ -21,4 +21,5 @@
   <export>
     <build_type>ament_cmake</build_type>
   </export>
+  <exec_depend>chess_workcell_description</exec_depend>
 </package>

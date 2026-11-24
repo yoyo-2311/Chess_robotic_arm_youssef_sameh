@@ -1,0 +1,3613 @@
+[
+  {
+    "t": 2.2491,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": false,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 2.7876,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "no_vision_received"
+    }
+  },
+  {
+    "t": 2.788,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": false,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 3.2881,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 3.2885,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 3.7879,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 3.7883,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 4.2494,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 4.2879,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 4.2883,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 4.788,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 4.7884,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 4.7938,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "initializing",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 4.7939,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 4.7941,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 4.7943,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 5.2882,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 5.2886,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 5.2925,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 5.2928,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 5.2929,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "initializing",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 5.2934,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 5.7881,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 5.7883,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 5.7932,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "initializing",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 5.7933,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 5.7937,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 5.794,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 5.9221,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "ready",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "detail": "Scene and controllers available; gripper handshake required for chess moves"
+    }
+  },
+  {
+    "t": 5.9222,
+    "kind": "geometry",
+    "data": {
+      "revision": 0,
+      "frame_id": "world",
+      "configuration": {
+        "board": {
+          "length": 0.24,
+          "width": 0.24,
+          "square_size_x": 0.02625,
+          "square_size_y": 0.02625,
+          "thickness": 0.020189205169677735,
+          "surface_height": 0.01,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "grid_mode": "fit_board",
+          "border_x": 0.015,
+          "border_y": 0.015
+        },
+        "support": {
+          "enabled": true,
+          "size": [
+            0.24,
+            0.24,
+            0.01
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -0.005
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mounts": {
+          "robot1": {
+            "position": [
+              0.0,
+              -0.19,
+              0.04
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              1.5707963267948966
+            ]
+          },
+          "robot2": {
+            "position": [
+              0.0,
+              0.19,
+              0.04
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              -1.5707963267948966
+            ]
+          }
+        },
+        "tool": {
+          "position": [
+            0.007,
+            -0.0287,
+            0.0
+          ]
+        },
+        "pieces": {
+          "heights": {
+            "p": 0.018,
+            "n": 0.022,
+            "b": 0.024,
+            "r": 0.02,
+            "q": 0.025,
+            "k": 0.026
+          },
+          "radius": 0.003
+        },
+        "motion": {
+          "grasp_fraction": 0.65,
+          "approach_clearance": 0.012,
+          "transfer_clearance": 0.012,
+          "place_clearance": 0.001,
+          "velocity_scale": 0.4,
+          "acceleration_scale": 0.4,
+          "cartesian_step": 0.002,
+          "minimum_cartesian_fraction": 1.0,
+          "operator_timeout": 120.0,
+          "max_board_tilt": 0.035
+        },
+        "capture_bins": {
+          "robot1": {
+            "origin": [
+              0.14,
+              -0.042,
+              0.025
+            ],
+            "step": [
+              0.0,
+              0.012,
+              0.0
+            ],
+            "row_step": [
+              0.012,
+              0.0,
+              0.0
+            ],
+            "columns": 8,
+            "slots": 16
+          },
+          "robot2": {
+            "origin": [
+              -0.14,
+              -0.042,
+              0.025
+            ],
+            "step": [
+              0.0,
+              0.012,
+              0.0
+            ],
+            "row_step": [
+              -0.012,
+              0.0,
+              0.0
+            ],
+            "columns": 8,
+            "slots": 16
+          }
+        }
+      },
+      "placeholders": true
+    }
+  },
+  {
+    "t": 6.2495,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 6.2879,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 6.2881,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 6.2928,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "idle",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 6.2928,
+    "kind": "safety",
+    "data": true
+  },
+  {
+    "t": 6.2932,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": true
+    }
+  },
+  {
+    "t": 6.2935,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 6.7878,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": true,
+      "status": "synchronized",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    }
+  },
+  {
+    "t": 6.788,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 6.7926,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "idle",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 6.7926,
+    "kind": "safety",
+    "data": true
+  },
+  {
+    "t": 6.7928,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": true
+    }
+  },
+  {
+    "t": 6.793,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": null,
+      "pending_move": null,
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 6.9268416539998725,
+    "kind": "direct_ros_command",
+    "data": {
+      "action": "uci",
+      "uci": "g1f3",
+      "request_id": "opening-73323977b9f24a40b308d675fb174eca"
+    }
+  },
+  {
+    "t": 6.9334,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "uci",
+      "request_id": "opening-73323977b9f24a40b308d675fb174eca",
+      "ok": true,
+      "status": "manual_plan_published",
+      "plan_id": "3872569826934084af4b51c96e18b775"
+    }
+  },
+  {
+    "t": 6.9335,
+    "kind": "plan",
+    "data": {
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "uci": "g1f3",
+      "san": "Nf3",
+      "side": "white",
+      "piece": "N",
+      "from_sq": "g1",
+      "to_sq": "f3",
+      "before_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "expected_fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+      "actions": [
+        {
+          "kind": "move",
+          "source": "g1",
+          "target": "f3",
+          "piece": null,
+          "source_cell": {
+            "row": 7,
+            "col": 6
+          },
+          "target_cell": {
+            "row": 5,
+            "col": 5
+          }
+        }
+      ],
+      "created_at": 1795447316.9987752,
+      "captured": null,
+      "capture_sq": null,
+      "is_castling": false,
+      "promotion": null,
+      "gives_check": false,
+      "eval_cp": null,
+      "think_ms": null,
+      "schema_version": "1.0",
+      "from_cell": {
+        "row": 7,
+        "col": 6
+      },
+      "to_cell": {
+        "row": 5,
+        "col": 5
+      }
+    }
+  },
+  {
+    "t": 6.9339,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 6.9342,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "accepted",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "request_id": "3872569826934084af4b51c96e18b775"
+    }
+  },
+  {
+    "t": 6.9366,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "preflight",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "uci": "g1f3"
+    }
+  },
+  {
+    "t": 7.2057,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "stage",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "stage": "approach_pick",
+      "source": "g1",
+      "target": "f3"
+    }
+  },
+  {
+    "t": 7.2878,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 7.2883,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 7.293,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 7.293,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 7.2934,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 7.2934,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 7.7877,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 7.7879,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 7.7948,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 7.7948,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 7.795,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 7.7954,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 8.2492,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 8.2877,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 8.2879,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 8.294,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 8.2941,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 8.2943,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 8.2943,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 8.7875,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 8.7878,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 8.7927,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 8.7929,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 8.7931,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 8.7933,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 9.2874,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 9.2877,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 9.2927,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 9.2929,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 9.2931,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 9.2933,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 9.7876,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 9.7881,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 9.7927,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 9.7929,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 9.7931,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 9.7934,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 10.2493,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 10.2874,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 10.2877,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 10.2946,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 10.2946,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 10.295,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 10.295,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 10.7877,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 10.7881,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 10.7932,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 10.7932,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 10.7936,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 10.7939,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 11.2878,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 11.2879,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 11.2928,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 11.2929,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 11.2933,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 11.2933,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 11.7878,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 11.7883,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 11.7931,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 11.7931,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 11.7935,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 11.7938,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 12.2493,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 12.2876,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 12.288,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 12.2949,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 12.2949,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 12.2951,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 12.2953,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 12.7877,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 12.7881,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 12.7926,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 12.7928,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 12.7928,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 12.7934,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 13.2876,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 13.288,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 13.2928,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 13.2928,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 13.2932,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 13.2933,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 13.7877,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 13.7881,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 13.7941,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 13.7941,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 13.7943,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 13.7949,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 14.2493,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 14.2875,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 14.2879,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 14.2927,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 14.293,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 14.293,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 14.2932,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 14.7876,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 14.7878,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 14.7927,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 14.7927,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 14.7929,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 14.7932,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 15.2877,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 15.2881,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 15.2941,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "busy",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 15.2942,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 15.2946,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": false,
+      "block_reason": null,
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 15.2947,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 15.3148,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "failed",
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "geometry_revision": 0,
+      "simulation_grasp": true,
+      "request_id": "3872569826934084af4b51c96e18b775",
+      "reason": "cartesian_path_incomplete: fraction=0.8947 code=1",
+      "physical_state_confirmed": false,
+      "reconciliation_required": true
+    }
+  },
+  {
+    "t": 15.3169,
+    "kind": "ack",
+    "data": {
+      "plan_id": "3872569826934084af4b51c96e18b775",
+      "success": false,
+      "arm_parked": false,
+      "gripper_released": false,
+      "reason": "cartesian_path_incomplete: fraction=0.8947 code=1"
+    }
+  },
+  {
+    "t": 15.3173,
+    "kind": "event",
+    "data": {
+      "event": "robot_ack_response",
+      "ok": false,
+      "status": "blocked",
+      "reason": "robot_execution_failed_or_not_safe"
+    }
+  },
+  {
+    "t": 15.3177,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": true,
+      "block_reason": "robot_execution_failed_or_not_safe",
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 15.7879,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 15.7881,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": true,
+      "block_reason": "robot_execution_failed_or_not_safe",
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 15.7941,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 15.7942,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "blocked",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 15.7942,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 15.7944,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": true,
+      "block_reason": "robot_execution_failed_or_not_safe",
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 16.2495,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": true,
+      "block_reason": "robot_execution_failed_or_not_safe",
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 16.288,
+    "kind": "event",
+    "data": {
+      "event": "command_response",
+      "action": "sync",
+      "request_id": null,
+      "ok": false,
+      "status": "not_ready_for_sync"
+    }
+  },
+  {
+    "t": 16.2883,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": true,
+      "block_reason": "robot_execution_failed_or_not_safe",
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  },
+  {
+    "t": 16.2929,
+    "kind": "motion",
+    "data": {
+      "schema_version": 1,
+      "status": "blocked",
+      "plan_id": "",
+      "geometry_revision": 0,
+      "simulation_grasp": true
+    }
+  },
+  {
+    "t": 16.293,
+    "kind": "safety",
+    "data": false
+  },
+  {
+    "t": 16.2933,
+    "kind": "event",
+    "data": {
+      "event": "safety_signal",
+      "ready": false
+    }
+  },
+  {
+    "t": 16.2937,
+    "kind": "state",
+    "data": {
+      "schema_version": "1.0",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "turn": "white",
+      "result": null,
+      "synchronized": true,
+      "blocked": true,
+      "block_reason": "robot_execution_failed_or_not_safe",
+      "pending_plan_id": "3872569826934084af4b51c96e18b775",
+      "pending_move": "g1f3",
+      "robot_ack_received": false,
+      "committed_plies": 0,
+      "legal_moves": [
+        "g1h3",
+        "g1f3",
+        "b1c3",
+        "b1a3",
+        "h2h3",
+        "g2g3",
+        "f2f3",
+        "e2e3",
+        "d2d3",
+        "c2c3",
+        "b2b3",
+        "a2a3",
+        "h2h4",
+        "g2g4",
+        "f2f4",
+        "e2e4",
+        "d2d4",
+        "c2c4",
+        "b2b4",
+        "a2a4"
+      ]
+    }
+  }
+]

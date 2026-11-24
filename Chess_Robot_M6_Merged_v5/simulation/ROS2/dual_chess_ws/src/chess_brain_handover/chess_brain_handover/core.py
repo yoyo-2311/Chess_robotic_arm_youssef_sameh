@@ -339,6 +339,7 @@ class GameController:
         self.seen_capture_ids: set[str] = set()
         self.history: list[dict] = []
         self._closed = False
+        self.last_rejection = None
 
     def __enter__(self) -> "GameController":
         return self
@@ -370,7 +371,7 @@ class GameController:
             "pending_plan_id": self.pending.plan_id if self.pending else None,
             "pending_move": self.pending.uci if self.pending else None,
             "robot_ack_received": self.ack_received_at is not None,
-            "committed_plies": len(self.history),
+            "committed_plies": len(self.history), "last_rejection": self.last_rejection.copy() if self.last_rejection else None,
             "legal_moves": [move.uci() for move in self._board.legal_moves],
         }
 
@@ -416,6 +417,7 @@ class GameController:
     def next_plan(self) -> MovePlan:
         self._ensure_ready()
         move, score, elapsed = self.players[self._board.turn].choose_move(self.board)
+        self.last_rejection = None
         self.pending = describe_move(self._board, move, score=score, think_ms=elapsed)
         self.ack_received_at = None
         self.seen_capture_ids.clear()
@@ -434,11 +436,35 @@ class GameController:
             move = chess.Move(from_idx, to_idx, promotion=promotion_code)
         except (TypeError, ValueError, AttributeError) as exc:
             raise IllegalMove(f"Invalid move or promotion: {exc}") from exc
+        self.last_rejection = None
         self.pending = describe_move(self._board, move)
         self.ack_received_at = None
         self.seen_capture_ids.clear()
         self.mismatches = 0
         return self.pending
+
+    def reject_unexecuted(self, plan_id, *, before_fen, arm_activity, gripper_activity, scene_restored, reason):
+        """Accept only an explicit backend proof; never commit or assume a reset.
+
+        Legacy failed acknowledgements still block. A successful/ambiguous prior
+        acknowledgement cannot be reclassified as a pre-execution rejection.
+        """
+        if self.pending is None:
+            return {"ok": False, "status": "no_pending_plan"}
+        if self.pending.plan_id != plan_id:
+            return {"ok": False, "status": "stale_plan_id"}
+        if self.blocked or self.ack_received_at is not None:
+            return {"ok": False, "status": "reconciliation_required"}
+        if (arm_activity is not False or gripper_activity is not False or scene_restored is not True
+                or before_fen != self._board.fen() or before_fen != self.pending.before_fen):
+            return {"ok": False, "status": "invalid_rejection_proof"}
+        self.last_rejection = {"plan_id":plan_id,"before_fen":before_fen,"reason":str(reason),
+                               "status":"rejected_before_activity"}
+        self.pending = None
+        self.ack_received_at = None
+        self.mismatches = 0
+        self.seen_capture_ids.clear()
+        return {"ok":True, **self.last_rejection, "fen":self._board.fen()}
 
     def robot_ack(self, plan_id: str, *, success: bool, arm_parked: bool, gripper_released: bool) -> dict:
         """Explicit ack from robot coordinator, not an assumption derived from images."""
@@ -517,6 +543,7 @@ class GameController:
         self.mismatches = 0
         self.seen_capture_ids.clear()
         self.history = []
+        self.last_rejection = None
 
     def export_history(self) -> list[dict]:
         return [record.copy() for record in self.history]

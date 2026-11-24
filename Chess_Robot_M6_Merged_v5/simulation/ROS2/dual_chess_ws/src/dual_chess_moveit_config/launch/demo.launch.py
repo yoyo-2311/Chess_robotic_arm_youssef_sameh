@@ -1,8 +1,10 @@
 """MoveIt with ros2_control mock hardware. Does not command physical motors or Gazebo."""
 import os
+import yaml
+import xml.etree.ElementTree as ET
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, OpaqueFunction
+from launch.actions import DeclareLaunchArgument, OpaqueFunction, TimerAction
 from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
@@ -22,6 +24,14 @@ def setup(context):
               .planning_pipelines(pipelines=['ompl'])
               .planning_scene_monitor(publish_robot_description=True, publish_robot_description_semantic=True)
               .to_moveit_configs())
+    with open(LaunchConfiguration('geometry_file').perform(context)) as stream:
+        homes=yaml.safe_load(stream).get('motion',{}).get('home',{})
+    if homes:
+        semantic=ET.fromstring(config.robot_description_semantic['robot_description_semantic'])
+        for state in semantic.findall('group_state'):
+            if state.get('name')=='home' and state.get('group') in homes:
+                for joint,value in zip(state.findall('joint'),homes[state.get('group')]):joint.set('value',str(value))
+        config.robot_description_semantic['robot_description_semantic']=ET.tostring(semantic,encoding='unicode')
     return [
         Node(package='robot_state_publisher', executable='robot_state_publisher', parameters=[config.robot_description], output='screen'),
         Node(package='controller_manager', executable='ros2_control_node',
@@ -30,7 +40,7 @@ def setup(context):
         Node(package='controller_manager', executable='spawner',
              arguments=['joint_state_broadcaster', 'robot1_controller', 'robot2_controller', '--controller-manager-timeout', '60'], output='screen'),
         Node(package='moveit_ros_move_group', executable='move_group', parameters=[config.to_dict()], output='screen'),
-        Node(package='chess_motion_interface', executable='motion_interface', output='screen', parameters=[{'geometry_file': LaunchConfiguration('geometry_file'), 'initial_fen': ParameterValue(LaunchConfiguration('initial_fen'), value_type=str), 'accept_move_plans': ParameterValue(LaunchConfiguration('accept_move_plans'), value_type=bool), 'publish_mock_readiness': ParameterValue(LaunchConfiguration('publish_mock_readiness'), value_type=bool)}]),
+        TimerAction(period=LaunchConfiguration('motion_start_delay'), actions=[Node(package='chess_motion_interface', executable='motion_interface', output='screen', parameters=[{'geometry_file': LaunchConfiguration('geometry_file'), 'initial_fen': ParameterValue(LaunchConfiguration('initial_fen'), value_type=str), 'accept_move_plans': ParameterValue(LaunchConfiguration('accept_move_plans'), value_type=bool), 'publish_mock_readiness': ParameterValue(LaunchConfiguration('publish_mock_readiness'), value_type=bool)}])]),
         Node(package='rviz2', executable='rviz2', arguments=['-d', os.path.join(share, 'config', 'moveit.rviz')],
              parameters=[config.to_dict()], condition=IfCondition(LaunchConfiguration('rviz')), output='screen'),
     ]
@@ -40,6 +50,7 @@ def generate_launch_description():
     default = os.path.join(get_package_share_directory('dual_chess_description'), 'config', 'chess_geometry.yaml')
     return LaunchDescription([
         DeclareLaunchArgument('rviz', default_value='true'),
+        DeclareLaunchArgument('motion_start_delay', default_value='0.0'),
         DeclareLaunchArgument('geometry_file', default_value=default),
         DeclareLaunchArgument('initial_fen', default_value=''),
         DeclareLaunchArgument('accept_move_plans', default_value='false'),

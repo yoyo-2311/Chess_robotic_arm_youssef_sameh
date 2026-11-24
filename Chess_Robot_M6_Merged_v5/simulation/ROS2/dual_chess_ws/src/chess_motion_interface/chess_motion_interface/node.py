@@ -27,7 +27,7 @@ import xacro
 from chess_brain_handover.core import describe_move, chess
 from .geometry import Geometry
 from .model import Model
-from .backend import Backend, MotionError, requires_reconciliation
+from .backend import PreflightRejected, proven_safe_rejection, Backend, MotionError, requires_reconciliation
 from .scene import Scene
 
 
@@ -77,6 +77,7 @@ class MotionNode(Node):
         self.geometry_pub = self.create_publisher(String,'/chess/geometry',qos)
         self.gripper_pub = self.create_publisher(String,'/chess/gripper/command',10)
         self.gripper_pending = {}
+        self.gripper_epoch = 0
         self.operator_event = threading.Event()
         self.operator_token = None
         self.tf = TransformBroadcaster(self)
@@ -99,7 +100,12 @@ class MotionNode(Node):
         self.worker.start()
 
     def event(self, status, **data):
-        payload = {'schema_version':1,'status':status,'plan_id':self.active_id,'geometry_revision':self.revision,'simulation_grasp':True,**data}
+        if status == 'stage':
+            context=getattr(self,'active_context',{})
+            persistent={k:context[k] for k in ['arm','side','uci','source','target'] if k in context}
+            self.active_context = {**persistent, **data}
+        payload = {'schema_version':1,'status':status,'plan_id':self.active_id,'geometry_revision':self.revision,
+                   'simulation_grasp':True, **getattr(self,'active_context',{}), **data}
         send(self.status_pub,payload)
         if status not in ['idle','busy','initializing','blocked','awaiting_vision']:
             self.get_logger().info(json.dumps(payload,separators=(',',':')))
@@ -315,9 +321,11 @@ class MotionNode(Node):
             pass
 
     def grip(self, operation, arm):
+        self.gripper_epoch += 1  # Count intent before publishing; lost feedback is still activity.
         key = uuid.uuid4().hex
         entry = {'event':threading.Event(),'success':False}
         self.gripper_pending[key] = entry
+        self.event('operation',operation='gripper '+operation,operation_id=key,phase='waiting',timeout_seconds=5.)
         send(self.gripper_pub,{'schema_version':1,'request_id':key,'plan_id':self.active_id,'arm':arm,'operation':operation})
         try:
             deadline = time.monotonic()+5.
@@ -328,6 +336,7 @@ class MotionNode(Node):
                 raise MotionError('gripper_operation_failed')
         finally:
             self.gripper_pending.pop(key,None)
+            self.event('operation',operation='gripper '+operation,operation_id=key,phase='completed' if entry['success'] else 'failed')
 
     def on_operator(self, msg):
         try:
@@ -351,9 +360,11 @@ class MotionNode(Node):
                 send(self.ack_pub,{'plan_id':id,'success':False,'arm_parked':False,'gripper_released':False,'reason':'not_ready_busy_or_blocked'})
             return
         self.busy, self.active_id = True, id
+        self.active_context = {}
         self.seen.add(id)
         def run():
             epoch = self.backend.execution_epoch
+            gripper_epoch = self.gripper_epoch
             try:
                 self.event('accepted',request_id=id)
                 worker(data)
@@ -363,13 +374,17 @@ class MotionNode(Node):
                     send(self.ack_pub,{'plan_id':id,'success':True,'arm_parked':True,'gripper_released':True,'simulated_gripper':True})
             except Exception as exc:
                 # Conservative: a rejected later stage can leave an earlier stage executed.
-                partial = requires_reconciliation(exc, self.backend.execution_epoch != epoch, self.scene.attached is not None, self.blocked, self.backend.stop.is_set())
+                partial = requires_reconciliation(exc, self.backend.execution_epoch != epoch or self.gripper_epoch != gripper_epoch, self.scene.attached is not None, self.blocked, self.backend.stop.is_set())
+                safe = proven_safe_rejection(exc,epoch,self.backend.execution_epoch,gripper_epoch,self.gripper_epoch,partial)
                 self.blocked = partial
-                self.event('failed' if partial else 'rejected',request_id=id,reason=str(exc),physical_state_confirmed=False,reconciliation_required=partial)
+                self.event('failed' if partial else 'rejected',request_id=id,reason=str(exc),physical_state_confirmed=False,reconciliation_required=partial,safe_rejection=safe)
                 if chess_plan:
-                    send(self.ack_pub,{'plan_id':id,'success':False,'arm_parked':False,'gripper_released':False,'reason':str(exc)})
+                    send(self.ack_pub,{'plan_id':id,'success':False,'arm_parked':False,'gripper_released':False,'reason':str(exc),
+                        **({'safe_rejection':True,'before_fen':data['before_fen'],'arm_activity':False,
+                            'gripper_activity':False,'scene_restored':True} if safe else {})})
             finally:
                 self.busy, self.active_id = False, ''
+                self.active_context = {}
                 self.lock.release()
         threading.Thread(target=run,daemon=True).start()
 
@@ -479,7 +494,7 @@ class MotionNode(Node):
                 targets.extend([('capture_place',g.world(local+[0,0,g.grasp(symbol)])),('capture_approach',g.world([local[0],local[1],g.raw['board']['surface_height']+g.travel(g.piece_height(symbol))]))])
         self.check_targets(arm,targets)
 
-    def transfer(self, arm, source, target=None, bin_slot=None):
+    def prepare_transfer(self, arm, source, target=None, bin_slot=None):
         g = self.geometry
         if source not in self.scene.at:
             raise MotionError('scene_piece_missing_'+source)
@@ -488,15 +503,62 @@ class MotionNode(Node):
         height = g.piece_height(symbol)
         src = np.array(self.scene.pieces[name]['local'])-[0,0,height/2]
         dst = g.local_square(target) if target else g.bin_local(arm,bin_slot)
-        travel_z = max(g.raw['board']['surface_height']+g.travel(height),float(dst[2])+height+g.raw['motion']['approach_clearance'])
-        above_src = g.world([src[0],src[1],travel_z])
-        above_dst = g.world([dst[0],dst[1],travel_z])
-        grasp_src = g.world(src+[0,0,g.grasp(symbol)])
-        grasp_dst = g.world(dst+[0,0,g.grasp(symbol)+g.raw['motion']['place_clearance']])
+        # Search only profile-approved points inside the piece's height. No
+        # activity occurs until BOTH pickup and payload-aware placement pass.
+        failures=[];self.scene.touch(name,arm,True)
+        try:
+            for fraction in g.grasp_fractions():
+                grasp_height=height*fraction
+                travel_z=max(g.raw['board']['surface_height']+g.travel(height,fraction),
+                             float(dst[2])+height+g.raw['motion']['approach_clearance'])
+                above_src=g.world([src[0],src[1],travel_z]);above_dst=g.world([dst[0],dst[1],travel_z])
+                grasp_src=g.world(src+[0,0,grasp_height])
+                grasp_dst=g.world(dst+[0,0,grasp_height+g.raw['motion']['place_clearance']])
+                self.event('stage',stage='pickup_preflight',source=source,target=target,
+                           world=grasp_src.tolist(),grasp_fraction=fraction,
+                           detail='Check pickup and placement before any arm/gripper activity')
+                try:
+                    approach_trajectory=self.backend.approach(arm,above_src,grasp_src,execute=False)
+                    start=self.backend.trajectory_end_state(approach_trajectory)
+                    descent=self.backend.plan_vertical(arm,grasp_src,start)
+                    grasp_state=self.backend.trajectory_end_state(descent)
+                    with self.scene.preview_attachment(name,arm,grasp_state):
+                        self.event('stage',stage='placement_preflight',source=source,target=target,
+                                   world=grasp_dst.tolist(),grasp_fraction=fraction)
+                        self.backend.descent_candidates(arm,above_dst,grasp_dst)
+                    self.event('grasp_selected',source=source,target=target,grasp_fraction=fraction,
+                               pickup=grasp_src.tolist(),placement=grasp_dst.tolist(),
+                               detail='Both descents passed with the carried piece; no activity yet')
+                    break
+                except MotionError as exc:
+                    if not str(exc).startswith(('no_collision_free_descent:','unreachable_target:',
+                                                'planning_failed:','cartesian_path_incomplete:')):
+                        raise
+                    failures.append({'fraction':fraction,'reason':str(exc)})
+                    self.event('grasp_candidate_rejected',grasp_fraction=fraction,reason=str(exc))
+            else:
+                raise PreflightRejected('transfer_preflight_infeasible: '+source+' -> '+str(target or 'capture bin')+
+                    '; fractions='+str(g.grasp_fractions())+'; '+failures[-1]['reason'])
+        except Exception:
+            # Restore selected-piece permission before issuing a safe proof.
+            self.scene.touch(name,arm,False)
+            raise
+        self.scene.touch(name,arm,False)
+        return {'name':name,'height':height,'dst':dst,'above_src':above_src,'above_dst':above_dst,
+                'grasp_src':grasp_src,'grasp_dst':grasp_dst,'approach_trajectory':approach_trajectory,
+                'grasp_fraction':fraction}
+
+    def transfer(self, arm, source, target=None, bin_slot=None):
+        plan=self.prepare_transfer(arm,source,target,bin_slot)
+        g=self.geometry
+        name,height,dst=plan['name'],plan['height'],plan['dst']
+        above_src,above_dst=plan['above_src'],plan['above_dst']
+        grasp_src,grasp_dst=plan['grasp_src'],plan['grasp_dst']
+        approach_trajectory=plan['approach_trajectory']
+        self.scene.touch(name,arm,True)
         self.event('stage',stage='approach_pick',source=source,target=target)
         self.grip('open',arm)
-        self.backend.move(arm,above_src)
-        self.scene.touch(name,arm,True)
+        self.backend.execute(approach_trajectory)
         self.backend.vertical(arm,grasp_src)
         self.event('stage',stage='grasp',piece=name)
         self.grip('close',arm)
@@ -504,7 +566,7 @@ class MotionNode(Node):
         self.scene.at.pop(source)
         self.backend.vertical(arm,above_src)
         self.event('stage',stage='transfer',piece=name)
-        self.backend.move(arm,above_dst)
+        self.backend.approach(arm,above_dst,grasp_dst)
         self.backend.vertical(arm,grasp_dst)
         self.grip('open',arm)
         centre = dst+[0,0,height/2+g.raw['motion']['place_clearance']]
@@ -519,16 +581,23 @@ class MotionNode(Node):
 
     def execute_plan(self, plan):
         arm = 'robot1' if plan['side']=='white' else 'robot2'
+        self.active_context = {'arm':arm,'side':plan['side'],'uci':plan['uci']}
         self.event('preflight',uci=plan['uci'])
-        self.preflight_plan(plan,arm)
-        ok, contacts = self.backend.valid()
-        if not ok:
-            raise MotionError('start_scene_collision: '+str(contacts))
-        # The non-moving arm must be parked, not merely clear at a sampled endpoint.
-        other = 'robot2' if arm=='robot1' else 'robot1'
-        values = self.backend.joints()
-        if any(abs(values[f'{other}_joint{i}']-v)>.01 for i,v in enumerate([.09,0.,0.],1)):
-            raise MotionError('other_arm_not_parked')
+        try:
+            self.preflight_plan(plan,arm)
+            ok, contacts = self.backend.valid()
+            if not ok:
+                raise MotionError('start_scene_collision: '+str(contacts))
+            # The non-moving arm must be parked, not merely clear at a sampled endpoint.
+            other = 'robot2' if arm=='robot1' else 'robot1'
+            values = self.backend.joints()
+            if any(abs(values[f'{other}_joint{i}']-v)>.01 for i,v in enumerate(self.geometry.home(other),1)):
+                raise MotionError('other_arm_not_parked')
+        except MotionError as exc:
+            if str(exc).startswith(('unreachable_','collision_at_','board_tilt_',
+                    'piece_scene_does_not_match_','start_scene_collision:','other_arm_not_parked')):
+                raise PreflightRejected(str(exc)) from exc
+            raise
         for action in plan['actions']:
             kind = action['kind']
             if kind=='move':
@@ -543,7 +612,7 @@ class MotionNode(Node):
                 self.backend.park(arm)
                 self.operator_event.clear()
                 self.operator_token = uuid.uuid4().hex
-                self.event('operator_required',token=self.operator_token,square=sq,piece=action['piece'],detail='Replace pawn with requested promotion piece; explicitly confirm')
+                self.event('operator_required',timeout_seconds=self.geometry.raw['motion']['operator_timeout'],token=self.operator_token,square=sq,piece=action['piece'],detail='Replace pawn with requested promotion piece; explicitly confirm')
                 deadline = time.monotonic()+self.geometry.raw['motion']['operator_timeout']
                 while not self.operator_event.wait(.1):
                     if self.backend.stop.is_set() or time.monotonic()>deadline:

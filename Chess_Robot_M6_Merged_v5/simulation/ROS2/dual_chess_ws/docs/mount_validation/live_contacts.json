@@ -1,0 +1,717 @@
+{
+  "valid": false,
+  "joints": {
+    "robot1_joint1": 0.09,
+    "robot1_joint2": -1.5707963267948966,
+    "robot1_joint3": 0.0,
+    "robot2_joint1": 0.09,
+    "robot2_joint2": -1.5707963267948966,
+    "robot2_joint3": 0.0
+  },
+  "contacts": [
+    {
+      "pair": [
+        "workcell_controle_box",
+        "robot1_base_link"
+      ],
+      "depth": 0.0010491423354765383,
+      "world_point": [
+        -0.514970841053474,
+        -0.07935863148873368,
+        -0.030000018622940328
+      ],
+      "normal": [
+        0.8412541317355638,
+        0.5406398855410529,
+        1.2004616979167722e-16
+      ]
+    },
+    {
+      "pair": [
+        "workcell_controle_box",
+        "robot2_base_link"
+      ],
+      "depth": 0.0010491770387475174,
+      "world_point": [
+        0.2850291140761988,
+        -0.07935863689398015,
+        -0.030000018623717484
+      ],
+      "normal": [
+        0.8412534567399093,
+        0.5406409358559094,
+        1.2004640300842458e-16
+      ]
+    }
+  ],
+  "world_objects": [
+    {
+      "id": "chess_board_body",
+      "frame": "world",
+      "meshes": 1,
+      "primitives": 0
+    },
+    {
+      "id": "chess_tile_a1",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_a2",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_a3",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_a4",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_a5",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_a6",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_a7",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_a8",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_b1",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_b2",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_b3",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_b4",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_b5",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_b6",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_b7",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_b8",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_c1",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_c2",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_c3",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_c4",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_c5",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_c6",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_c7",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_c8",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_d1",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_d2",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_d3",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_d4",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_d5",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_d6",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_d7",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_d8",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_e1",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_e2",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_e3",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_e4",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_e5",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_e6",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_e7",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_e8",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_f1",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_f2",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_f3",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_f4",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_f5",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_f6",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_f7",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_f8",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_g1",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_g2",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_g3",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_g4",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_g5",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_g6",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_g7",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_g8",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_h1",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_h2",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_h3",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_h4",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_h5",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_h6",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_h7",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tile_h8",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_0",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_1",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_10",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_11",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_12",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_13",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_14",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_15",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_2",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_3",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_4",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_5",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_6",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_7",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_8",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot1_9",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_0",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_1",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_10",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_11",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_12",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_13",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_14",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_15",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_2",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_3",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_4",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_5",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_6",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_7",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_8",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "chess_tray_robot2_9",
+      "frame": "world",
+      "meshes": 0,
+      "primitives": 1
+    },
+    {
+      "id": "workcell_controle_box",
+      "frame": "world",
+      "meshes": 1,
+      "primitives": 0
+    }
+  ],
+  "tf": {
+    "robot1_mount": {
+      "translation": [
+        -0.3968999927673221,
+        0.09810001242666276,
+        0.4045213286605072
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        1.0,
+        6.123233995736766e-17
+      ]
+    },
+    "robot1_base_link": {
+      "translation": [
+        -0.3968999927673221,
+        0.09810001242666276,
+        0.4045213286605072
+      ],
+      "quaternion": [
+        -4.3297802811668655e-17,
+        -0.7071067811848163,
+        0.7071067811882787,
+        4.329780281188067e-17
+      ]
+    },
+    "robot1_tool0": {
+      "translation": [
+        -0.7622514550874431,
+        0.20421763605981935,
+        0.4370225840809465
+      ],
+      "quaternion": [
+        -0.36483178179598164,
+        0.6057218038862756,
+        0.6057210408047566,
+        -0.36482994396667606
+      ]
+    },
+    "robot2_mount": {
+      "translation": [
+        0.39689996171862046,
+        -0.09809999124238346,
+        0.4045213286605072
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "robot2_base_link": {
+      "translation": [
+        0.39689996171862046,
+        -0.09809999124238346,
+        0.4045213286605072
+      ],
+      "quaternion": [
+        -0.7071067811848163,
+        0.0,
+        0.0,
+        0.7071067811882787
+      ]
+    },
+    "robot2_tool0": {
+      "translation": [
+        0.7622514240387415,
+        -0.20421761487554002,
+        0.4370225840809465
+      ],
+      "quaternion": [
+        0.6057218038862756,
+        0.36483178179598175,
+        0.36482994396667606,
+        0.6057210408047565
+      ]
+    }
+  }
+}

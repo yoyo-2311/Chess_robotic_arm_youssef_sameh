@@ -1,0 +1,55 @@
+{
+  "mode": "gazebo",
+  "cases": [
+    {
+      "arm": "robot1",
+      "joint": "joint3",
+      "requested": 0.1,
+      "observed": 0.09708328845158787,
+      "tracking_within_tolerance": true
+    },
+    {
+      "arm": "robot1",
+      "joint": "joint1",
+      "requested": 0.01,
+      "observed": -8.767680483543203e-15,
+      "tracking_within_tolerance": false
+    },
+    {
+      "arm": "robot2",
+      "joint": "joint3",
+      "requested": 0.1,
+      "observed": 0.10011108838454673,
+      "tracking_within_tolerance": true
+    },
+    {
+      "arm": "robot2",
+      "joint": "joint1",
+      "requested": 0.01,
+      "observed": -8.82083295294814e-15,
+      "tracking_within_tolerance": false
+    }
+  ],
+  "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261123-235510-4111bb.log",
+  "initial_joints": {
+    "board_joint": 0.0,
+    "robot1_mount_joint": 0.0,
+    "robot1_joint1": -9.810001769250398e-15,
+    "robot1_joint2": 7.595580356206943e-08,
+    "robot1_joint3": -2.472024122135223e-08,
+    "robot2_mount_joint": 0.0,
+    "robot2_joint1": -9.810001769250398e-15,
+    "robot2_joint2": 7.595580356387778e-08,
+    "robot2_joint3": -2.4720241221655327e-08
+  },
+  "clock": {
+    "sec": 1,
+    "nanosec": 77000000
+  },
+  "scene_query_returncode": 0,
+  "enclosure_in_scene": true,
+  "mesh_load_errors": [],
+  "clean_shutdown": true,
+  "max_qt_timer_gap": 0.061030666998703964,
+  "events": []
+}

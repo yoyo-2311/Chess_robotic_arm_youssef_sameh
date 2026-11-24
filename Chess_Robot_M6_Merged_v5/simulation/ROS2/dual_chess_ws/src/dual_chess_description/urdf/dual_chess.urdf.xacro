@@ -7,7 +7,8 @@
 <xacro:include filename="$(find dual_chess_description)/urdf/common/materials.xacro"/>
 <xacro:include filename="$(find dual_chess_description)/urdf/board/board.macro.xacro"/>
 <xacro:include filename="$(find dual_chess_description)/urdf/arm/scara_v2.macro.xacro"/>
-<link name="world"/><xacro:if value="$(arg include_board)"><xacro:chess_board parent="world"/><xacro:chess_support parent="world"/></xacro:if>
+<xacro:include filename="$(find chess_workcell_description)/urdf/workcell.macro.xacro"/>
+<link name="world"/><xacro:if value="$(arg include_board)"><xacro:if value="${geometry.get('workcell',dict()).get('enabled',False)}"><xacro:workcell_enclosure parent="world" configuration="${geometry['workcell']}"/></xacro:if></xacro:if><xacro:if value="$(arg include_board)"><xacro:chess_board parent="world"/><xacro:chess_support parent="world"/></xacro:if>
 <xacro:if value="$(arg robot1_enabled)"><xacro:scara_chess_arm prefix="robot1_" parent="world" mount="${geometry['mounts']['robot1']}"/></xacro:if>
 <xacro:if value="$(arg robot2_enabled)"><xacro:scara_chess_arm prefix="robot2_" parent="world" mount="${geometry['mounts']['robot2']}"/></xacro:if>
 <xacro:if value="${'$(arg hardware_mode)' == 'mock'}">

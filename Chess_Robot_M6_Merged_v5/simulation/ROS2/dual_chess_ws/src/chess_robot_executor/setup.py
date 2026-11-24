@@ -9,7 +9,7 @@ setup(
         ('share/' + package_name + '/launch', ['launch/executor.launch.py']),
         ('share/' + package_name + '/config', ['config/executor_params.yaml']),
     ],
-    install_requires=['setuptools', 'pyyaml'], zip_safe=True,
+    tests_require=['pytest'], install_requires=['setuptools', 'pyyaml'], zip_safe=True,
     maintainer='M6 Simulation / Control',
     maintainer_email='noreply@example.com',
     description='Chess robot executor: move plans to SCARA trajectories (dry-run by default)',

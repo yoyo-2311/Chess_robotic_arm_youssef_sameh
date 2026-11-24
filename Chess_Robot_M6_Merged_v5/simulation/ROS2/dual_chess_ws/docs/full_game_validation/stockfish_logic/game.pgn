@@ -1,0 +1,9 @@
+[Event "Chess Brain logic-only Stockfish self-play"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Stockfish strong"]
+[Black "Stockfish easy"]
+[Result "1-0"]
+
+1. e4 e6 2. Nc3 d5 3. d4 dxe4 4. Nxe4 Nc6 5. Bd3 Qxd4 6. Nf3 Qd8 7. Qe2 a6 8. Bg5 Qd5 9. O-O Qd7 10. Rfd1 h6 11. Bf4 Nge7 12. Bb5 Nd5 13. Ne5 Nxf4 14. Qf3 Qxd1+ 15. Rxd1 axb5 16. Qxf4 f6 17. Nxc6 Be7 18. Qxc7 bxc6 19. Rd8+ Kf7 20. Rxh8 Kg6 21. Rg8 Ra3 22. Qxe7 f5 23. bxa3 c5 24. Rxg7+ Kh5 25. Rg5+ Kh4 26. Rg8+ Kh5 27. Ng3# 1-0

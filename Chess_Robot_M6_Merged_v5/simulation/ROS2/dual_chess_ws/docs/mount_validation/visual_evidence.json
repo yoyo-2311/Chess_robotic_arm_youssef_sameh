@@ -1,0 +1,20 @@
+{
+  "profile": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/src/chess_workcell_description/config/workcell_sim.yaml",
+  "manual_ready": true,
+  "joint_publishers": [
+    "dual_scara_desktop_bridge"
+  ],
+  "joints": {
+    "robot1_joint1": 0.09,
+    "robot1_joint2": -1.5707963267948966,
+    "robot1_joint3": 0.0,
+    "robot2_joint1": 0.09,
+    "robot2_joint2": -1.5707963267948966,
+    "robot2_joint3": 0.0
+  },
+  "assignment": "A/B unconfirmed, preview only",
+  "screenshots": [
+    "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/docs/mount_validation/rviz_topdown.png",
+    "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/docs/mount_validation/rviz_perspective.png"
+  ]
+}

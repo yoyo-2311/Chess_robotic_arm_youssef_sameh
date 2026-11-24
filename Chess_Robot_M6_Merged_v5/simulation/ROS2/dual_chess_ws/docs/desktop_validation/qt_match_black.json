@@ -1,0 +1,35 @@
+{
+  "human": "black",
+  "confirmed_plies": 3,
+  "history": [
+    {
+      "ply": 1,
+      "uci": "d2d4",
+      "san": "d4",
+      "side": "white",
+      "arm": "robot1"
+    },
+    {
+      "ply": 2,
+      "uci": "g8f6",
+      "san": "Nf6",
+      "side": "black",
+      "arm": "robot2"
+    },
+    {
+      "ply": 3,
+      "uci": "b1c3",
+      "san": "Nc3",
+      "side": "white",
+      "arm": "robot1"
+    }
+  ],
+  "automatic_reply_ply_keys": [
+    0,
+    2
+  ],
+  "board_matches_confirmed_fen": true,
+  "qt_timer_ticks": 4000,
+  "maximum_qt_timer_gap_seconds": 0.060548437000761623,
+  "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261123-152401-097cb2.log"
+}

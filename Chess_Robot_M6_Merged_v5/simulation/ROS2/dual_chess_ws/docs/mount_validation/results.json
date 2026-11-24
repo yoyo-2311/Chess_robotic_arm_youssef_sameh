@@ -1,0 +1,982 @@
+{
+  "dates": "2026-11-23/24",
+  "mount_reference_frame": "world -> robotN_mount",
+  "mounts": {
+    "robot1": {
+      "position": [
+        -0.3968999934878585,
+        0.09810001256154201,
+        0.40452133173637606
+      ],
+      "rpy": [
+        0.0,
+        0.0,
+        3.141592653589793
+      ]
+    },
+    "robot2": {
+      "position": [
+        0.3968999620927243,
+        -0.09809999110750385,
+        0.40452133173637606
+      ],
+      "rpy": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "assignment": "UNCONFIRMED preview: robot1/White=A, robot2/Black=B; user does not know seat identity",
+  "yaw": "Preserved world yaw pi/0, unconfirmed physical clocking",
+  "build": "10 packages passed",
+  "pytest": "223 passed",
+  "default_colcon_test": "197 tests, zero errors/failures/skips; fresh result directory",
+  "static_audit": "passed",
+  "source_installed_checks": {
+    "chess_workcell_description/config/workcell_sim.yaml": {
+      "source_sha256": "0e3d7b7cf0e0e8dde8d0f6f1085dfedac776c371c9ecc010c23263114eda4408",
+      "installed": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/install/chess_workcell_description/share/chess_workcell_description/config/workcell_sim.yaml",
+      "identical": true
+    },
+    "chess_workcell_description/meshes/controle_box_refined.STL": {
+      "source_sha256": "10bae1eaeb032f1f31b4939027240761dad2226ffd071ad6d29da4a1b8ebe401",
+      "installed": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/install/chess_workcell_description/share/chess_workcell_description/meshes/controle_box_refined.STL",
+      "identical": true
+    },
+    "chess_workcell_description/urdf/workcell.macro.xacro": {
+      "source_sha256": "800225b0345a61d4f1dfd84654ce57826b20f349e0d7e9dd9d9345e3f9461872",
+      "installed": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/install/chess_workcell_description/share/chess_workcell_description/urdf/workcell.macro.xacro",
+      "identical": true
+    },
+    "dual_chess_description/urdf/arm/scara_v2.macro.xacro": {
+      "source_sha256": "2c6cae67280e3c2361b5eecc257c6d0e073ccb5ef55e80efe2970140ddb404bb",
+      "installed": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/install/dual_chess_description/share/dual_chess_description/urdf/arm/scara_v2.macro.xacro",
+      "identical": true
+    },
+    "dual_chess_description/urdf/dual_chess.urdf.xacro": {
+      "source_sha256": "b46f36878da6c2d38862b5c12ffc688889d59b69005d7b617770bacb638e22e5",
+      "installed": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/install/dual_chess_description/share/dual_chess_description/urdf/dual_chess.urdf.xacro",
+      "identical": true
+    },
+    "dual_chess_gazebo/launch/gazebo.launch.py": {
+      "source_sha256": "de65b7be74e9ad9b4ee1d00be72764d6d41761b3b9befd65d2c16781625d6f7f",
+      "installed": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/install/dual_chess_gazebo/share/dual_chess_gazebo/launch/gazebo.launch.py",
+      "identical": true
+    },
+    "dual_scara_desktop/modes.py": {
+      "installed": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/install/dual_scara_desktop/lib/python3.12/site-packages/dual_scara_desktop/modes.py",
+      "identical": true
+    },
+    "chess_workcell_description/mounting.py": {
+      "installed": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/install/chess_workcell_description/lib/python3.12/site-packages/chess_workcell_description/mounting.py",
+      "identical": true
+    }
+  },
+  "home_collision_valid": true,
+  "home_collision_contacts": [],
+  "reach": "Both arms: all 64 squares at 6 stages unreachable (384/384 endpoint IK failures each)",
+  "unreachable_square_list": "unreachable_squares.json",
+  "height_diagnostics": {
+    "robot1": {
+      "tcp_z_min": 0.34701663950440814,
+      "tcp_z_max": 0.4470239935769586,
+      "minimizer_joint_values": {
+        "robot1_joint1": 8.2649165289439e-14,
+        "robot1_joint2": 1.9902851527224263,
+        "robot1_joint3": 0.018986824210547766
+      },
+      "board_surface_z": 0.01,
+      "highest_tested_board_approach_z": 0.074,
+      "capture_trays": [
+        {
+          "slot": 0,
+          "stage": "place",
+          "world": [
+            0.14,
+            -0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 0,
+          "stage": "approach",
+          "world": [
+            0.14,
+            -0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 1,
+          "stage": "place",
+          "world": [
+            0.14,
+            -0.030000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 1,
+          "stage": "approach",
+          "world": [
+            0.14,
+            -0.030000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 2,
+          "stage": "place",
+          "world": [
+            0.14,
+            -0.018000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 2,
+          "stage": "approach",
+          "world": [
+            0.14,
+            -0.018000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 3,
+          "stage": "place",
+          "world": [
+            0.14,
+            -0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 3,
+          "stage": "approach",
+          "world": [
+            0.14,
+            -0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 4,
+          "stage": "place",
+          "world": [
+            0.14,
+            0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 4,
+          "stage": "approach",
+          "world": [
+            0.14,
+            0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 5,
+          "stage": "place",
+          "world": [
+            0.14,
+            0.017999999999999995,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 5,
+          "stage": "approach",
+          "world": [
+            0.14,
+            0.017999999999999995,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 6,
+          "stage": "place",
+          "world": [
+            0.14,
+            0.030000000000000006,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 6,
+          "stage": "approach",
+          "world": [
+            0.14,
+            0.030000000000000006,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 7,
+          "stage": "place",
+          "world": [
+            0.14,
+            0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 7,
+          "stage": "approach",
+          "world": [
+            0.14,
+            0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 8,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            -0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 8,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            -0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 9,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            -0.030000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 9,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            -0.030000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 10,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            -0.018000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 10,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            -0.018000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 11,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            -0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 11,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            -0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 12,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 12,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 13,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            0.017999999999999995,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 13,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            0.017999999999999995,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 14,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            0.030000000000000006,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 14,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            0.030000000000000006,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 15,
+          "stage": "place",
+          "world": [
+            0.15200000000000002,
+            0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 15,
+          "stage": "approach",
+          "world": [
+            0.15200000000000002,
+            0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        }
+      ]
+    },
+    "robot2": {
+      "tcp_z_min": 0.34701663950440814,
+      "tcp_z_max": 0.4470239935769586,
+      "minimizer_joint_values": {
+        "robot2_joint1": 8.2649165289439e-14,
+        "robot2_joint2": 1.9902851527224263,
+        "robot2_joint3": 0.018986824210547766
+      },
+      "board_surface_z": 0.01,
+      "highest_tested_board_approach_z": 0.074,
+      "capture_trays": [
+        {
+          "slot": 0,
+          "stage": "place",
+          "world": [
+            -0.14,
+            -0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 0,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            -0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 1,
+          "stage": "place",
+          "world": [
+            -0.14,
+            -0.030000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 1,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            -0.030000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 2,
+          "stage": "place",
+          "world": [
+            -0.14,
+            -0.018000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 2,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            -0.018000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 3,
+          "stage": "place",
+          "world": [
+            -0.14,
+            -0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 3,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            -0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 4,
+          "stage": "place",
+          "world": [
+            -0.14,
+            0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 4,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 5,
+          "stage": "place",
+          "world": [
+            -0.14,
+            0.017999999999999995,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 5,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            0.017999999999999995,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 6,
+          "stage": "place",
+          "world": [
+            -0.14,
+            0.030000000000000006,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 6,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            0.030000000000000006,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 7,
+          "stage": "place",
+          "world": [
+            -0.14,
+            0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 7,
+          "stage": "approach",
+          "world": [
+            -0.14,
+            0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 8,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            -0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 8,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            -0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 9,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            -0.030000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 9,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            -0.030000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 10,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            -0.018000000000000002,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 10,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            -0.018000000000000002,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 11,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            -0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 11,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            -0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 12,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            0.005999999999999998,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 12,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            0.005999999999999998,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 13,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            0.017999999999999995,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 13,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            0.017999999999999995,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 14,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            0.030000000000000006,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 14,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            0.030000000000000006,
+            0.0799
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 15,
+          "stage": "place",
+          "world": [
+            -0.15200000000000002,
+            0.042,
+            0.0367
+          ],
+          "ik_solutions": 0
+        },
+        {
+          "slot": 15,
+          "stage": "approach",
+          "world": [
+            -0.15200000000000002,
+            0.042,
+            0.0799
+          ],
+          "ik_solutions": 0
+        }
+      ]
+    }
+  },
+  "qt_cases": [
+    {
+      "scenario": "manual",
+      "result": "passed",
+      "both_arm_slider_feedback": true,
+      "single_publisher": true
+    },
+    {
+      "scenario": "moveit_plan",
+      "arm": "robot1",
+      "result": "unreachable",
+      "reason": "unreachable_approach: world=[0.013125000000000001, -0.013125000000000001, 0.048]; check board/support/mount geometry"
+    },
+    {
+      "scenario": "moveit_execute",
+      "arm": "robot1",
+      "result": "unreachable",
+      "reason": "unreachable_approach: world=[0.013125000000000001, -0.013125000000000001, 0.048]; check board/support/mount geometry"
+    },
+    {
+      "scenario": "moveit_home",
+      "arm": "robot1",
+      "result": "mock_controller_execution_passed"
+    },
+    {
+      "scenario": "moveit_plan",
+      "arm": "robot2",
+      "result": "unreachable",
+      "reason": "unreachable_approach: world=[0.013125000000000001, -0.013125000000000001, 0.048]; check board/support/mount geometry"
+    },
+    {
+      "scenario": "moveit_execute",
+      "arm": "robot2",
+      "result": "unreachable",
+      "reason": "unreachable_approach: world=[0.013125000000000001, -0.013125000000000001, 0.048]; check board/support/mount geometry"
+    },
+    {
+      "scenario": "moveit_home",
+      "arm": "robot2",
+      "result": "mock_controller_execution_passed"
+    },
+    {
+      "scenario": "After c4 e5: g1f3",
+      "uci": "g1f3",
+      "result": "rejected_before_activity",
+      "reason": "unreachable_g1_grasp: world=[0.065625, -0.09187500000000001, 0.024300000000000002]; check board/support/mount geometry",
+      "confirmed_fen_unchanged": true,
+      "ready_for_another_human_move": true,
+      "no_automatic_reply": true,
+      "h2_pawn_present": true
+    },
+    {
+      "scenario": "Capture e4d5",
+      "uci": "e4d5",
+      "result": "rejected_before_activity",
+      "reason": "unreachable_d5_grasp: world=[-0.013125000000000001, 0.013125000000000001, 0.0217]; check board/support/mount geometry",
+      "confirmed_fen_unchanged": true,
+      "ready_for_another_human_move": true,
+      "no_automatic_reply": true
+    },
+    {
+      "scenario": "Castling e1g1",
+      "uci": "e1g1",
+      "result": "rejected_before_activity",
+      "reason": "unreachable_e1_grasp: world=[0.013125000000000001, -0.09187500000000001, 0.0269]; check board/support/mount geometry",
+      "confirmed_fen_unchanged": true,
+      "ready_for_another_human_move": true,
+      "no_automatic_reply": true
+    },
+    {
+      "scenario": "En passant e5d6",
+      "uci": "e5d6",
+      "result": "rejected_before_activity",
+      "reason": "unreachable_d5_grasp: world=[-0.013125000000000001, 0.013125000000000001, 0.0217]; check board/support/mount geometry",
+      "confirmed_fen_unchanged": true,
+      "ready_for_another_human_move": true,
+      "no_automatic_reply": true
+    },
+    {
+      "scenario": "Promotion a7a8q",
+      "uci": "a7a8q",
+      "result": "rejected_before_activity",
+      "reason": "unreachable_a7_grasp: world=[-0.09187500000000001, 0.065625, 0.0217]; check board/support/mount geometry",
+      "confirmed_fen_unchanged": true,
+      "ready_for_another_human_move": true,
+      "no_automatic_reply": true
+    },
+    {
+      "scenario": "stockfish_human_white",
+      "uci": "e2e4",
+      "result": "rejected_before_activity",
+      "reason": "unreachable_e2_grasp: world=[0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry",
+      "confirmed_fen_unchanged": true,
+      "ready_for_another_human_move": true,
+      "no_automatic_reply": true
+    },
+    {
+      "scenario": "stockfish_human_black",
+      "result": "opening_robot1_rejected",
+      "one_opening_request": true,
+      "no_retry_or_commit": true,
+      "reason": "unreachable_d2_grasp: world=[-0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry",
+      "status": "Paused \u2022 White / robot1 d2d4 \u2022 Rejected before any arm/gripper activity: unreachable_d2_grasp: world=[-0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry. Stockfish automatic retry disabled; use explicit recovery."
+    }
+  ],
+  "initial_gazebo_import_failure": {
+    "scenario": "probe_error",
+    "error": "Gazebo \u2014 physics and direct joint controls \u2022 Waiting for Gazebo spawn, clock and joint feedback | White / robot1 d2d4 \u2022 Rejected before any arm/gripper activity: unreachable_d2_grasp: world=[-0.013125000000000001, -0.065625, 0.0217]; check board/support/mount geometry. Stockfish automatic retry disabled; use explicit recovery."
+  },
+  "gazebo_failure_correction": "Resolved by static SDF import, raw-space paths, explicit pose arguments, derived floor, profile-scoped vertical PID",
+  "gazebo_final": {
+    "mode": "gazebo",
+    "cases": [
+      {
+        "arm": "robot1",
+        "joint": "joint3",
+        "requested": 0.1,
+        "observed": 0.09535771754896574,
+        "tracking_within_tolerance": true
+      },
+      {
+        "arm": "robot1",
+        "joint": "joint1",
+        "requested": 0.01,
+        "observed": 0.007893276580385269,
+        "tracking_within_tolerance": true
+      },
+      {
+        "arm": "robot2",
+        "joint": "joint3",
+        "requested": 0.1,
+        "observed": 0.1002378342556772,
+        "tracking_within_tolerance": true
+      },
+      {
+        "arm": "robot2",
+        "joint": "joint1",
+        "requested": 0.01,
+        "observed": 0.009226308505526238,
+        "tracking_within_tolerance": true
+      }
+    ],
+    "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261124-000112-8ae287.log",
+    "initial_joints": {
+      "board_joint": 0.0,
+      "robot1_mount_joint": 0.0,
+      "robot1_joint1": -9.810000034526922e-15,
+      "robot1_joint2": 1.2373034090765475e-08,
+      "robot1_joint3": 5.5288976239399435e-09,
+      "robot2_mount_joint": 0.0,
+      "robot2_joint1": -9.810000034526922e-15,
+      "robot2_joint2": 1.237303409118832e-08,
+      "robot2_joint3": 5.528897624401853e-09
+    },
+    "clock": {
+      "sec": 1,
+      "nanosec": 65000000
+    },
+    "scene_query_returncode": 0,
+    "enclosure_in_scene": true,
+    "physics_enclosure_position": [
+      -0.522123332705935,
+      -0.689524212328646,
+      -1.11365698223419
+    ],
+    "physics_mounts": {
+      "robot1": [
+        -0.3968999934878585,
+        0.09810001256154201,
+        0.4045213317363761
+      ],
+      "robot2": [
+        0.3968999620927243,
+        -0.09809999110750385,
+        0.4045213317363761
+      ]
+    },
+    "mesh_load_errors": [],
+    "clean_shutdown": true,
+    "max_qt_timer_gap": 0.13090306699450593
+  },
+  "gazebo_mount_orientation_quaternions": {
+    "robot1": [
+      0.0,
+      0.0,
+      1.0,
+      6.123233995736766e-17
+    ],
+    "robot2": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "g1f3_final": {
+    "mode": "exact",
+    "cases": [
+      {
+        "transport": "qt",
+        "rejection": {
+          "plan_id": "d66d3361e60346268fc8f0fa76d7702d",
+          "before_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+          "reason": "unreachable_g1_grasp: world=[0.065625, -0.09187500000000001, 0.024300000000000002]; check board/support/mount geometry",
+          "status": "rejected_before_activity"
+        },
+        "h2_present": true,
+        "fen_unchanged": true,
+        "no_activity": true
+      },
+      {
+        "transport": "ros",
+        "rejection": {
+          "plan_id": "875b19bd50234209b8b1121094ed3d80",
+          "before_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+          "reason": "unreachable_g1_grasp: world=[0.065625, -0.09187500000000001, 0.024300000000000002]; check board/support/mount geometry",
+          "status": "rejected_before_activity"
+        },
+        "h2_present": true,
+        "fen_unchanged": true,
+        "no_activity": true
+      }
+    ],
+    "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261123-235540-1afb27.log",
+    "clean_shutdown": true,
+    "max_qt_timer_gap": 0.062249104004877154
+  },
+  "max_qt_workflow_gap": 0.057055862998822704,
+  "not_demonstrated": [
+    "Any seated-layout board pickup/place/retreat or capture-tray execution: endpoint IK fails",
+    "Successful human move plus confirmed Stockfish reply: no board move can execute",
+    "Promotion operator handshake after actual pickup: mechanically blocked",
+    "Real hardware, actual yaw/arm-seat identity, physical motor tuning or camera integration"
+  ]
+}

@@ -5,7 +5,7 @@
 <xacro:macro name="scara_chess_arm" params="prefix parent mount">
 <link name="${prefix}mount"/>
 <joint name="${prefix}mount_joint" type="fixed"><parent link="${parent}"/><child link="${prefix}mount"/><origin xyz="${mount['position'][0]} ${mount['position'][1]} ${mount['position'][2]}" rpy="${mount['rpy'][0]} ${mount['rpy'][1]} ${mount['rpy'][2]}"/></joint>
-<joint name="${prefix}world_to_base" type="fixed"><parent link="${prefix}mount"/><child link="${prefix}base_link"/><origin xyz="0 0 0" rpy="-1.57079632679 0 0"/></joint>
+<joint name="${prefix}world_to_base" type="fixed"><parent link="${prefix}mount"/><child link="${prefix}base_link"/><origin xyz="0 0 0" rpy="-1.5707963267948966 0 0"/></joint>
 <link name="${prefix}base_link">
     <inertial>
       <origin xyz="0.00779289313647138 0.110894655660121 0.0956125419275902" rpy="0 0 0" />
@@ -187,10 +187,11 @@
 <joint name="${prefix}joint${index}"><command_interface name="position"/><state_interface name="position"><param name="initial_value">${initial}</param></state_interface><state_interface name="velocity"/></joint>
 </xacro:macro>
 <xacro:macro name="scara_control" params="prefix hardware">
+<xacro:property name="home_values" value="${geometry['motion'].get('home',dict()).get(prefix[:-1], [0.09,0.0,0.0])}"/>
 <ros2_control name="${prefix}system" type="system"><hardware><plugin>${hardware}</plugin></hardware>
-<xacro:scara_control_joint prefix="${prefix}" index="1" initial="0.09"/>
-<xacro:scara_control_joint prefix="${prefix}" index="2" initial="0.0"/>
-<xacro:scara_control_joint prefix="${prefix}" index="3" initial="0.0"/>
+<xacro:scara_control_joint prefix="${prefix}" index="1" initial="${home_values[0]}"/>
+<xacro:scara_control_joint prefix="${prefix}" index="2" initial="${home_values[1]}"/>
+<xacro:scara_control_joint prefix="${prefix}" index="3" initial="${home_values[2]}"/>
 </ros2_control>
 </xacro:macro>
 <xacro:macro name="scara_cmd_pos" params="prefix ns">
@@ -199,6 +200,7 @@
 <xacro:scara_position_plugin prefix="${prefix}" ns="${ns}" index="3"/>
 </xacro:macro>
 <xacro:macro name="scara_position_plugin" params="prefix ns index">
-<gazebo><plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController"><joint_name>${prefix}joint${index}</joint_name><topic>/${ns}/joint${index}/cmd_pos</topic><p_gain>100</p_gain></plugin></gazebo>
+<xacro:property name="tuning" value="${geometry.get('gazebo',dict()).get('position_controllers',dict()).get('joint'+str(index),dict())}"/>
+<gazebo><plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController"><joint_name>${prefix}joint${index}</joint_name><topic>/${ns}/joint${index}/cmd_pos</topic><p_gain>${tuning.get('p_gain',100)}</p_gain><xacro:if value="${bool(tuning)}"><i_gain>${tuning.get('i_gain',0)}</i_gain><d_gain>${tuning.get('d_gain',0)}</d_gain><i_max>${tuning.get('i_max',0)}</i_max><i_min>${tuning.get('i_min',0)}</i_min><cmd_max>${tuning.get('cmd_max',100)}</cmd_max><cmd_min>${tuning.get('cmd_min',-100)}</cmd_min></xacro:if></plugin></gazebo>
 </xacro:macro>
 </robot>

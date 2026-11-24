@@ -1,0 +1,81 @@
+{
+  "move": "g1f3",
+  "transport": "qt",
+  "domain": 221,
+  "complete": false,
+  "setup_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+  "error": "[WARN] [1795454167.025205667] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.\n[WARN] [1795454167.025212789] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.\nTraceback (most recent call last):\n  File \"/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/tools/inspect_pickup_scene.py\", line 71, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/tools/inspect_pickup_scene.py\", line 30, in main\n    before=get_scene();scene=Scene(b,g);saved=copy.deepcopy(before.allowed_collision_matrix)\n           ^^^^^^^^^^^\n  File \"/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/tools/inspect_pickup_scene.py\", line 27, in get_scene\n    def get_scene():return b.wait(client.call_async(GetPlanningScene.Request(components=PlanningSceneComponents(components=1023)))).scene\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/install/chess_motion_interface/lib/python3.12/site-packages/chess_motion_interface/backend.py\", line 58, in wait\n    raise MotionError('service_or_action_timeout: '+str(operation or 'ROS service'))\nchess_motion_interface.backend.MotionError: service_or_action_timeout: ROS service\nterminate called without an active exception\n",
+  "history": [
+    {
+      "ply": 1,
+      "uci": "c2c4",
+      "san": "c4",
+      "side": "white",
+      "arm": "robot1"
+    },
+    {
+      "ply": 2,
+      "uci": "e7e5",
+      "san": "e5",
+      "side": "black",
+      "arm": "robot2"
+    }
+  ],
+  "state": {
+    "schema_version": "1.0",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+    "turn": "white",
+    "result": null,
+    "synchronized": true,
+    "blocked": false,
+    "block_reason": null,
+    "pending_plan_id": null,
+    "pending_move": null,
+    "robot_ack_received": false,
+    "committed_plies": 2,
+    "legal_moves": [
+      "g1h3",
+      "g1f3",
+      "d1a4",
+      "d1b3",
+      "d1c2",
+      "b1c3",
+      "b1a3",
+      "c4c5",
+      "h2h3",
+      "g2g3",
+      "f2f3",
+      "e2e3",
+      "d2d3",
+      "b2b3",
+      "a2a3",
+      "h2h4",
+      "g2g4",
+      "f2f4",
+      "e2e4",
+      "d2d4",
+      "b2b4",
+      "a2a4"
+    ]
+  },
+  "motion": {
+    "schema_version": 1,
+    "status": "idle",
+    "plan_id": "",
+    "geometry_revision": 0,
+    "simulation_grasp": true
+  },
+  "status": "Human vs Stockfish \u2014 simulated match \u2022 Confirmed board ready \u2022 robot1 White / robot2 Black",
+  "pending": "Human turn",
+  "execution": "Execution / confirmation: fresh vision committed the move",
+  "selected": null,
+  "inflight": null,
+  "initial_joints": {},
+  "max_joint_travel": {},
+  "automatic_reply_keys": [],
+  "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261123-191515-23f261.log",
+  "qt_ticks": 4288,
+  "max_qt_gap": 0.06260897200263571,
+  "elapsed": 86.042961723997,
+  "clean_shutdown": true
+}

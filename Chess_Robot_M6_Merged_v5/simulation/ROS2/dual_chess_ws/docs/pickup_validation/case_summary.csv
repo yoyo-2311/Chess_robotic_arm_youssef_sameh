@@ -1,0 +1,13 @@
+case,file,move,transport,complete_move_and_reply,safe_rejection_recovered,confirmed_plies,history,error,clean_shutdown,max_qt_gap_s
+baseline2,qt_g1f3.json,g1f3,qt,False,False,2,c2c4 e7e5,"White / robot1 g1f3 • pickup preflight • Rejected before arm movement • No collision-free descent: robot1 target=[0.065625, -0.091875, 0.0243]; contacts=['robot1_link3/robot1_link1', 'robot1_link4/chess_piece_h2']; fractions=[0.8947, 0.0]",True,0.055668633001914714
+default_ros,ros_g1f3.json,g1f3,ros,False,True,2,c2c4 e7e5,EXPECTED_SAFE_REJECTION,True,0.058517064000625396
+default_h3,qt_g1h3.json,g1h3,qt,False,True,2,c2c4 e7e5,EXPECTED_SAFE_REJECTION,True,0.07067336199907004
+default_control,qt_b1c3.json,b1c3,qt,True,False,4,c2c4 e7e5 b1c3 f8e7,,True,0.03892831299890531
+default_recovery,qt_e2e4.json,g1f3,qt,False,True,3,c2c4 e7e5 e2e4,Stockfish move safely rejected. Automatic retry disabled; use explicit recovery.,True,0.05420261199833476
+recovery_verified2,qt_g1f3.json,g1f3,qt,False,True,3,c2c4 e7e5 b1c3,Stockfish move safely rejected. Automatic retry disabled; use explicit recovery.,True,0.054701467997801956
+upper_grasp_verified,qt_b1c3.json,b1c3,qt,True,False,4,c2c4 e7e5 b1c3 f8e7,,True,0.041613018001953606
+upper_grasp_verified,qt_g1f3.json,g1f3,qt,True,False,4,c2c4 e7e5 g1f3 b8c6,,True,0.04072648100191145
+upper_grasp_verified,qt_g1h3.json,g1h3,qt,True,False,4,c2c4 e7e5 g1h3 g7g6,,True,0.04030203000002075
+upper_grasp_ros,ros_g1f3.json,g1f3,ros,True,False,4,c2c4 e7e5 g1f3 e5e4,,True,0.04161650400055805
+upper_grasp_held_vision,qt_g1f3.json,g1f3,qt,True,False,4,c2c4 e7e5 g1f3 f7f6,,True,0.050486692001868505
+uncertain_failure2,qt_b1c3.json,b1c3,qt,False,False,2,c2c4 e7e5,White / robot1 b1c3 • approach pick • Execution stopped; reconciliation required • gripper_operation_failed,True,0.03665858800013666

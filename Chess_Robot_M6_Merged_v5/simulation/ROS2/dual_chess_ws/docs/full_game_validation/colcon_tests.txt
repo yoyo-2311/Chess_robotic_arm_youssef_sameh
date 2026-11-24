@@ -1,0 +1,32 @@
+Starting >>> chess_brain_handover
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/build/chess_brain_handover/.pytest_cache
+rootdir: /media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/src/chess_brain_handover
+plugins: launch-testing-3.4.12, ament-flake8-0.17.5, ament-xmllint-0.17.5, ament-copyright-0.17.5, ament-lint-0.17.5, launch-testing-ros-0.26.13, ament-pep257-0.17.5, typeguard-4.1.5, cov-4.1.0, colcon-core-0.21.3
+collected 31 items
+
+tests/test_chess_brain.py .........................                      [ 80%]
+tests/test_complete_games.py ......                                      [100%]
+
+- generated xml file: /media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/build/chess_brain_handover/pytest.xml -
+============================== 31 passed in 0.09s ==============================
+Finished <<< chess_brain_handover [0.49s]
+Starting >>> dual_scara_desktop
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/build/dual_scara_desktop/.pytest_cache
+rootdir: /media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/src/dual_scara_desktop
+plugins: launch-testing-3.4.12, ament-flake8-0.17.5, ament-xmllint-0.17.5, ament-copyright-0.17.5, ament-lint-0.17.5, launch-testing-ros-0.26.13, ament-pep257-0.17.5, typeguard-4.1.5, cov-4.1.0, colcon-core-0.21.3
+collected 16 items
+
+tests/test_coordinator.py ......                                         [ 37%]
+tests/test_modes.py ...                                                  [ 56%]
+tests/test_qt_controls.py .....                                          [ 87%]
+tests/test_supervisor.py ..                                              [100%]
+
+- generated xml file: /media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/build/dual_scara_desktop/pytest.xml -
+============================== 16 passed in 0.79s ==============================
+Finished <<< dual_scara_desktop [1.15s]
+
+Summary: 2 packages finished [1.73s]

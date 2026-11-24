@@ -1,0 +1,17 @@
+version,transport,opening,outcome,confirmed_plies,reply,engine_next_accepted,fault_side,fault_uci,fault_reason,fault_t,max_qt_gap_s,clean_shutdown
+before,qt,g1f3,execution_failed,0,,0,white,g1f3,cartesian_path_incomplete: fraction=0.8947 code=1,14.4863,0.0376,True
+before,qt,g1h3,execution_failed,0,,0,white,g1h3,cartesian_path_incomplete: fraction=0.9000 code=1,14.2552,0.036,True
+before,qt,b1c3,human_and_reply_confirmed,2,e7e5,1,,,,,0.0355,True
+before,qt,e2e4,human_and_reply_confirmed,2,e7e6,1,,,,,0.0394,True
+before,ros,g1f3,execution_failed,0,,0,white,g1f3,cartesian_path_incomplete: fraction=0.8947 code=1,15.3148,0.0545,True
+before,ros,g1h3,execution_failed,0,,0,white,g1h3,cartesian_path_incomplete: fraction=0.9000 code=1,15.6975,0.035,True
+before,ros,b1c3,human_and_reply_confirmed,2,e7e5,1,,,,,0.0362,True
+before,ros,e2e4,human_and_reply_confirmed,2,g8f6,1,,,,,0.0367,True
+after,qt,g1f3,motion_rejected,0,,0,white,g1f3,"no_collision_free_descent: robot1 target=[0.065625, -0.091875, 0.0243]; contacts=['robot1_link3/robot1_link1', 'robot1_link4/chess_piece_h2']; fractions=[0.8947368421052632, 0.0]",7.6345,0.0627,True
+after,qt,g1h3,motion_rejected,0,,0,white,g1h3,"no_collision_free_descent: robot1 target=[0.065625, -0.091875, 0.0243]; contacts=['robot1_link3/robot1_link1', 'robot1_link4/chess_piece_h2']; fractions=[0.8947368421052632, 0.0]",6.414,0.0337,True
+after,qt,b1c3,human_and_reply_confirmed,2,g7g6,1,,,,,0.0356,True
+after,qt,e2e4,human_and_reply_confirmed,2,e7e6,1,,,,,0.0373,True
+after,ros,g1f3,motion_rejected,0,,0,white,g1f3,"no_collision_free_descent: robot1 target=[0.065625, -0.091875, 0.0243]; contacts=['robot1_link3/robot1_link1', 'robot1_link4/chess_piece_h2']; fractions=[0.8947368421052632, 0.0]",6.5791,0.0378,True
+after,ros,g1h3,motion_rejected,0,,0,white,g1h3,"no_collision_free_descent: robot1 target=[0.065625, -0.091875, 0.0243]; contacts=['robot1_link3/robot1_link1', 'robot1_link4/chess_piece_h2']; fractions=[0.8947368421052632, 0.0]",6.7589,0.0336,True
+after,ros,b1c3,human_and_reply_confirmed,2,d7d5,1,,,,,0.0345,True
+after,ros,e2e4,human_and_reply_confirmed,2,g8f6,1,,,,,0.0397,True

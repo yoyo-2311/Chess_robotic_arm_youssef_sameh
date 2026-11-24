@@ -16,10 +16,11 @@ def generate_launch_description():
     initial = ParameterValue(LaunchConfiguration('initial_fen'),value_type=str)
     return LaunchDescription([
         DeclareLaunchArgument('rviz',default_value='true'),
+        DeclareLaunchArgument('motion_start_delay',default_value='0.0'),
         DeclareLaunchArgument('geometry_file',default_value=geometry),
         DeclareLaunchArgument('initial_fen',default_value=fen),
         IncludeLaunchDescription(PythonLaunchDescriptionSource(os.path.join(share,'launch','demo.launch.py')),
-                                 launch_arguments={'rviz':LaunchConfiguration('rviz'),'geometry_file':LaunchConfiguration('geometry_file'),'initial_fen':LaunchConfiguration('initial_fen'),'accept_move_plans':'true','publish_mock_readiness':'true'}.items()),
+                                 launch_arguments={'motion_start_delay':LaunchConfiguration('motion_start_delay'),'rviz':LaunchConfiguration('rviz'),'geometry_file':LaunchConfiguration('geometry_file'),'initial_fen':LaunchConfiguration('initial_fen'),'accept_move_plans':'true','publish_mock_readiness':'true'}.items()),
         Node(package='chess_brain_handover',executable='chess_brain_node',output='screen',parameters=[{'engine_mode':'mock','initial_fen':initial}]),
         Node(package='chess_motion_interface',executable='mock_vision',output='screen',parameters=[{'initial_fen':initial}]),
         Node(package='chess_motion_interface',executable='mock_gripper',output='screen'),

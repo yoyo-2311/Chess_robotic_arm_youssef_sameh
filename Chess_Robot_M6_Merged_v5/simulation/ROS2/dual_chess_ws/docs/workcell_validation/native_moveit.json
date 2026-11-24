@@ -1,0 +1,9 @@
+{
+  "qt_platform": "wayland",
+  "window_visible": true,
+  "desktop_only": false,
+  "mode": "moveit",
+  "ready": false,
+  "component_failed": false,
+  "software_stop_checked": true
+}

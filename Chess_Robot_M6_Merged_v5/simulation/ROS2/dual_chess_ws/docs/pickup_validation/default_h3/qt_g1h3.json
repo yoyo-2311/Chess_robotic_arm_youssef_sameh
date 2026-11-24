@@ -1,0 +1,103 @@
+{
+  "move": "g1h3",
+  "transport": "qt",
+  "domain": 225,
+  "complete": false,
+  "setup_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+  "safe_rejection_recovered": true,
+  "rejection_notice": "Rejected before any arm/gripper activity: no_collision_free_descent: robot1 target=[0.065625, -0.091875, 0.0243]; contacts=['robot1_link3/robot1_link1', 'robot1_link4/chess_piece_h2']; fractions=[0.8947, 0.0]. Choose another legal move.",
+  "error": "EXPECTED_SAFE_REJECTION",
+  "history": [
+    {
+      "ply": 1,
+      "uci": "c2c4",
+      "san": "c4",
+      "side": "white",
+      "arm": "robot1"
+    },
+    {
+      "ply": 2,
+      "uci": "e7e5",
+      "san": "e5",
+      "side": "black",
+      "arm": "robot2"
+    }
+  ],
+  "state": {
+    "schema_version": "1.0",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+    "turn": "white",
+    "result": null,
+    "synchronized": true,
+    "blocked": false,
+    "block_reason": null,
+    "pending_plan_id": null,
+    "pending_move": null,
+    "robot_ack_received": false,
+    "committed_plies": 2,
+    "last_rejection": {
+      "plan_id": "2dc91d76b8374bae842ca040d3d401de",
+      "before_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+      "reason": "no_collision_free_descent: robot1 target=[0.065625, -0.091875, 0.0243]; contacts=['robot1_link3/robot1_link1', 'robot1_link4/chess_piece_h2']; fractions=[0.8947, 0.0]",
+      "status": "rejected_before_activity"
+    },
+    "legal_moves": [
+      "g1h3",
+      "g1f3",
+      "d1a4",
+      "d1b3",
+      "d1c2",
+      "b1c3",
+      "b1a3",
+      "c4c5",
+      "h2h3",
+      "g2g3",
+      "f2f3",
+      "e2e3",
+      "d2d3",
+      "b2b3",
+      "a2a3",
+      "h2h4",
+      "g2g4",
+      "f2f4",
+      "e2e4",
+      "d2d4",
+      "b2b4",
+      "a2a4"
+    ]
+  },
+  "motion": {
+    "schema_version": 1,
+    "status": "idle",
+    "plan_id": "",
+    "geometry_revision": 0,
+    "simulation_grasp": true
+  },
+  "status": "Human vs Stockfish \u2014 simulated match \u2022 Confirmed board ready \u2022 robot1 White / robot2 Black",
+  "pending": "Human turn",
+  "execution": "Rejected before any arm/gripper activity: no_collision_free_descent: robot1 target=[0.065625, -0.091875, 0.0243]; contacts=['robot1_link3/robot1_link1', 'robot1_link4/chess_piece_h2']; fractions=[0.8947, 0.0]. Choose another legal move.",
+  "selected": null,
+  "inflight": null,
+  "initial_joints": {
+    "robot1_joint1": 0.08992907408219762,
+    "robot1_joint2": 1.4036412676767669e-05,
+    "robot1_joint3": 5.068070329731674e-05,
+    "robot2_joint1": 0.08990162753500043,
+    "robot2_joint2": -5.1905081514348025e-05,
+    "robot2_joint3": -7.802622090073174e-05
+  },
+  "max_joint_travel": {
+    "robot1_joint1": 0,
+    "robot1_joint2": 0,
+    "robot1_joint3": 0,
+    "robot2_joint1": 0,
+    "robot2_joint2": 0,
+    "robot2_joint3": 0
+  },
+  "automatic_reply_keys": [],
+  "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261123-192513-613333.log",
+  "qt_ticks": 2706,
+  "max_qt_gap": 0.07067336199907004,
+  "elapsed": 54.48291592900205,
+  "clean_shutdown": true
+}

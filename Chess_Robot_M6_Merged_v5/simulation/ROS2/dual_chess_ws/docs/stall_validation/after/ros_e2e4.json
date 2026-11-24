@@ -1,0 +1,101 @@
+{
+  "move": "e2e4",
+  "transport": "ros",
+  "domain": 228,
+  "complete": true,
+  "history": [
+    {
+      "ply": 1,
+      "uci": "e2e4",
+      "san": "e4",
+      "side": "white",
+      "arm": "robot1"
+    },
+    {
+      "ply": 2,
+      "uci": "g8f6",
+      "san": "Nf6",
+      "side": "black",
+      "arm": "robot2"
+    }
+  ],
+  "state": {
+    "schema_version": "1.0",
+    "fen": "rnbqkb1r/pppppppp/5n2/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 1 2",
+    "turn": "white",
+    "result": null,
+    "synchronized": true,
+    "blocked": false,
+    "block_reason": null,
+    "pending_plan_id": null,
+    "pending_move": null,
+    "robot_ack_received": false,
+    "committed_plies": 2,
+    "legal_moves": [
+      "g1h3",
+      "g1f3",
+      "g1e2",
+      "f1a6",
+      "f1b5",
+      "f1c4",
+      "f1d3",
+      "f1e2",
+      "e1e2",
+      "d1h5",
+      "d1g4",
+      "d1f3",
+      "d1e2",
+      "b1c3",
+      "b1a3",
+      "e4e5",
+      "h2h3",
+      "g2g3",
+      "f2f3",
+      "d2d3",
+      "c2c3",
+      "b2b3",
+      "a2a3",
+      "h2h4",
+      "g2g4",
+      "f2f4",
+      "d2d4",
+      "c2c4",
+      "b2b4",
+      "a2a4"
+    ]
+  },
+  "motion": {
+    "schema_version": 1,
+    "status": "idle",
+    "plan_id": "",
+    "geometry_revision": 0,
+    "simulation_grasp": true
+  },
+  "status": "Human vs Stockfish \u2014 simulated match \u2022 Confirmed board ready \u2022 robot1 White / robot2 Black",
+  "pending": "No pending move",
+  "execution": "Execution / confirmation: fresh vision committed the move",
+  "selected": null,
+  "inflight": null,
+  "initial_joints": {
+    "robot1_joint1": 0.09,
+    "robot1_joint2": 0.0,
+    "robot1_joint3": 0.0,
+    "robot2_joint1": 0.09,
+    "robot2_joint2": 0.0,
+    "robot2_joint3": 0.0
+  },
+  "max_joint_travel": {
+    "robot1_joint1": 0.050801937596287844,
+    "robot1_joint2": 0.6648507121286747,
+    "robot1_joint3": 2.5719575338633036,
+    "robot2_joint1": 0.04820123357249359,
+    "robot2_joint2": 1.2203146174854045,
+    "robot2_joint3": 2.327097801110673
+  },
+  "automatic_reply_keys": [],
+  "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261123-184609-3dc465.log",
+  "qt_ticks": 2636,
+  "max_qt_gap": 0.03968104099840275,
+  "elapsed": 52.74133715899734,
+  "clean_shutdown": true
+}

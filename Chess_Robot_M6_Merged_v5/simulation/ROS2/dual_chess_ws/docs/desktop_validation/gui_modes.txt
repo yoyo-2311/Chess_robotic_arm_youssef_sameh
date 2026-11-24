@@ -1,0 +1,121 @@
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+[WARN] [1795441594.876053382] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[WARN] [1795441594.876069451] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+checking manual Checking ROS domain ownership… supervisor False
+This plugin does not support propagateSizeHints()
+running manual Manual joints — visualization only • Visualization • desktop is the sole joint-state publisher supervisor True
+running manual Manual joints — visualization only • Visualization • desktop is the sole joint-state publisher supervisor True
+stopping manual Stopping app-managed mode… supervisor True
+This plugin does not support propagateSizeHints()
+running moveit MoveIt / square tests — mock controllers • MoveIt ready • mock controllers supervisor True
+running moveit MoveIt / square tests — mock controllers • MoveIt ready • mock controllers supervisor True
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+running moveit MoveIt / square tests — mock controllers • MoveIt ready • mock controllers supervisor True
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+running moveit MoveIt / square tests — mock controllers • MoveIt ready • mock controllers supervisor True
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+running moveit MoveIt / square tests — mock controllers • MoveIt ready • mock controllers supervisor True
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+running moveit MoveIt / square tests — mock controllers • MoveIt ready • mock controllers supervisor True
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+running moveit MoveIt / square tests — mock controllers • MoveIt ready • mock controllers supervisor True
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+running moveit MoveIt / square tests — mock controllers • MoveIt ready • mock controllers supervisor True
+stopping moveit Stopping app-managed mode… supervisor True
+checking mock Waiting for ROS discovery to clear: chess_motion_interface, controller_manager, robot_state_publisher supervisor False
+checking mock Waiting for ROS discovery to clear: chess_motion_interface, controller_manager supervisor False
+checking mock Waiting for ROS discovery to clear: chess_motion_interface, controller_manager supervisor False
+running mock Full mock chess — repeatable scenarios • Confirmed board ready • robot1 White / robot2 Black supervisor True
+running mock Full mock chess — repeatable scenarios • Confirmed board ready • robot1 White / robot2 Black supervisor True
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+stopping mock Stopping app-managed mode… supervisor True
+checking mock Waiting for ROS discovery to clear: chess_motion_interface, controller_manager supervisor False
+checking mock Waiting for ROS discovery to clear: chess_motion_interface, controller_manager supervisor False
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+running mock Full mock chess — repeatable scenarios • Confirmed board ready • robot1 White / robot2 Black supervisor True
+running mock Full mock chess — repeatable scenarios • Confirmed board ready • robot1 White / robot2 Black supervisor True
+This plugin does not support propagateSizeHints()
+running mock Full mock chess — repeatable scenarios • Executing grasp •  →  supervisor True
+running mock Full mock chess — repeatable scenarios • Executing retreat •  →  supervisor True
+running mock Full mock chess — repeatable scenarios • succeeded supervisor True
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+stopping mock Stopping app-managed mode… supervisor True
+checking mock Checking ROS domain ownership… supervisor False
+checking mock Waiting for ROS discovery to clear: chess_motion_interface, controller_manager supervisor False
+checking mock Waiting for ROS discovery to clear: chess_motion_interface, controller_manager supervisor False
+running mock Full mock chess — repeatable scenarios • Confirmed board ready • robot1 White / robot2 Black supervisor True
+This plugin does not support propagateSizeHints()
+running mock Full mock chess — repeatable scenarios • Executing grasp •  →  supervisor True
+running mock Full mock chess — repeatable scenarios • Executing approach pick • a8 → None supervisor True
+running mock Full mock chess — repeatable scenarios • Executing transfer •  →  supervisor True
+running mock Full mock chess — repeatable scenarios • Executing retreat •  →  supervisor True
+This plugin does not support propagateSizeHints()
+running mock Full mock chess — repeatable scenarios • Executing retreat •  →  supervisor True
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+stopping mock Stopping app-managed mode… supervisor True
+checking logic Checking ROS domain ownership… supervisor False
+checking logic Waiting for ROS discovery to clear: chess_motion_interface, controller_manager supervisor False
+checking logic Waiting for ROS discovery to clear: chess_motion_interface, controller_manager supervisor False
+running logic Chess logic only — external interfaces • Brain available • external vision/safety required; no robot execution supervisor True
+stopping logic Stopping app-managed mode… supervisor True
+This plugin does not support propagateSizeHints()
+checking gazebo Checking ROS domain ownership… supervisor False
+checking gazebo Waiting for ROS discovery to clear: chess_brain supervisor False
+checking gazebo Waiting for ROS discovery to clear: chess_brain supervisor False
+This plugin does not support propagateSizeHints()
+{
+  "manual": {
+    "both_arms_feedback": true,
+    "publishers": [
+      "dual_scara_desktop_bridge"
+    ]
+  },
+  "switch": {
+    "old_owned_group_gone_before_new_backend": true
+  },
+  "moveit": {
+    "plan_only_keeps_joints": true,
+    "execute_and_home_both_arms": true,
+    "empty_square_probe": true
+  },
+  "software_stop": {
+    "mode_stays_running": true,
+    "motion_disabled": true
+  },
+  "failure": {
+    "confirmed_fen_unchanged": true,
+    "mode_not_shutdown_by_failure": true,
+    "next_move_disabled": true
+  },
+  "delayed_vision": {
+    "ack_does_not_change_board": true,
+    "fresh_vision_commits_once": true,
+    "duplicate_click_ignored": true
+  },
+  "promotion": {
+    "explicit_operator_token_confirmation": true,
+    "confirmed_queen_displayed": true
+  },
+  "logic_only": {
+    "brain_state_visible": true,
+    "missing_external_vision_reported": true,
+    "motion_disabled": true
+  },
+  "gazebo": {
+    "clock_and_joint_feedback": true,
+    "direct_position_controls_enabled": true
+  }
+}
+This plugin does not support propagateSizeHints()

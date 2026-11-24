@@ -146,6 +146,8 @@ def test_partial_cartesian_paths_never_reach_execution():
                          cart_client=SimpleNamespace(call_async=lambda req:seen.append(req)),
                          wait=lambda *a,**kw:SimpleNamespace(fraction=.5,error_code=SimpleNamespace(val=1)),
                          execute=lambda trajectory:pytest.fail('partial trajectory must not execute'))
+    fake._cartesian_request=lambda *args:Backend._cartesian_request(fake,*args)
+    fake.plan_vertical=lambda *args:Backend.plan_vertical(fake,*args)
     with pytest.raises(MotionError,match='cartesian_path_incomplete'):Backend.vertical(fake,'robot1',[.01,.01,.03])
     assert seen[0].avoid_collisions
 
@@ -191,3 +193,21 @@ def test_configured_approach_clearance_also_changes_square_approach_and_retreat_
     raw['motion']['approach_clearance']+=.01
     raised=Geometry(raw)
     assert raised.travel()==pytest.approx(g.travel()+.01)
+
+
+def test_cad_environment_has_one_collision_owner_and_profile_home_values():
+    profile=DESC.parent/'chess_workcell_description/config/workcell_sim.yaml'
+    g=Geometry.load(profile)
+    for include in ['true','false']:
+        root=E.fromstring(xacro.process_file(str(DESC/'urdf/dual_chess.urdf.xacro'),
+            mappings={'geometry_file':str(profile),'include_board':include,'hardware_mode':'mock'}).toxml())
+        links=[link.get('name') for link in root.findall('link')]
+        assert len(links)==len(set(links))
+        assert ('workcell_controle_box' in links)==(include=='true')
+        if include=='true':
+            assert root.find(".//mesh[@filename='package://chess_workcell_description/meshes/chess_board.STL']") is not None
+        else:
+            for arm in ['robot1','robot2']:
+                for i,value in enumerate(g.home(arm),1):
+                    param=root.find(f"ros2_control/joint[@name='{arm}_joint{i}']/state_interface/param[@name='initial_value']")
+                    assert float(param.text)==pytest.approx(value)

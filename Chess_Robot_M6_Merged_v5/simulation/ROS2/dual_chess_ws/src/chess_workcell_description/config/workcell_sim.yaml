@@ -1,0 +1,152 @@
+# CAD-measured centers/planes. Yaw and A/B arm identity are UNCONFIRMED previews.
+# Gazebo gains are simulation-only; do not use for physical motor control.
+board:
+  length: 0.28
+  width: 0.28
+  square_size_x: 0.02625
+  square_size_y: 0.02625
+  thickness: 0.01
+  surface_height: 0.01
+  position:
+  - 0.0
+  - 0.0
+  - 0.0
+  rpy:
+  - 0.0
+  - 0.0
+  - 0.0
+  grid_mode: fit_board
+  border_x: 0.035
+  border_y: 0.035
+support:
+  enabled: false
+  size:
+  - 0.24
+  - 0.24
+  - 0.01
+  position:
+  - 0.0
+  - 0.0
+  - -0.005
+  rpy:
+  - 0.0
+  - 0.0
+  - 0.0
+mounts:
+  robot1:
+    position:
+    - -0.3968999934878585
+    - 0.09810001256154201
+    - 0.40452133173637606
+    rpy:
+    - 0.0
+    - 0.0
+    - 3.141592653589793
+  robot2:
+    position:
+    - 0.3968999620927243
+    - -0.09809999110750385
+    - 0.40452133173637606
+    rpy:
+    - 0.0
+    - 0.0
+    - 0.0
+tool:
+  position:
+  - 0.007
+  - -0.0287
+  - 0.0
+pieces:
+  heights:
+    p: 0.018
+    n: 0.022
+    b: 0.024
+    r: 0.02
+    q: 0.025
+    k: 0.026
+  radius: 0.003
+motion:
+  grasp_fraction: 0.65
+  approach_clearance: 0.012
+  transfer_clearance: 0.012
+  place_clearance: 0.001
+  velocity_scale: 0.4
+  acceleration_scale: 0.4
+  cartesian_step: 0.002
+  minimum_cartesian_fraction: 1.0
+  operator_timeout: 120.0
+  max_board_tilt: 0.035
+  grasp_search_fractions:
+  - 0.8
+  - 0.9
+  - 0.98
+  - 1.0
+  home:
+    robot1:
+    - 0.09
+    - -1.5707963267948966
+    - 0.0
+    robot2:
+    - 0.09
+    - -1.5707963267948966
+    - 0.0
+capture_bins:
+  robot1:
+    origin:
+    - 0.14
+    - -0.042
+    - 0.025
+    step:
+    - 0.0
+    - 0.012
+    - 0.0
+    row_step:
+    - 0.012
+    - 0.0
+    - 0.0
+    columns: 8
+    slots: 16
+  robot2:
+    origin:
+    - -0.14
+    - -0.042
+    - 0.025
+    step:
+    - 0.0
+    - 0.012
+    - 0.0
+    row_step:
+    - -0.012
+    - 0.0
+    - 0.0
+    columns: 8
+    slots: 16
+workcell:
+  enabled: true
+  mesh: controle_box_refined.STL
+  position:
+  - -0.522123332705935
+  - -0.689524212328646
+  - -1.11365698223419
+  rpy:
+  - -1.5707963267948966
+  - 0.0
+  - 0.0
+mounting_evidence:
+  reference_frame: world
+  yaw_status: 'Unconfirmed: retained configured yaw; unkeyed circular platform has
+    no mating frame or bolt pattern'
+  assignment_status: 'UNCONFIRMED preview: robot1/White on A; robot2/Black on B; user
+    has no seat identity information yet'
+  robot1_seat: A
+  assignment_confirmed: false
+gazebo:
+  position_controllers:
+    joint1:
+      p_gain: 10000.0
+      i_gain: 1000.0
+      d_gain: 200.0
+      i_max: 20.0
+      i_min: -20.0
+      cmd_max: 100.0
+      cmd_min: -100.0

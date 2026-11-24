@@ -6,9 +6,12 @@
   <xacro:include filename="$(find dual_chess_description)/urdf/board/board_params_cad.xacro"/>
 
   <xacro:macro name="chess_board" params="parent">
+    <xacro:property name="cad_workcell" value="${geometry.get('workcell',dict()).get('enabled',False)}"/>
     <link name="board_link">
-      <visual name="board_configurable_visual"><origin xyz="0 0 ${board_play_surface_height/2}"/>
-      <geometry><box size="${board_length} ${board_width} ${board_play_surface_height}"/></geometry><material name="board_wood"/></visual>
+      <visual name="board_configurable_visual">
+      <xacro:if value="${cad_workcell}"><origin xyz="0 0 ${board_play_surface_height}" rpy="1.5707963267948966 0 0"/><geometry><mesh filename="package://chess_workcell_description/meshes/chess_board.STL"/></geometry></xacro:if>
+      <xacro:unless value="${cad_workcell}"><origin xyz="0 0 ${board_play_surface_height/2}"/><geometry><box size="${board_length} ${board_width} ${board_play_surface_height}"/></geometry></xacro:unless>
+      <material name="board_wood"/></visual>
       <xacro:if value="${board_rim_x > 0 and board_thickness > board_play_surface_height}"><visual name="rim_left_visual"><origin xyz="${-board_length/2+board_rim_x/2} 0 ${(board_thickness+board_play_surface_height)/2}"/><geometry><box size="${board_rim_x} ${board_width} ${board_thickness-board_play_surface_height}"/></geometry><material name="board_wood"/></visual></xacro:if>
       <xacro:if value="${board_rim_x > 0 and board_thickness > board_play_surface_height}"><visual name="rim_right_visual"><origin xyz="${board_length/2-board_rim_x/2} 0 ${(board_thickness+board_play_surface_height)/2}"/><geometry><box size="${board_rim_x} ${board_width} ${board_thickness-board_play_surface_height}"/></geometry><material name="board_wood"/></visual></xacro:if>
       <xacro:if value="${board_rim_y > 0 and board_thickness > board_play_surface_height}"><visual name="rim_front_visual"><origin xyz="0 ${-board_width/2+board_rim_y/2} ${(board_thickness+board_play_surface_height)/2}"/><geometry><box size="${8*board_square_x} ${board_rim_y} ${board_thickness-board_play_surface_height}"/></geometry><material name="board_wood"/></visual></xacro:if>
@@ -17,8 +20,8 @@
            first material to all visuals if they share a single URDF link. -->
       <!-- Collision uses a simplified foundation (z=0..10 mm). -->
       <collision name="playing_area_collision">
-        <origin xyz="0 0 ${board_play_surface_height/2}" rpy="0 0 0"/>
-        <geometry><box size="${board_length} ${board_width} ${board_play_surface_height}"/></geometry>
+        <xacro:if value="${cad_workcell}"><origin xyz="0 0 ${board_play_surface_height}" rpy="1.5707963267948966 0 0"/><geometry><mesh filename="package://chess_workcell_description/meshes/chess_board.STL"/></geometry></xacro:if>
+        <xacro:unless value="${cad_workcell}"><origin xyz="0 0 ${board_play_surface_height/2}"/><geometry><box size="${board_length} ${board_width} ${board_play_surface_height}"/></geometry></xacro:unless>
       </collision>
       <!-- Four raised perimeter rails, preserving the 35cm playing area. -->
       <xacro:if value="${board_rim_x > 0 and board_thickness > board_play_surface_height}"><collision name="rim_left_collision">

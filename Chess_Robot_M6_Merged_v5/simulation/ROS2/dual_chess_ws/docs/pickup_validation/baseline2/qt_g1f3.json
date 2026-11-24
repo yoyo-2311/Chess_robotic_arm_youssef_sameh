@@ -1,0 +1,104 @@
+{
+  "move": "g1f3",
+  "transport": "qt",
+  "domain": 222,
+  "complete": false,
+  "setup_fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+  "error": "White / robot1 g1f3 \u2022 pickup preflight \u2022 Rejected before arm movement \u2022 No collision-free descent: robot1 target=[0.065625, -0.091875, 0.0243]; contacts=['robot1_link3/robot1_link1', 'robot1_link4/chess_piece_h2']; fractions=[0.8947, 0.0]",
+  "history": [
+    {
+      "ply": 1,
+      "uci": "c2c4",
+      "san": "c4",
+      "side": "white",
+      "arm": "robot1"
+    },
+    {
+      "ply": 2,
+      "uci": "e7e5",
+      "san": "e5",
+      "side": "black",
+      "arm": "robot2"
+    }
+  ],
+  "state": {
+    "schema_version": "1.0",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+    "turn": "white",
+    "result": null,
+    "synchronized": true,
+    "blocked": true,
+    "block_reason": "robot_execution_failed_or_not_safe",
+    "pending_plan_id": "d9a45ff1d0794ff2a28c7db27271c1c7",
+    "pending_move": "g1f3",
+    "robot_ack_received": false,
+    "committed_plies": 2,
+    "legal_moves": [
+      "g1h3",
+      "g1f3",
+      "d1a4",
+      "d1b3",
+      "d1c2",
+      "b1c3",
+      "b1a3",
+      "c4c5",
+      "h2h3",
+      "g2g3",
+      "f2f3",
+      "e2e3",
+      "d2d3",
+      "b2b3",
+      "a2a3",
+      "h2h4",
+      "g2g4",
+      "f2f4",
+      "e2e4",
+      "d2d4",
+      "b2b4",
+      "a2a4"
+    ]
+  },
+  "motion": {
+    "schema_version": 1,
+    "status": "idle",
+    "plan_id": "",
+    "geometry_revision": 0,
+    "simulation_grasp": true
+  },
+  "status": "Paused \u2022 White / robot1 g1f3 \u2022 pickup preflight \u2022 Rejected before arm movement \u2022 No collision-free descent: robot1 target=[0.065625, -0.091875, 0.0243]; contacts=['robot1_link3/robot1_link1', 'robot1_link4/chess_piece_h2']; fractions=[0.8947, 0.0]",
+  "pending": "Pending: White / robot1 g1f3 \u2022 pickup preflight",
+  "execution": "Motion result: White / robot1 g1f3 \u2022 pickup preflight \u2022 Rejected before arm movement \u2022 No collision-free descent: robot1 target=[0.065625, -0.091875, 0.0243]; contacts=['robot1_link3/robot1_link1', 'robot1_link4/chess_piece_h2']; fractions=[0.8947, 0.0]",
+  "selected": null,
+  "inflight": {
+    "request_id": "ebb79d8e3035405399e98d5cdb9f14bc",
+    "ply": 2,
+    "sent": 20214.732559974,
+    "side": "white",
+    "uci": "g1f3",
+    "action": "uci",
+    "accepted": true,
+    "plan_id": "d9a45ff1d0794ff2a28c7db27271c1c7"
+  },
+  "initial_joints": {
+    "robot1_joint1": 0.08991758499736897,
+    "robot1_joint2": -8.588264635764063e-05,
+    "robot1_joint3": 9.023097110912205e-06,
+    "robot2_joint1": 0.08996421470409259,
+    "robot2_joint2": -9.813986816449035e-05,
+    "robot2_joint3": 2.186476774528175e-05
+  },
+  "max_joint_travel": {
+    "robot1_joint1": 0,
+    "robot1_joint2": 0,
+    "robot1_joint3": 0,
+    "robot2_joint1": 0,
+    "robot2_joint2": 0,
+    "robot2_joint3": 0
+  },
+  "automatic_reply_keys": [],
+  "launch_log": "/media/youssef-sameh/Data/ECU/level 3/Projects/Design of mechatronics/ROS/Chess_Robot_M6_Merged_v5_after_overlay/Chess_Robot_M6_Merged_v5/simulation/ROS2/dual_chess_ws/.desktop-state/20261123-191752-7486aa.log",
+  "qt_ticks": 2957,
+  "max_qt_gap": 0.055668633001914714,
+  "elapsed": 59.459739853999054,
+  "clean_shutdown": true
+}

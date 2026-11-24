@@ -1,0 +1,58 @@
+Packages: ['chess_auto_coordinator', 'chess_brain_handover', 'chess_motion_interface', 'chess_robot_executor', 'dual_chess_bringup', 'dual_chess_description', 'dual_chess_gazebo', 'dual_chess_moveit_config', 'dual_scara_desktop']
+  [ok]   chess_auto_coordinator (ament_python): manifest and install targets consistent so far
+  [ok]   chess_brain_handover (ament_python): manifest and install targets consistent so far
+  [ok]   chess_motion_interface (ament_python): manifest and install targets consistent so far
+  [ok]   chess_robot_executor (ament_python): manifest and install targets consistent so far
+  [ok]   dual_chess_bringup (ament_cmake): manifest and install targets consistent so far
+  [ok]   dual_chess_description (ament_cmake): manifest and install targets consistent so far
+  [ok]   dual_chess_gazebo (ament_cmake): manifest and install targets consistent so far
+  [ok]   dual_chess_moveit_config (ament_cmake): manifest and install targets consistent so far
+  [ok]   dual_scara_desktop (ament_python): manifest and install targets consistent so far
+  [ok]   78 python files compile
+  [ok]   chess_brain_handover/launch/chess_brain.launch.py: dependencies declared
+  [ok]   chess_robot_executor/launch/executor.launch.py: dependencies declared
+  [ok]   chess_robot_executor/launch/executor.launch.py: config/executor_params.yaml -> installed by chess_robot_executor
+  [ok]   dual_chess_bringup/launch/chess_logic_only.launch.py: dependencies declared
+  [ok]   dual_chess_bringup/launch/chess_logic_only.launch.py: launch/chess_brain.launch.py -> installed by chess_brain_handover
+  [ok]   dual_chess_bringup/launch/chess_logic_only.launch.py: launch/executor.launch.py -> installed by chess_robot_executor
+  [ok]   dual_chess_bringup/launch/simulation.launch.py: dependencies declared
+  [ok]   dual_chess_bringup/launch/simulation.launch.py: config/chess_geometry.yaml -> installed by dual_chess_description
+  [ok]   dual_chess_bringup/launch/simulation.launch.py: launch/gazebo.launch.py -> installed by dual_chess_gazebo
+  [ok]   dual_chess_bringup/launch/simulation.launch.py: rviz/dual_chess.rviz -> installed by dual_chess_description
+  [ok]   dual_chess_bringup/launch/simulation.launch.py: launch/chess_brain.launch.py -> installed by chess_brain_handover
+  [ok]   dual_chess_bringup/launch/simulation.launch.py: launch/executor.launch.py -> installed by chess_robot_executor
+  [ok]   dual_chess_description/launch/display.launch.py: dependencies declared
+  [ok]   dual_chess_description/launch/display.launch.py: urdf/dual_chess.urdf.xacro -> installed by dual_chess_description
+  [ok]   dual_chess_description/launch/display.launch.py: rviz/dual_chess.rviz -> installed by dual_chess_description
+  [ok]   dual_chess_description/launch/display.launch.py: config/chess_geometry.yaml -> installed by dual_chess_description
+  [ok]   dual_chess_description/launch/manual.launch.py: dependencies declared
+  [ok]   dual_chess_description/launch/manual.launch.py: config/chess_geometry.yaml -> installed by dual_chess_description
+  [ok]   dual_chess_description/launch/manual.launch.py: launch/display.launch.py -> installed by dual_chess_description
+  [ok]   dual_chess_gazebo/launch/gazebo.launch.py: dependencies declared
+  [ok]   dual_chess_gazebo/launch/gazebo.launch.py: worlds/chess_world.sdf -> installed by dual_chess_gazebo
+  [ok]   dual_chess_gazebo/launch/gazebo.launch.py: config/bridge.yaml -> installed by dual_chess_gazebo
+  [ok]   dual_chess_gazebo/launch/gazebo.launch.py: urdf/dual_chess.urdf.xacro -> installed by dual_chess_description
+  [ok]   dual_chess_gazebo/launch/gazebo.launch.py: launch/gz_sim.launch.py -> external ros_gz_sim file, skipped
+  [ok]   dual_chess_gazebo/launch/gazebo.launch.py: urdf/dual_chess.urdf.xacro -> installed by dual_chess_description
+  [ok]   dual_chess_gazebo/launch/gazebo.launch.py: config/chess_geometry.yaml -> installed by dual_chess_description
+  [ok]   dual_chess_moveit_config/launch/demo.launch.py: dependencies declared
+  [ok]   dual_chess_moveit_config/launch/demo.launch.py: urdf/dual_chess.urdf.xacro -> installed by dual_chess_description
+  [ok]   dual_chess_moveit_config/launch/demo.launch.py: config/ros2_controllers.yaml -> installed by dual_chess_moveit_config
+  [ok]   dual_chess_moveit_config/launch/demo.launch.py: config/moveit.rviz -> installed by dual_chess_moveit_config
+  [ok]   dual_chess_moveit_config/launch/demo.launch.py: config/chess_geometry.yaml -> installed by dual_chess_description
+  [ok]   dual_chess_moveit_config/launch/simulation_pipeline.launch.py: dependencies declared
+  [ok]   dual_chess_moveit_config/launch/simulation_pipeline.launch.py: config/chess_geometry.yaml -> installed by dual_chess_description
+  [ok]   dual_chess_moveit_config/launch/simulation_pipeline.launch.py: launch/demo.launch.py -> installed by dual_chess_moveit_config
+  [ok]   dual_scara_desktop/launch/manual.launch.py: dependencies declared
+  [ok]   dual_scara_desktop/launch/manual.launch.py: urdf/dual_chess.urdf.xacro -> installed by dual_chess_description
+  [ok]   dual_scara_desktop/launch/manual.launch.py: rviz/dual_chess.rviz -> installed by dual_chess_description
+  [ok]   dual_scara_desktop/launch/manual.launch.py: config/chess_geometry.yaml -> installed by dual_chess_description
+  [ok]   dual_scara_desktop/launch/stockfish_match.launch.py: dependencies declared
+  [ok]   dual_scara_desktop/launch/stockfish_match.launch.py: config/chess_geometry.yaml -> installed by dual_chess_description
+  [ok]   dual_scara_desktop/launch/stockfish_match.launch.py: launch/demo.launch.py -> installed by dual_chess_moveit_config
+  [ok]   xacro dual_chess.urdf.xacro (default): expands; links=151 joints=150 movable=6
+  [ok]   xacro dual_chess.urdf.xacro sim_gazebo:=true: expands; links=151 joints=150 movable=6
+  [ok]   xacro dual_chess.urdf.xacro robot2_enabled:=false: expands; links=143 joints=142 movable=3
+  [ok]   xacro dual_chess.urdf.xacro robot1_enabled:=false robot2_enabled:=false: expands; links=135 joints=134 movable=0
+
+RESULT: OK - no problems found

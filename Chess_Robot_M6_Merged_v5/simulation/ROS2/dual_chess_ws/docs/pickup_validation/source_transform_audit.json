@@ -1,0 +1,41 @@
+{
+  "link1": {
+    "installed_mesh_matches_source": true
+  },
+  "link3": {
+    "installed_mesh_matches_source": true
+  },
+  "link4": {
+    "installed_mesh_matches_source": true
+  },
+  "joint1": {
+    "origin": true,
+    "axis": true,
+    "source_type": "prismatic",
+    "active_type": "prismatic"
+  },
+  "joint2": {
+    "origin": true,
+    "axis": true,
+    "source_type": "revolute",
+    "active_type": "revolute"
+  },
+  "joint3": {
+    "origin": true,
+    "axis": true,
+    "source_type": "revolute",
+    "active_type": "revolute"
+  },
+  "joint4": {
+    "origin": true,
+    "axis": true,
+    "source_type": "fixed",
+    "active_type": "fixed"
+  },
+  "joint5": {
+    "origin": true,
+    "axis": true,
+    "source_type": "fixed",
+    "active_type": "fixed"
+  }
+}

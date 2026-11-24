@@ -109,7 +109,7 @@ setup(
     ],
     # Not an external runtime requirement: pinned chess files are placed in
     # _vendor by the build commands above. System packages use rosdep/apt.
-    install_requires=['setuptools'],
+    tests_require=['pytest'], install_requires=['setuptools'],
     cmdclass={'build_py': BuildWithChess, 'develop': DevelopWithChess},
     zip_safe=False,
     maintainer='Dual Robotic Arm Chess Team',

@@ -1,0 +1,44 @@
+[
+  {
+    "case": "upper_grasp_verified/qt_b1c3.json",
+    "successful_robot_acknowledgements": 4,
+    "fresh_vision_commits": 4,
+    "stockfish_next_requests_accepted": 1,
+    "confirmed_plies": 4
+  },
+  {
+    "case": "upper_grasp_verified/qt_g1f3.json",
+    "successful_robot_acknowledgements": 4,
+    "fresh_vision_commits": 4,
+    "stockfish_next_requests_accepted": 1,
+    "confirmed_plies": 4
+  },
+  {
+    "case": "upper_grasp_verified/qt_g1h3.json",
+    "successful_robot_acknowledgements": 4,
+    "fresh_vision_commits": 4,
+    "stockfish_next_requests_accepted": 1,
+    "confirmed_plies": 4
+  },
+  {
+    "case": "upper_grasp_ros/ros_g1f3.json",
+    "successful_robot_acknowledgements": 4,
+    "fresh_vision_commits": 4,
+    "stockfish_next_requests_accepted": 1,
+    "confirmed_plies": 4
+  },
+  {
+    "case": "upper_grasp_held_vision/qt_g1f3.json",
+    "successful_robot_acknowledgements": 4,
+    "fresh_vision_commits": 4,
+    "stockfish_next_requests_accepted": 1,
+    "confirmed_plies": 4
+  },
+  {
+    "case": "default_control/qt_b1c3.json",
+    "successful_robot_acknowledgements": 4,
+    "fresh_vision_commits": 4,
+    "stockfish_next_requests_accepted": 1,
+    "confirmed_plies": 4
+  }
+]

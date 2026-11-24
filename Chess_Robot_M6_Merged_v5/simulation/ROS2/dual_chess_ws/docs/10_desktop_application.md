@@ -1,5 +1,7 @@
 # Local Dual SCARA desktop
 
+**Current quick start:** [fresh-machine installation and all mode commands](../../../../../README.md). For the measured new platform, every chess square is currently unreachable; the first-match steps below describe software flow on a feasible simulation profile, not a successful seated-layout match. See [current mount validation](14_mount_alignment.md).
+
 `dual_scara_desktop` is a PySide6/rclpy application for this Ubuntu 24.04 / ROS 2 Jazzy workspace. It launches the existing backends and uses their ROS interfaces. No web server, HTTP interface, camera algorithm, game rules, hardware protocol or replacement vision source is added.
 
 ## Install, build and start

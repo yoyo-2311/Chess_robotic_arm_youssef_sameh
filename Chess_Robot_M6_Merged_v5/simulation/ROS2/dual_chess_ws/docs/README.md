@@ -1,3 +1,7 @@
+**Start on a new laptop:** [repository setup and all-mode commands](../../../../../README.md).
+
+**Current physical layout:** [measured seat alignment and reach limitations](14_mount_alignment.md). Earlier robot-only motion evidence does not certify the seated platform.
+
 Current extension: [configurable geometry, all test modes and engine/vision/embedded contracts](09_configurable_motion_interfaces.md).
 
 Current integration: [SCARA and MoveIt analysis](08_scara_moveit.md). Start with the [workspace README](../README.md).

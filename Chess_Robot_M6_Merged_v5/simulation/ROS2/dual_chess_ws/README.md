@@ -1,5 +1,7 @@
 # Dual SCARA chess robot — ROS 2 Jazzy / MoveIt 2
 
+**New laptop or teammate?** Start with the [repository setup and all-mode commands](../../../../README.md). It includes clone/install/build, Qt, CLI modes, geometry choices and the current seated-layout reach limitation.
+
 This continues the supplied `Scara_ws_last.zip` integration. Both CAD arms, previous launch names, chess brain, coordinator and the offline executor are retained. The new `chess_motion_interface` connects the existing chess action schema to MoveIt and controller feedback.
 
 **Start here:** [complete test guide and engine/vision/embedded contracts](docs/09_configurable_motion_interfaces.md).
